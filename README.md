@@ -1,0 +1,6 @@
+- Compilado de:
+  - scripts
+  - programas
+  - queries
+  - arquivos de configuração
+- úteis para desenvolvimento
