@@ -25,3 +25,6 @@ async def read_item(item_id: int, q: str = None):
 ```
 Executar com o comando
 - uvicorn main:app --reload --port 5000
+
+Comando para executar mais de um worker de forma concerrente(testar concorrência)
+- uvicorn main:app --port 5000 --workers 5
