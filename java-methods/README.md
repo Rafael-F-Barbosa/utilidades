@@ -30,3 +30,32 @@
     }
 
 ```
+
+- Versão melhorada pelo GPT - Não testada
+```java
+@GET
+@Path("/async")
+@Produces(MediaType.APPLICATION_JSON)
+public Response asyncCall() {
+    List<CompletableFuture<String>> futures = new ArrayList<>();
+    ExecutorService executor = Executors.newFixedThreadPool(5);
+
+    try {
+        for (int i = 1; i <= 20; i++) {
+            final int id = i;
+            futures.add(CompletableFuture.supplyAsync(() -> asyncService.chamada(String.valueOf(id)), executor)
+                .completeOnTimeout("Timeout for ID " + id, 5, TimeUnit.SECONDS)
+                .exceptionally(e -> "Error for ID " + id));
+        }
+
+        List<String> responses = futures.stream()
+            .map(CompletableFuture::join)
+            .collect(Collectors.toList());
+
+        return Response.ok().entity(responses).build();
+    } finally {
+        executor.shutdown();
+    }
+}
+
+```
