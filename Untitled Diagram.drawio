@@ -59,19 +59,19 @@
         <mxCell id="OAvGSqqMQwYdZcl9DCns-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OAvGSqqMQwYdZcl9DCns-21" target="OAvGSqqMQwYdZcl9DCns-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="OAvGSqqMQwYdZcl9DCns-21" value="Usuário 1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="OAvGSqqMQwYdZcl9DCns-21" value="A1A- Usuário 1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="30" y="690" width="60" height="40" as="geometry" />
         </mxCell>
         <mxCell id="OAvGSqqMQwYdZcl9DCns-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OAvGSqqMQwYdZcl9DCns-23" target="OAvGSqqMQwYdZcl9DCns-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="OAvGSqqMQwYdZcl9DCns-23" value="Usuário 2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="OAvGSqqMQwYdZcl9DCns-23" value="A2A-Usuário 2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="30" y="730" width="60" height="40" as="geometry" />
         </mxCell>
         <mxCell id="OAvGSqqMQwYdZcl9DCns-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OAvGSqqMQwYdZcl9DCns-24" target="OAvGSqqMQwYdZcl9DCns-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="OAvGSqqMQwYdZcl9DCns-24" value="Usuário 3" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="OAvGSqqMQwYdZcl9DCns-24" value="B1B -Usuário 3" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="30" y="770" width="60" height="40" as="geometry" />
         </mxCell>
         <mxCell id="OAvGSqqMQwYdZcl9DCns-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OAvGSqqMQwYdZcl9DCns-25" target="OAvGSqqMQwYdZcl9DCns-20">
@@ -82,7 +82,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="OAvGSqqMQwYdZcl9DCns-25" value="Usuário 4" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="OAvGSqqMQwYdZcl9DCns-25" value="B2B - Usuário 4" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="30" y="810" width="60" height="40" as="geometry" />
         </mxCell>
         <mxCell id="OAvGSqqMQwYdZcl9DCns-32" value="Modelo1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -110,6 +110,9 @@
         </mxCell>
         <mxCell id="OAvGSqqMQwYdZcl9DCns-49" value="- Isso aqui não parece escalar, o big-direcionamento-iib receberia muitas requisições" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-10" y="870" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OAvGSqqMQwYdZcl9DCns-51" value="&lt;b&gt;Serviço 3 - Consumo do modelo online - Ideia 2&lt;/b&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- O usuário cria sua própria IIB na sua sigla&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Usuário cria aplicação, usa como dependência um chart produzido por nós que ao passar os parâmetros certos aponta para o modelo rodando no triton&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="930" width="300" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
