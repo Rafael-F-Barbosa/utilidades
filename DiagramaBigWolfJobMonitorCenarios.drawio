@@ -1,0 +1,886 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.1.1 Chrome/132.0.6834.210 Electron/34.3.3 Safari/537.36" version="26.1.1">
+  <diagram name="Página-1" id="HQxk4_neFjKg6ZKaD3Pr">
+    <mxGraphModel dx="1299" dy="598" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Cenários dashboard de execuções de modelos&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="410" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-2" value="big-wolf-job-monitor-producer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="179" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-3" value="&lt;b&gt;1) Cenário de sucesso&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="_3WzRdwHU4r3Bykr_k4B-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="210" as="sourcePoint" />
+            <mxPoint x="440" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-5" target="_3WzRdwHU4r3Bykr_k4B-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-5" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.queue_viewer;" vertex="1" parent="1">
+          <mxGeometry x="593" y="180" width="59" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-7" value="Mensagem de&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;criação:&lt;/span&gt;&lt;div&gt;job_123&lt;/div&gt;&lt;div&gt;23/03/25T08:00:00&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="173.5" width="147.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-2" target="_3WzRdwHU4r3Bykr_k4B-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="211" as="sourcePoint" />
+            <mxPoint x="500" y="210.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-13" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;colocada na fila&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;kafka&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="159" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-14" value="big-wolf-job-monitor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="178.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-17" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space-collapse: collapse; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;consumida&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="203.5" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-18" value="&amp;nbsp;Banco&lt;div&gt;Oracle&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="169" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-19" value="Fila kafka" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="593" y="148.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-14" target="_3WzRdwHU4r3Bykr_k4B-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-23" value="big-wolf-job-monitor-producer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="284" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-24" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="_3WzRdwHU4r3Bykr_k4B-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="315" as="sourcePoint" />
+            <mxPoint x="450" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-26" target="_3WzRdwHU4r3Bykr_k4B-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-26" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.queue_viewer;" vertex="1" parent="1">
+          <mxGeometry x="603" y="285" width="59" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-23" target="_3WzRdwHU4r3Bykr_k4B-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="316" as="sourcePoint" />
+            <mxPoint x="510" y="315.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-28" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;colocada na fila&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;kafka&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="264" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-29" value="big-wolf-job-monitor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="283.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-30" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space-collapse: collapse; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;consumida&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="314" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-31" value="&amp;nbsp;Banco&lt;div&gt;Oracle&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="274" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-32" value="Fila kafka" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="603" y="253.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-29" target="_3WzRdwHU4r3Bykr_k4B-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-34" value="Mensagem de&amp;nbsp;&lt;div&gt;atualização de job_123&lt;/div&gt;&lt;div&gt;ts_job:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="274" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-40" value="&lt;b&gt;Melhoria recente:&amp;nbsp;&lt;/b&gt;&lt;div&gt;&lt;b&gt;usar o ts_job para&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;setar o ts_inicio&lt;/b&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="100" width="160" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-41" value="big-wolf-job-monitor-producer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="384.5" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-42" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="_3WzRdwHU4r3Bykr_k4B-41">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="415.5" as="sourcePoint" />
+            <mxPoint x="450" y="435.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-44" target="_3WzRdwHU4r3Bykr_k4B-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-44" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.queue_viewer;" vertex="1" parent="1">
+          <mxGeometry x="603" y="385.5" width="59" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-41" target="_3WzRdwHU4r3Bykr_k4B-44">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="416.5" as="sourcePoint" />
+            <mxPoint x="510" y="416" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-46" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;colocada na fila&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;kafka&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="364.5" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-47" value="big-wolf-job-monitor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="384" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-48" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center; background-color: transparent;&quot;&gt;consumida&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: center; background-color: transparent;&quot;&gt;e é repassado&lt;/span&gt;&lt;span style=&quot;text-align: center; background-color: transparent;&quot;&gt;ts_entrada_ fila:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center; background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center; background-color: transparent;&quot;&gt;23/03/25T08:35:00&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="662" y="420" width="178" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-49" value="&amp;nbsp;Banco&lt;div&gt;Oracle&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="374.5" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-50" value="Fila kafka" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="603" y="354" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-47" target="_3WzRdwHU4r3Bykr_k4B-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-52" value="Mensagem de&amp;nbsp;&lt;div&gt;atualização de job_123&lt;/div&gt;&lt;div&gt;ts_job:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="374.5" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-54" value="No banco de dados&amp;nbsp;&lt;div&gt;é cadastrada uma execução&lt;/div&gt;&lt;div&gt;job_123&lt;/div&gt;&lt;div&gt;status - criado&lt;/div&gt;&lt;div&gt;ts_inicio:&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;&lt;div&gt;ts_fim: null&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="178.5" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-55" value="No banco de dados&amp;nbsp;&lt;div&gt;é atualizada uma execução&lt;/div&gt;&lt;div&gt;job_123&lt;/div&gt;&lt;div&gt;status - executando&lt;/div&gt;&lt;div&gt;ts_inicio:&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;&lt;div&gt;ts_fim: null&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="285" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-56" value="No banco de dados&amp;nbsp;&lt;div&gt;é atualizada uma execução&lt;/div&gt;&lt;div&gt;job_123&lt;/div&gt;&lt;div&gt;status - sucesso OU falha&lt;/div&gt;&lt;div&gt;ts_inicio:&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;&lt;div&gt;ts_fim:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:35:00&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="404.5" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-48" target="_3WzRdwHU4r3Bykr_k4B-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-61" value="big-wolf-job-monitor-producer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="595" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-62" value="&lt;b&gt;2) Cenário de falha 1: A mensagem de criação não chega na fila&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="86.25" y="500" width="430" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-63" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="_3WzRdwHU4r3Bykr_k4B-61">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="626" as="sourcePoint" />
+            <mxPoint x="450" y="646" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-65" target="_3WzRdwHU4r3Bykr_k4B-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-65" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.queue_viewer;" vertex="1" parent="1">
+          <mxGeometry x="603" y="596" width="59" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-61" target="_3WzRdwHU4r3Bykr_k4B-65">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="627" as="sourcePoint" />
+            <mxPoint x="510" y="626.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-67" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;colocada na fila&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;kafka&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="575" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-68" value="big-wolf-job-monitor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="594.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-69" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space-collapse: collapse; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;consumida&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="619.5" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-70" value="&amp;nbsp;Banco&lt;div&gt;Oracle&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="585" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-71" value="Fila kafka" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="603" y="564.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-68" target="_3WzRdwHU4r3Bykr_k4B-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-73" value="big-wolf-job-monitor-producer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="700" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-74" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="_3WzRdwHU4r3Bykr_k4B-73">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="731" as="sourcePoint" />
+            <mxPoint x="460" y="751" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-76" target="_3WzRdwHU4r3Bykr_k4B-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-76" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.queue_viewer;" vertex="1" parent="1">
+          <mxGeometry x="613" y="701" width="59" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-73" target="_3WzRdwHU4r3Bykr_k4B-76">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="732" as="sourcePoint" />
+            <mxPoint x="520" y="731.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-78" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;colocada na fila&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;kafka&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="680" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-79" value="big-wolf-job-monitor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="699.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-80" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space-collapse: collapse; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;consumida&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="730" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-81" value="&amp;nbsp;Banco&lt;div&gt;Oracle&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="690" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-82" value="Fila kafka" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="613" y="669.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-79" target="_3WzRdwHU4r3Bykr_k4B-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-84" value="Mensagem de&amp;nbsp;&lt;div&gt;atualização de job_123&lt;/div&gt;&lt;div&gt;ts_job:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="690" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-85" value="big-wolf-job-monitor-producer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="800.5" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-86" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="_3WzRdwHU4r3Bykr_k4B-85">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="831.5" as="sourcePoint" />
+            <mxPoint x="460" y="851.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-88" target="_3WzRdwHU4r3Bykr_k4B-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-88" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.queue_viewer;" vertex="1" parent="1">
+          <mxGeometry x="613" y="801.5" width="59" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-89" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-85" target="_3WzRdwHU4r3Bykr_k4B-88">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="832.5" as="sourcePoint" />
+            <mxPoint x="520" y="832" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-90" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;colocada na fila&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;kafka&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="780.5" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-91" value="big-wolf-job-monitor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-92" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center; background-color: transparent;&quot;&gt;consumida&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: center; background-color: transparent;&quot;&gt;e é repassado&lt;/span&gt;&lt;span style=&quot;text-align: center; background-color: transparent;&quot;&gt;ts_entrada_ fila:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center; background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center; background-color: transparent;&quot;&gt;23/03/25T08:35:00&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="672" y="836" width="178" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-93" value="&amp;nbsp;Banco&lt;div&gt;Oracle&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="790.5" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-94" value="Fila kafka" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="613" y="770" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-91" target="_3WzRdwHU4r3Bykr_k4B-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-96" value="Mensagem de&amp;nbsp;&lt;div&gt;atualização de job_123&lt;/div&gt;&lt;div&gt;ts_job:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="790.5" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-97" value="Não há um registro na fila da execução criada" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="594.5" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-98" value="No banco de dados&amp;nbsp;&lt;div&gt;é atualizada uma execução&lt;/div&gt;&lt;div&gt;job_123&lt;/div&gt;&lt;div&gt;status - executando&lt;/div&gt;&lt;div&gt;ts_inicio:&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;&lt;div&gt;ts_fim: null&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="701" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-99" value="No banco de dados&amp;nbsp;&lt;div&gt;é atualizadauma execução&lt;/div&gt;&lt;div&gt;job_123&lt;/div&gt;&lt;div&gt;status - sucesso OU falha&lt;/div&gt;&lt;div&gt;ts_inicio:&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;&lt;div&gt;ts_fim:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:35:00&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="820.5" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-92" target="_3WzRdwHU4r3Bykr_k4B-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-108" value="Mensagem de&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;criação:&lt;/span&gt;&lt;div&gt;job_123&lt;/div&gt;&lt;div&gt;23/03/25T08:00:00&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="86.25" y="585" width="147.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-109" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="100" y="560" width="160" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-110" value="" style="endArrow=none;html=1;rounded=0;fillColor=#FF6666;strokeColor=#FF3333;" edge="1" parent="_3WzRdwHU4r3Bykr_k4B-109">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="75" as="sourcePoint" />
+            <mxPoint x="81.60377358490565" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-111" value="" style="endArrow=none;html=1;rounded=0;fillColor=#FF6666;strokeColor=#FF3333;" edge="1" parent="_3WzRdwHU4r3Bykr_k4B-109">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="7.5" as="sourcePoint" />
+            <mxPoint x="86.5" y="65.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-107" value="Pode houver uma falha na requisição para o big-wolf-job-monitor-producer" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="530" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-112" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=-15;exitPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-31" target="_3WzRdwHU4r3Bykr_k4B-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1190" y="380" as="sourcePoint" />
+            <mxPoint x="1240" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-113" value="Busca-se uma execução pelo ts_inicio e nome do job" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="920" y="345" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-115" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=-15;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1080" y="432" as="sourcePoint" />
+            <mxPoint x="950" y="437" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-117" value="Busca-se uma execução pelo ts_inicio e nome do job" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="920" y="444.5" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-118" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=-15;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1090" y="754.5" as="sourcePoint" />
+            <mxPoint x="960" y="759.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-119" value="Busca-se uma execução pelo ts_inicio e nome do job" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="930" y="760.5" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-120" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=-15;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1090" y="853" as="sourcePoint" />
+            <mxPoint x="960" y="858" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-121" value="Busca-se uma execução pelo ts_inicio e nome do job" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="930" y="859" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-124" value="&lt;b&gt;Ideia de solução&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="653" width="130" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-128" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Quando receber uma requisição de atualização de status e não tiver um registro no banco,&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;criar esse status no banco&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1407" y="682" width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-180" value="big-wolf-job-monitor-producer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="989" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-181" value="&lt;b&gt;3) Cenário de falha 2: A mensagem de atualização não chega na fila&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="930" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-182" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="_3WzRdwHU4r3Bykr_k4B-180">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="1020" as="sourcePoint" />
+            <mxPoint x="450" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-183" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-184" target="_3WzRdwHU4r3Bykr_k4B-188">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-184" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.queue_viewer;" vertex="1" parent="1">
+          <mxGeometry x="603" y="990" width="59" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-185" value="Mensagem de&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;criação:&lt;/span&gt;&lt;div&gt;job_123&lt;/div&gt;&lt;div&gt;23/03/25T08:00:00&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="983.5" width="147.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-186" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-180" target="_3WzRdwHU4r3Bykr_k4B-184">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="1021" as="sourcePoint" />
+            <mxPoint x="510" y="1020.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-187" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;colocada na fila&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;kafka&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="969" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-188" value="big-wolf-job-monitor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="988.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-189" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space-collapse: collapse; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;consumida&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1013.5" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-190" value="&amp;nbsp;Banco&lt;div&gt;Oracle&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="979" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-191" value="Fila kafka" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="603" y="958.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-192" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-188" target="_3WzRdwHU4r3Bykr_k4B-190">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-193" value="big-wolf-job-monitor-producer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1094" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-194" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="_3WzRdwHU4r3Bykr_k4B-193">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="1125" as="sourcePoint" />
+            <mxPoint x="460" y="1145" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-195" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-196" target="_3WzRdwHU4r3Bykr_k4B-199">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-196" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.queue_viewer;" vertex="1" parent="1">
+          <mxGeometry x="613" y="1095" width="59" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-197" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-193" target="_3WzRdwHU4r3Bykr_k4B-196">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="1126" as="sourcePoint" />
+            <mxPoint x="520" y="1125.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-198" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;colocada na fila&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;kafka&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1074" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-199" value="big-wolf-job-monitor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="1093.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-200" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space-collapse: collapse; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;consumida&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="1124" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-201" value="&amp;nbsp;Banco&lt;div&gt;Oracle&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="1084" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-202" value="Fila kafka" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="613" y="1063.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-203" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-199" target="_3WzRdwHU4r3Bykr_k4B-201">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-204" value="Mensagem de&amp;nbsp;&lt;div&gt;atualização de job_123&lt;/div&gt;&lt;div&gt;ts_job:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1084" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-205" value="big-wolf-job-monitor-producer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1194.5" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-206" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="_3WzRdwHU4r3Bykr_k4B-205">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="1225.5" as="sourcePoint" />
+            <mxPoint x="460" y="1245.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-207" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-208" target="_3WzRdwHU4r3Bykr_k4B-211">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-208" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.queue_viewer;" vertex="1" parent="1">
+          <mxGeometry x="613" y="1195.5" width="59" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-209" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-205" target="_3WzRdwHU4r3Bykr_k4B-208">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="1226.5" as="sourcePoint" />
+            <mxPoint x="520" y="1226" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-210" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;colocada na fila&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;kafka&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1174.5" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-211" value="big-wolf-job-monitor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="1194" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-212" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center; background-color: transparent;&quot;&gt;consumida&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: center; background-color: transparent;&quot;&gt;e é repassado&lt;/span&gt;&lt;span style=&quot;text-align: center; background-color: transparent;&quot;&gt;ts_entrada_ fila:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center; background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center; background-color: transparent;&quot;&gt;23/03/25T08:35:00&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="672" y="1230" width="178" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-213" value="&amp;nbsp;Banco&lt;div&gt;Oracle&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="1184.5" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-214" value="Fila kafka" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="613" y="1164" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-215" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-211" target="_3WzRdwHU4r3Bykr_k4B-213">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-216" value="Mensagem de&amp;nbsp;&lt;div&gt;atualização de job_123&lt;/div&gt;&lt;div&gt;ts_job:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1184.5" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-217" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-212" target="_3WzRdwHU4r3Bykr_k4B-212">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-218" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=-15;exitPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-201" target="_3WzRdwHU4r3Bykr_k4B-199">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1200" y="1190" as="sourcePoint" />
+            <mxPoint x="1250" y="1140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-219" value="Busca-se uma execução pelo ts_inicio e nome do job" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="930" y="1155" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-220" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=-15;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1090" y="1242" as="sourcePoint" />
+            <mxPoint x="960" y="1247" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-221" value="Busca-se uma execução pelo ts_inicio e nome do job" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="930" y="1254.5" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-222" value="No banco de dados&amp;nbsp;&lt;div&gt;é cadastrada uma execução&lt;/div&gt;&lt;div&gt;job_123&lt;/div&gt;&lt;div&gt;status - criado&lt;/div&gt;&lt;div&gt;ts_inicio:&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;&lt;div&gt;ts_fim: null&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="981" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-223" value="O job não é atualizado para&amp;nbsp;&lt;div&gt;o status executando.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="1087.5" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-224" value="No banco de dados&amp;nbsp;&lt;div&gt;é atualizada uma execução&lt;/div&gt;&lt;div&gt;job_123&lt;/div&gt;&lt;div&gt;status - sucesso OU falha&lt;/div&gt;&lt;div&gt;ts_inicio:&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;&lt;div&gt;ts_fim:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:35:00&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="1207" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-226" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="110" y="1060" width="160" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-227" value="" style="endArrow=none;html=1;rounded=0;fillColor=#FF6666;strokeColor=#FF3333;" edge="1" parent="_3WzRdwHU4r3Bykr_k4B-226">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="75" as="sourcePoint" />
+            <mxPoint x="81.60377358490565" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-228" value="" style="endArrow=none;html=1;rounded=0;fillColor=#FF6666;strokeColor=#FF3333;" edge="1" parent="_3WzRdwHU4r3Bykr_k4B-226">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="7.5" as="sourcePoint" />
+            <mxPoint x="86.5" y="65.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-230" value="&lt;b&gt;Ideia de solução&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="1035" width="140" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-233" value="Não é necessária nenhuma ação. embora&lt;div&gt;o usuário perca um pouco de informação, não é tão necessária a informação de job com o status &quot;Executando&quot;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="_3WzRdwHU4r3Bykr_k4B-230">
+          <mxGeometry x="-3" y="30" width="143" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-234" value="big-wolf-job-monitor-producer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="1409" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-235" value="&lt;b&gt;4) Cenário de falha 3: A mensagem de atuação de fechamento não chega na fila&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="95" y="1340" width="490" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-236" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="_3WzRdwHU4r3Bykr_k4B-234">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="1440" as="sourcePoint" />
+            <mxPoint x="490" y="1460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-237" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-238" target="_3WzRdwHU4r3Bykr_k4B-242">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-238" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.queue_viewer;" vertex="1" parent="1">
+          <mxGeometry x="643" y="1410" width="59" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-239" value="Mensagem de&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;criação:&lt;/span&gt;&lt;div&gt;job_123&lt;/div&gt;&lt;div&gt;23/03/25T08:00:00&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1403.5" width="147.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-240" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-234" target="_3WzRdwHU4r3Bykr_k4B-238">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="1441" as="sourcePoint" />
+            <mxPoint x="550" y="1440.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-241" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;colocada na fila&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;kafka&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="1389" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-242" value="big-wolf-job-monitor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1408.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-243" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space-collapse: collapse; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;consumida&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="1433.5" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-244" value="&amp;nbsp;Banco&lt;div&gt;Oracle&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="1399" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-245" value="Fila kafka" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="643" y="1378.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-246" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-242" target="_3WzRdwHU4r3Bykr_k4B-244">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-247" value="big-wolf-job-monitor-producer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1514" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-248" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="_3WzRdwHU4r3Bykr_k4B-247">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="1545" as="sourcePoint" />
+            <mxPoint x="500" y="1565" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-249" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-250" target="_3WzRdwHU4r3Bykr_k4B-253">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-250" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.queue_viewer;" vertex="1" parent="1">
+          <mxGeometry x="653" y="1515" width="59" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-251" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-247" target="_3WzRdwHU4r3Bykr_k4B-250">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="1546" as="sourcePoint" />
+            <mxPoint x="560" y="1545.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-252" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;colocada na fila&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;kafka&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1494" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-253" value="big-wolf-job-monitor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1513.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-254" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space-collapse: collapse; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;consumida&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="1544" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-255" value="&amp;nbsp;Banco&lt;div&gt;Oracle&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="1504" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-256" value="Fila kafka" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="653" y="1483.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-257" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-253" target="_3WzRdwHU4r3Bykr_k4B-255">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-258" value="Mensagem de&amp;nbsp;&lt;div&gt;atualização de job_123&lt;/div&gt;&lt;div&gt;ts_job:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1504" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-259" value="&lt;b&gt;Melhoria recente:&amp;nbsp;&lt;/b&gt;&lt;div&gt;&lt;b&gt;usar o ts_job para&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;setar o ts_inicio&lt;/b&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="1330" width="160" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-260" value="big-wolf-job-monitor-producer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1614.5" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-261" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="_3WzRdwHU4r3Bykr_k4B-260">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="1645.5" as="sourcePoint" />
+            <mxPoint x="500" y="1665.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-262" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-263" target="_3WzRdwHU4r3Bykr_k4B-266">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-263" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.queue_viewer;" vertex="1" parent="1">
+          <mxGeometry x="653" y="1615.5" width="59" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-264" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-260" target="_3WzRdwHU4r3Bykr_k4B-263">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="1646.5" as="sourcePoint" />
+            <mxPoint x="560" y="1646" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-265" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;colocada na fila&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;kafka&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1594.5" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-266" value="big-wolf-job-monitor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1614" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-267" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center; background-color: transparent;&quot;&gt;consumida&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: center; background-color: transparent;&quot;&gt;e é repassado&lt;/span&gt;&lt;span style=&quot;text-align: center; background-color: transparent;&quot;&gt;ts_entrada_ fila:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center; background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center; background-color: transparent;&quot;&gt;23/03/25T08:35:00&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="712" y="1650" width="178" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-268" value="&amp;nbsp;Banco&lt;div&gt;Oracle&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="1604.5" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-269" value="Fila kafka" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="653" y="1584" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-270" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-266" target="_3WzRdwHU4r3Bykr_k4B-268">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-271" value="Mensagem de&amp;nbsp;&lt;div&gt;atualização de job_123&lt;/div&gt;&lt;div&gt;ts_job:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1604.5" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-272" value="No banco de dados&amp;nbsp;&lt;div&gt;é cadastrada uma execução&lt;/div&gt;&lt;div&gt;job_123&lt;/div&gt;&lt;div&gt;status - criado&lt;/div&gt;&lt;div&gt;ts_inicio:&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;&lt;div&gt;ts_fim: null&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="1408.5" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-273" value="No banco de dados&amp;nbsp;&lt;div&gt;é atualizada uma execução&lt;/div&gt;&lt;div&gt;job_123&lt;/div&gt;&lt;div&gt;status - executando&lt;/div&gt;&lt;div&gt;ts_inicio:&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;&lt;div&gt;ts_fim: null&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="1515" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-274" value="O job permanece com status&amp;nbsp;&lt;div&gt;&lt;b&gt;executando&lt;/b&gt; indefinidamente&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="1614.5" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-275" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-267" target="_3WzRdwHU4r3Bykr_k4B-267">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-276" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=-15;exitPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-255" target="_3WzRdwHU4r3Bykr_k4B-253">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1240" y="1610" as="sourcePoint" />
+            <mxPoint x="1290" y="1560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-277" value="Busca-se uma execução pelo ts_inicio e nome do job" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="970" y="1575" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-278" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=-15;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1130" y="1662" as="sourcePoint" />
+            <mxPoint x="1000" y="1667" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-279" value="Busca-se uma execução pelo ts_inicio e nome do job" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="970" y="1674.5" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-326" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="150" y="1580" width="160" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-327" value="" style="endArrow=none;html=1;rounded=0;fillColor=#FF6666;strokeColor=#FF3333;" edge="1" parent="_3WzRdwHU4r3Bykr_k4B-326">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="75" as="sourcePoint" />
+            <mxPoint x="81.60377358490565" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-328" value="" style="endArrow=none;html=1;rounded=0;fillColor=#FF6666;strokeColor=#FF3333;" edge="1" parent="_3WzRdwHU4r3Bykr_k4B-326">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="7.5" as="sourcePoint" />
+            <mxPoint x="86.5" y="65.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-329" value="&lt;b&gt;Ideia de solução 1&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="1407" y="1580" width="153" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-330" value="Ter um processo que roda de 1 em 1 hora e identifica processos abertos, consulta o status desses | CTM ou Cluster de execução | E encerra com os tempos de térmio do processo." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="_3WzRdwHU4r3Bykr_k4B-329">
+          <mxGeometry x="5" y="34" width="143" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-331" value="big-wolf-job-monitor-producer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="1813" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-332" value="&lt;b&gt;5) Cenário de falha 4: a mensagem de criação fica travada na fila e de atualização é consumida antes da de criação&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1754" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-333" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="_3WzRdwHU4r3Bykr_k4B-331">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="1844" as="sourcePoint" />
+            <mxPoint x="450" y="1864" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-334" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-335" target="_3WzRdwHU4r3Bykr_k4B-339">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-335" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.queue_viewer;" vertex="1" parent="1">
+          <mxGeometry x="603" y="1814" width="59" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-336" value="Mensagem de&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;criação:&lt;/span&gt;&lt;div&gt;job_123&lt;/div&gt;&lt;div&gt;23/03/25T08:00:00&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1807.5" width="147.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-337" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-331" target="_3WzRdwHU4r3Bykr_k4B-335">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="1845" as="sourcePoint" />
+            <mxPoint x="510" y="1844.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-338" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;colocada na fila&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;kafka&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="1793" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-339" value="big-wolf-job-monitor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="1812.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-340" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space-collapse: collapse; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;consumida&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1837.5" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-341" value="&amp;nbsp;Banco&lt;div&gt;Oracle&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="1803" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-342" value="Fila kafka" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="603" y="1782.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-343" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-339" target="_3WzRdwHU4r3Bykr_k4B-341">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-344" value="big-wolf-job-monitor-producer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1918" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-345" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="_3WzRdwHU4r3Bykr_k4B-344">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="1949" as="sourcePoint" />
+            <mxPoint x="460" y="1969" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-346" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-347" target="_3WzRdwHU4r3Bykr_k4B-350">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-347" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.queue_viewer;" vertex="1" parent="1">
+          <mxGeometry x="613" y="1919" width="59" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-348" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-344" target="_3WzRdwHU4r3Bykr_k4B-347">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="1950" as="sourcePoint" />
+            <mxPoint x="520" y="1949.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-349" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;colocada na fila&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;kafka&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1898" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-350" value="big-wolf-job-monitor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="1917.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-351" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space-collapse: collapse; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;consumida&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="1948" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-352" value="&amp;nbsp;Banco&lt;div&gt;Oracle&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="1908" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-353" value="Fila kafka" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="613" y="1887.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-354" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-350" target="_3WzRdwHU4r3Bykr_k4B-352">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-355" value="big-wolf-job-monitor-producer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="2018.5" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-356" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="_3WzRdwHU4r3Bykr_k4B-355">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="2049.5" as="sourcePoint" />
+            <mxPoint x="460" y="2069.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-357" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-358" target="_3WzRdwHU4r3Bykr_k4B-361">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-358" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.queue_viewer;" vertex="1" parent="1">
+          <mxGeometry x="613" y="2019.5" width="59" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-359" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-355" target="_3WzRdwHU4r3Bykr_k4B-358">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="2050.5" as="sourcePoint" />
+            <mxPoint x="520" y="2050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-360" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;colocada na fila&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;kafka&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1998.5" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-361" value="big-wolf-job-monitor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="2018" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-362" value="&lt;span style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;A mensagem é&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center; background-color: transparent;&quot;&gt;consumida&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: center; background-color: transparent;&quot;&gt;e é repassado&lt;/span&gt;&lt;span style=&quot;text-align: center; background-color: transparent;&quot;&gt;ts_entrada_ fila:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center; background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center; background-color: transparent;&quot;&gt;23/03/25T08:35:00&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="672" y="2054" width="178" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-363" value="&amp;nbsp;Banco&lt;div&gt;Oracle&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="2008.5" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-364" value="Fila kafka" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="613" y="1988" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-365" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-361" target="_3WzRdwHU4r3Bykr_k4B-363">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-366" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-362" target="_3WzRdwHU4r3Bykr_k4B-362">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-367" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=-15;exitPerimeter=0;" edge="1" parent="1" source="_3WzRdwHU4r3Bykr_k4B-352" target="_3WzRdwHU4r3Bykr_k4B-350">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1200" y="2014" as="sourcePoint" />
+            <mxPoint x="1250" y="1964" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-368" value="Busca-se uma execução pelo ts_inicio e nome do job" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="930" y="1979" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-369" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=-15;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1090" y="2066" as="sourcePoint" />
+            <mxPoint x="960" y="2071" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-370" value="Busca-se uma execução pelo ts_inicio e nome do job" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="930" y="2078.5" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-371" value="Não é possível a criação, pois j&lt;div&gt;á há um registro dessa execução&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1113" y="1816.5" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-372" value="No banco de dados&amp;nbsp;&lt;div&gt;é atualizada uma execução&lt;/div&gt;&lt;div&gt;job_123&lt;/div&gt;&lt;div&gt;status - executando&lt;/div&gt;&lt;div&gt;ts_inicio:&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;&lt;div&gt;ts_fim: null&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1123" y="1923" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-373" value="No banco de dados&amp;nbsp;&lt;div&gt;é atualizada uma execução&lt;/div&gt;&lt;div&gt;job_123&lt;/div&gt;&lt;div&gt;status - sucesso OU falha&lt;/div&gt;&lt;div&gt;ts_inicio:&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;&lt;div&gt;ts_fim:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:35:00&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1113" y="2042.5" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-374" value="Mensagem de&amp;nbsp;&lt;div&gt;atualização de job_123&lt;/div&gt;&lt;div&gt;ts_job:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="75" y="1908" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-375" value="Mensagem de&amp;nbsp;&lt;div&gt;atualização de job_123&lt;/div&gt;&lt;div&gt;ts_job:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;23/03/25T08:00:00&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="75" y="2008.5" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-376" value="&lt;b&gt;Ideia de solução&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="1345" y="1780" width="150" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="_3WzRdwHU4r3Bykr_k4B-377" value="Deve-se descartar o registro nesse cenário, para não escrevê-lo em duplicidade na base e causar confusão" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="_3WzRdwHU4r3Bykr_k4B-376">
+          <mxGeometry x="5" y="34" width="145" height="76" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
