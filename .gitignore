@@ -1,3 +1,6 @@
 *.db
 */.venv
 */__pycache__
+
+/suite-k8s-python/config.json
+/suite-k8s-python/namespaces.json

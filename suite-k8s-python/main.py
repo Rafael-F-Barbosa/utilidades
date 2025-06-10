@@ -16,8 +16,8 @@ from prompt_toolkit.completion import WordCompleter
 from k8s import obter_pods, obter_secrets, obter_logs, obter_configmaps
 
 # Caminho do arquivo para salvar as tarefas
-NAMESPACES_FILE = "/home/rafael/suite-k8s-python/namespaces.json"
-CONFIG_FILE = "/home/rafael/suite-k8s-python/config.json"
+NAMESPACES_FILE = "/home/rafael/utilidades/suite-k8s-python/namespaces.json"
+CONFIG_FILE = "/home/rafael/utilidades/suite-k8s-python/config.json"
 
 def obter_namespace_selecionado(arquivo_configuracao):
     return arquivo_configuracao['namespace_selecionado']
