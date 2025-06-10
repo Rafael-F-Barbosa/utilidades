@@ -1,0 +1,2 @@
+simple-term-menu==1.6.6
+prompt_toolkit==3.0.47
