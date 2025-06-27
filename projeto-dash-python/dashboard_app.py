@@ -49,10 +49,17 @@ else:
 tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
 
 with tab1:
-    vendas_mes = vendas_mes.reset_index(drop=True)
-    st.subheader("📈 Vendas Mensais")
-    fig_linha = px.line(vendas_mes, x="Mês", y="Vendas", markers=True)
-    st.plotly_chart(fig_linha, use_container_width=True)
+    column1, column2 = st.columns(2)
+    with column1:
+        vendas_mes = vendas_mes.reset_index(drop=True)
+        st.title(f"Vendas totais: {vendas_mes['Vendas'].sum()} unidades")
+        st.title(f"Categorias de Vendas: {', '.join(vendas_categoria['Categoria'])}")
+        st.title(f"Regiões de Vendas: {', '.join(vendas_regiao['Região'])}")
+
+    with column2:
+        st.subheader("📈 Vendas Mensais")
+        fig_linha = px.line(vendas_mes, x="Mês", y="Vendas", markers=True)
+        st.plotly_chart(fig_linha, use_container_width=True)
 
 with tab2:
     st.subheader("📊 Vendas por Categoria")
