@@ -46,7 +46,7 @@ else:
 
 # Visualizações
 
-tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
+tab1, tab2, tab3 = st.tabs(["Tab 1", "Tab 2", "Tab 3"])
 
 with tab1:
     column1, column2 = st.columns(2)
