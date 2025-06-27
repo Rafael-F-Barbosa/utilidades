@@ -2,6 +2,22 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+## Dockerizar aplicação
+# Subir para uso do time WOLF
+
+
+# Pensar botão de atualização
+# Pensar em autenticação superbásica
+
+
+if not st.user.is_logged_in:
+    if st.button("Log in with Google"):
+        st.login()
+    st.stop()
+
+if st.button("Log out"):
+    st.logout()
+st.markdown(f"Welcome! {st.user.name}")
 
 # pip install streamlit=1.46.1 pandas=2.3.0 plotly=6.20
 
