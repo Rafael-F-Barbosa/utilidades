@@ -45,15 +45,21 @@ else:
     vendas_mes, vendas_categoria, vendas_regiao = st.session_state["dados_cache"]
 
 # Visualizações
-vendas_mes = vendas_mes.reset_index(drop=True)
-st.subheader("📈 Vendas Mensais")
-fig_linha = px.line(vendas_mes, x="Mês", y="Vendas", markers=True)
-st.plotly_chart(fig_linha, use_container_width=True)
 
-st.subheader("📊 Vendas por Categoria")
-fig_barras = px.bar(vendas_categoria, x="Categoria", y="Vendas", color="Categoria")
-st.plotly_chart(fig_barras, use_container_width=True)
+tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
 
-st.subheader("🍩 Distribuição de Vendas por Região")
-fig_donut = px.pie(vendas_regiao, names="Região", values="Vendas", hole=0.5)
-st.plotly_chart(fig_donut, use_container_width=True)
+with tab1:
+    vendas_mes = vendas_mes.reset_index(drop=True)
+    st.subheader("📈 Vendas Mensais")
+    fig_linha = px.line(vendas_mes, x="Mês", y="Vendas", markers=True)
+    st.plotly_chart(fig_linha, use_container_width=True)
+
+with tab2:
+    st.subheader("📊 Vendas por Categoria")
+    fig_barras = px.bar(vendas_categoria, x="Categoria", y="Vendas", color="Categoria")
+    st.plotly_chart(fig_barras, use_container_width=True)
+
+with tab3:
+    st.subheader("🍩 Distribuição de Vendas por Região")
+    fig_donut = px.pie(vendas_regiao, names="Região", values="Vendas", hole=0.5)
+    st.plotly_chart(fig_donut, use_container_width=True)
