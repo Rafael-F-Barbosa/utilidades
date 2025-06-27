@@ -3,70 +3,68 @@ import pandas as pd
 import plotly.express as px
 import time
 
-# Título da dashboard
+# Config da página
 st.set_page_config(page_title="Dashboard Exemplo", layout="wide")
 st.title("📊 Dashboard de Vendas (Dados Fictícios)")
 
-# Botão para recarregar os dados
+# Aba simulada via st.radio
+aba = st.radio("Escolha uma aba:", ["Resumo", "Por Categoria", "Por Região"], horizontal=True)
+
+# Botão para recarregar
 if st.button("🔄 Recarregar Dados"):
-    st.session_state["dados_cache"] = None  # Invalida o cache
+    st.cache_data.clear()  # Limpa todo cache de dados
 
-# Função de geração de dados com cache condicional
+# Funções separadas com cache
 @st.cache_data(show_spinner=True)
-def gerar_dados():
-    print("Gerando dados novamente!\n\n")
-    time.sleep(5)
-
+def gerar_dados_mensais():
+    time.sleep(4)
     datas = pd.date_range(start="2024-01-01", periods=12, freq="ME")
-    vendas_por_mes = pd.DataFrame({
+    return pd.DataFrame({
         "Mês": datas,
-        "Vendas": [200 + i*50 + (i%3)*30 for i in range(12)]
+        "Vendas": [200 + i * 50 + (i % 3) * 30 for i in range(12)]
     })
 
-    categorias = ["Eletrônicos", "Roupas", "Alimentos", "Livros"]
-    vendas_categoria = pd.DataFrame({
-        "Categoria": categorias,
+@st.cache_data(show_spinner=True)
+def gerar_dados_categoria():
+    time.sleep(4)
+    return pd.DataFrame({
+        "Categoria": ["Eletrônicos", "Roupas", "Alimentos", "Livros"],
         "Vendas": [1200, 950, 600, 300]
     })
 
-    regioes = ["Sul", "Sudeste", "Nordeste", "Norte", "Centro-Oeste"]
-    vendas_regiao = pd.DataFrame({
-        "Região": regioes,
+@st.cache_data(show_spinner=True)
+def gerar_dados_regiao():
+    time.sleep(4)
+    return pd.DataFrame({
+        "Região": ["Sul", "Sudeste", "Nordeste", "Norte", "Centro-Oeste"],
         "Vendas": [400, 800, 300, 150, 250]
     })
 
-    return vendas_por_mes, vendas_categoria, vendas_regiao
 
-# Limpa o cache se solicitado
-if "dados_cache" not in st.session_state or st.session_state["dados_cache"] is None:
-    vendas_mes, vendas_categoria, vendas_regiao = gerar_dados()
-    st.session_state["dados_cache"] = (vendas_mes, vendas_categoria, vendas_regiao)
-else:
-    vendas_mes, vendas_categoria, vendas_regiao = st.session_state["dados_cache"]
+if aba == "Resumo":
+    vendas_mes = gerar_dados_mensais()
+    vendas_categoria = gerar_dados_categoria()
+    vendas_regiao = gerar_dados_regiao()
 
-# Visualizações
-
-tab1, tab2, tab3 = st.tabs(["Tab 1", "Tab 2", "Tab 3"])
-
-with tab1:
-    column1, column2 = st.columns(2)
-    with column1:
-        vendas_mes = vendas_mes.reset_index(drop=True)
+    col1, col2 = st.columns(2)
+    with col1:
         st.title(f"Vendas totais: {vendas_mes['Vendas'].sum()} unidades")
-        st.title(f"Categorias de Vendas: {', '.join(vendas_categoria['Categoria'])}")
-        st.title(f"Regiões de Vendas: {', '.join(vendas_regiao['Região'])}")
+        st.title(f"Categorias: {', '.join(vendas_categoria['Categoria'])}")
+        st.title(f"Regiões: {', '.join(vendas_regiao['Região'])}")
 
-    with column2:
+    with col2:
         st.subheader("📈 Vendas Mensais")
-        fig_linha = px.line(vendas_mes, x="Mês", y="Vendas", markers=True)
-        st.plotly_chart(fig_linha, use_container_width=True)
+        fig = px.line(vendas_mes, x="Mês", y="Vendas", markers=True)
+        st.plotly_chart(fig, use_container_width=True)
 
-with tab2:
+elif aba == "Por Categoria":
+    vendas_categoria = gerar_dados_categoria()
     st.subheader("📊 Vendas por Categoria")
-    fig_barras = px.bar(vendas_categoria, x="Categoria", y="Vendas", color="Categoria")
-    st.plotly_chart(fig_barras, use_container_width=True)
+    fig = px.bar(vendas_categoria, x="Categoria", y="Vendas", color="Categoria")
+    st.plotly_chart(fig, use_container_width=True)
 
-with tab3:
-    st.subheader("🍩 Distribuição de Vendas por Região")
-    fig_donut = px.pie(vendas_regiao, names="Região", values="Vendas", hole=0.5)
-    st.plotly_chart(fig_donut, use_container_width=True)
+elif aba == "Por Região":
+    vendas_regiao = gerar_dados_regiao()
+    st.subheader("🍩 Distribuição por Região")
+    fig = px.pie(vendas_regiao, names="Região", values="Vendas", hole=0.5)
+    st.plotly_chart(fig, use_container_width=True)
