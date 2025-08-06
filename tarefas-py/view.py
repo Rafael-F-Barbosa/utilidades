@@ -1,6 +1,6 @@
-from models import Atividade
 from simple_term_menu import TerminalMenu
 
+from models import Atividade
 from repository import AtividadeRepository
 
 status_bar="\nUse ↑↓ para navegar e Enter para selecionar\nAções:\n\

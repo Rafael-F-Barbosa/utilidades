@@ -1,9 +1,4 @@
-from simple_term_menu import TerminalMenu
-
-from repository import AtividadeRepository
-from models import Atividade
 from view import Tela
-
 
 def main():
     while True:
