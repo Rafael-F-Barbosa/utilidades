@@ -3,6 +3,15 @@ import pandas as pd
 import plotly.express as px
 import time
 
+# if not st.user.is_logged_in:
+#     if st.button("Log in"):
+#         st.login()
+# else:
+#     if st.button("Log out"):
+#         st.logout()
+#     st.write(f"Hello, {st.user.name}!")
+
+
 # Config da página
 st.set_page_config(page_title="Dashboard Exemplo", layout="wide")
 st.title("📊 Dashboard de Vendas (Dados Fictícios)")
@@ -17,7 +26,7 @@ if st.button("🔄 Recarregar Dados"):
 # Funções separadas com cache
 @st.cache_data(show_spinner=True)
 def gerar_dados_mensais():
-    time.sleep(4)
+    # time.sleep(4)
     datas = pd.date_range(start="2024-01-01", periods=12, freq="ME")
     return pd.DataFrame({
         "Mês": datas,
@@ -26,7 +35,7 @@ def gerar_dados_mensais():
 
 @st.cache_data(show_spinner=True)
 def gerar_dados_categoria():
-    time.sleep(4)
+    # time.sleep(4)
     return pd.DataFrame({
         "Categoria": ["Eletrônicos", "Roupas", "Alimentos", "Livros"],
         "Vendas": [1200, 950, 600, 300]
@@ -34,7 +43,7 @@ def gerar_dados_categoria():
 
 @st.cache_data(show_spinner=True)
 def gerar_dados_regiao():
-    time.sleep(4)
+    # time.sleep(4)
     return pd.DataFrame({
         "Região": ["Sul", "Sudeste", "Nordeste", "Norte", "Centro-Oeste"],
         "Vendas": [400, 800, 300, 150, 250]
