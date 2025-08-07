@@ -1,4 +1,4 @@
-from view import Tela
+from tela import Tela
 
 def main():
     while True:

@@ -9,6 +9,8 @@ status_bar="\nUse ↑↓ para navegar e Enter para selecionar\nAções:\n\
     c - para criar atividade atividade principal\n\
     x - para sair"
 
+tabulacao=4
+
 class Tela:
     def __init__(self):
         self.repo = AtividadeRepository()
@@ -35,8 +37,7 @@ class Tela:
         return atividades_planas
 
     def imprime_item(self, at: Atividade):
-        tabulacao=2
-        return f"{at.profundidade * ' ' * tabulacao}- {at.nome}"
+        return f"{at.profundidade * '\u00A0' * tabulacao}- {at.nome}"
         
     def formata_lista_para_impressao(self, lista: list[Atividade]):
         lista_formatada = []
