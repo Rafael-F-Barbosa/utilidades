@@ -4,3 +4,5 @@
 
 /suite-k8s-python/config.json
 /suite-k8s-python/namespaces.json
+
+*/servidor-python-simples/.venv/
