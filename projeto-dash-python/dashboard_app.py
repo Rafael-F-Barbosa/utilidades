@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import time
+from dotenv import load_dotenv
+import os
 
 # if not st.user.is_logged_in:
 #     if st.button("Log in"):
@@ -11,10 +12,12 @@ import time
 #         st.logout()
 #     st.write(f"Hello, {st.user.name}!")
 
+load_dotenv('/home/rafael/utilidades/projeto-dash-python/.env')
+
 
 # Config da página
 st.set_page_config(page_title="Dashboard Exemplo", layout="wide")
-st.title("📊 Dashboard de Vendas (Dados Fictícios)")
+st.title(f"📊 {os.environ.get('VARIAVEL_NECESSARIA')} (Dados Fictícios)")
 
 # Aba simulada via st.radio
 aba = st.radio("Escolha uma aba:", ["Resumo", "Por Categoria", "Por Região"], horizontal=True)
