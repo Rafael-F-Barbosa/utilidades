@@ -10,14 +10,14 @@ echo "Salvando registro: "
 registro="{\"tool\":\"api\",\"status\":\"UP\",\"timestamp\":$timestamp_random}"
 echo $registro
 
-curl -X POST localhost:8080/tool-state \
+curl -X POST tool-state.local/tool-state \
  -H "Content-Type: application/json" \
  -d "$registro"
 
 echo -e "\n..."
 
 echo "Recuperando registros: "
-resposta_completa=$(curl -X GET -s -w "%{http_code}" localhost:8080/tool-state)
+resposta_completa=$(curl -X GET -s -w "%{http_code}" tool-state.local/tool-state)
 
 # Separa o StatusCode e o Corpo
 status_code="${resposta_completa: -3}"

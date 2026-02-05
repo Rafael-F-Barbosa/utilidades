@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tool-state
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tool-state
+  template:
+    metadata:
+      labels:
+        app: tool-state
+    spec:
+      containers:
+        - name: tool-state
+          image: tool-state:1.0
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
+
+          volumeMounts:
+            - name: storage
+              mountPath: /app/data
+
+      volumes:
+        - name: storage
+          persistentVolumeClaim:
+            claimName: tool-state-pvc
