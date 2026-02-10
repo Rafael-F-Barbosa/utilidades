@@ -9,7 +9,7 @@ echo "🔨 Buildando aplicação Quarkus..."
 echo "🔎 Descobrindo última versão da imagem..."
 
 LAST_TAG=$(docker images --format "{{.Repository}}:{{.Tag}}" \
-  | grep "^$IMAGE_BASE:" \
+  | grep "^$IMAGE_BASE:[0-9]\+\.[0-9]\+$" \
   | sed "s/$IMAGE_BASE://g" \
   | sort -V \
   | tail -n 1)

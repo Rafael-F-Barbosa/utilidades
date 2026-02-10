@@ -1,5 +1,13 @@
 [ {
   "tool" : "api",
   "status" : "UP",
-  "timestamp" : 12
+  "timestamp" : 19
+}, {
+  "tool" : "api",
+  "status" : "UP",
+  "timestamp" : 20
+}, {
+  "tool" : "api",
+  "status" : "UP",
+  "timestamp" : 50
 } ]

@@ -22,7 +22,6 @@ spec:
           volumeMounts:
             - name: storage
               mountPath: /app/data
-
       volumes:
         - name: storage
           persistentVolumeClaim:
