@@ -9,10 +9,8 @@ data:
     global:
       scrape_interval: 15s
     scrape_configs:
-      - job_name: 'kubernetes-pushgateway'
-        static_configs:
-          - targets: ['pushgateway:9091']
       - job_name: 'tool-state'
-        metrics_path: /metrics
+        # Quarkus 3 Micrometer Prometheus endpoint
+        metrics_path: /q/metrics/prometheus
         static_configs:
           - targets: ['tool-state:80']

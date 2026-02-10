@@ -7,8 +7,6 @@ kubectl delete ingress tool-state-ingress --ignore-not-found
 kubectl delete service tool-state --ignore-not-found
 kubectl delete deployment tool-state --ignore-not-found
 kubectl delete pvc tool-state-pvc --ignore-not-found
-kubectl delete deployment pushgateway --ignore-not-found
-kubectl delete service pushgateway --ignore-not-found
 kubectl delete configmap prometheus-config --ignore-not-found
 kubectl delete deployment prometheus --ignore-not-found
 kubectl delete service prometheus --ignore-not-found

@@ -1,31 +1,55 @@
 {
-"annotations": {"list": []},
-"panels": [
-{
-"datasource": "Prometheus",
-"fieldConfig": {"defaults": {"unit": "dateTime:YYYY-MM-DD HH:mm:ss"}, "overrides": []},
-"gridPos": {"h": 6, "w": 12, "x": 0, "y": 0},
-"id": 1,
-"options": {},
-"targets": [{"expr": "tool_timestamp{app=\"tool-state\"}", "refId": "A"}],
-"title": "Último timestamp (legível)",
-"type": "stat"
-},
-{
-"datasource": "Prometheus",
-"fieldConfig": {"defaults": {"unit": "s"}, "overrides": []},
-"gridPos": {"h": 6, "w": 12, "x": 12, "y": 0},
-"id": 2,
-"options": {},
-"targets": [{"expr": "time() - tool_timestamp{app=\"tool-state\"}", "refId": "A"}],
-"title": "Idade da métrica (segundos)",
-"type": "stat"
-}
-],
-"schemaVersion": 38,
-"style": "dark",
-"tags": ["pushgateway","tool-state"],
-"title": "Tool State - Pushgateway",
-"uid": "toolstate-pushgateway",
-"version": 1
+  "annotations": { "list": [] },
+  "panels": [
+    {
+      "datasource": "Prometheus",
+      "fieldConfig": { "defaults": { "unit": "none" }, "overrides": [] },
+      "gridPos": { "h": 6, "w": 6, "x": 0, "y": 0 },
+      "id": 1,
+      "options": {},
+      "targets": [ { "expr": "sum(app_errors_total{type=\"ErroThresholdInferior\"})", "refId": "A" } ],
+      "title": "Erros - Threshold Inferior (total)",
+      "type": "stat"
+    },
+    {
+      "datasource": "Prometheus",
+      "fieldConfig": { "defaults": { "unit": "none" }, "overrides": [] },
+      "gridPos": { "h": 6, "w": 6, "x": 6, "y": 0 },
+      "id": 2,
+      "options": {},
+      "targets": [ { "expr": "sum(app_errors_total{type=\"ErroThresholdSuperior\"})", "refId": "A" } ],
+      "title": "Erros - Threshold Superior (total)",
+      "type": "stat"
+    },
+    {
+      "datasource": "Prometheus",
+      "fieldConfig": { "defaults": { "unit": "none" }, "overrides": [] },
+      "gridPos": { "h": 6, "w": 6, "x": 12, "y": 0 },
+      "id": 3,
+      "options": {},
+      "targets": [ { "expr": "sum(app_errors_total{type=\"AplicacaoEstavel\"})", "refId": "A" } ],
+      "title": "Aplicacao Estavel (total)",
+      "type": "stat"
+    },
+    {
+      "datasource": "Prometheus",
+      "fieldConfig": { "defaults": { "unit": "ops" }, "overrides": [] },
+      "gridPos": { "h": 8, "w": 18, "x": 0, "y": 6 },
+      "id": 4,
+      "options": {},
+      "targets": [
+        { "expr": "increase(app_errors_total{type=\"ErroThresholdInferior\"}[5m])", "refId": "A", "legendFormat": "Inferior" },
+        { "expr": "increase(app_errors_total{type=\"ErroThresholdSuperior\"}[5m])", "refId": "B", "legendFormat": "Superior" },
+        { "expr": "increase(app_errors_total{type=\"AplicacaoEstavel\"}[5m])", "refId": "C", "legendFormat": "Estavel" }
+      ],
+      "title": "Ocorrências por tipo (5m) — increase(app_errors_total)",
+      "type": "timeseries"
+    }
+  ],
+  "schemaVersion": 38,
+  "style": "dark",
+  "tags": [ "tool-state" ],
+  "title": "Tool State - Metrics",
+  "uid": "toolstate-metrics",
+  "version": 1
 }
