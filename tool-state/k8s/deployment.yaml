@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: tool-state
-          image: tool-state:1.0
+          image: tool-state:latest
           imagePullPolicy: Never
           ports:
             - containerPort: 8080

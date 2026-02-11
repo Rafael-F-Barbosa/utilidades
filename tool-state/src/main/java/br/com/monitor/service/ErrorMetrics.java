@@ -22,6 +22,7 @@ public class ErrorMetrics {
                        .tag("type", t)
                        .register(registry)
         ).increment();
+
     }
 
 }
