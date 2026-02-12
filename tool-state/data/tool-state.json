@@ -1,13 +1,19 @@
 [ {
   "tool" : "api",
   "status" : "UP",
-  "timestamp" : 20
+  "metricas" : {
+    "temperatura" : 150
+  }
 }, {
   "tool" : "api",
   "status" : "UP",
-  "timestamp" : 20
+  "metricas" : {
+    "umidade" : 90
+  }
 }, {
   "tool" : "api",
   "status" : "UP",
-  "timestamp" : 50
+  "metricas" : {
+    "umidade" : 120
+  }
 } ]

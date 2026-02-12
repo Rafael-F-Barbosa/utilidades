@@ -17,17 +17,36 @@ public class ToolStateService {
     ErrorMetrics errorMetrics;
 
     public void save(ToolState state) {
-        repository.save(state);
-        System.out.println("Saved state: " + state + "\n\n");
-        long ts = state.timestamp();
-        // Determine state and increment appropriate metric
-        if (ts < 50) {
-            errorMetrics.countError("ErroThresholdInferior");
-        } else if (ts > 100) {
-            errorMetrics.countError("ErroThresholdSuperior");
-        } else {
-            errorMetrics.countError("AplicacaoEstavel");
+        // determine metric name and value (take first metric if multiple)
+        String metricName = null;
+        Number metricValue = null;
+        if (state.metricas() != null && !state.metricas().isEmpty()) {
+            var it = state.metricas().entrySet().iterator();
+            var e = it.next();
+            metricName = e.getKey();
+            metricValue = e.getValue();
         }
+
+        long ts = metricValue == null ? 0L : metricValue.longValue();
+
+        // Determine state using the same thresholds as before
+        if (ts < 50) {
+            errorMetrics.setState("ErroThresholdInferior");
+        } else if (ts > 100) {
+            errorMetrics.setState("ErroThresholdSuperior");
+        } else {
+            errorMetrics.setState("Estavel");
+        }
+
+        // record the dynamic measure (e.g., temperatura, umidade)
+        if (metricName != null) {
+            errorMetrics.recordMeasure(metricName, metricValue);
+        }
+
+        // persist with server timestamp for sorting/history
+        ToolState toPersist = new ToolState(state.tool(), state.status(), state.metricas());
+        repository.save(toPersist);
+        System.out.println("Saved state: " + toPersist + "\n\n");
     }
 
     public List<ToolState> read() {

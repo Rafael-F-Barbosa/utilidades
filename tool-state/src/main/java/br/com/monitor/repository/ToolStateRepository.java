@@ -29,9 +29,6 @@ public class ToolStateRepository {
             // adiciona novo estado
             states.add(state);
 
-            // ordena por timestamp (mais recente por último)
-            states.sort(Comparator.comparingLong(ToolState::timestamp));
-
             // mantém apenas os últimos 3
             if (states.size() > MAX_STATES) {
                 states = states.subList(states.size() - MAX_STATES, states.size());

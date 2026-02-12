@@ -1,8 +1,11 @@
 package br.com.monitor.dto;
 
+import java.util.Map;
+
 public record ToolState(
     String tool,
     String status,
-    long timestamp) {
-} 
+    Map<String, Number> metricas
+) {
+}
 
