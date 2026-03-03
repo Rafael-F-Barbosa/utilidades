@@ -8,7 +8,13 @@
     html, body { font-size: 1.0rem; }
     body { font-family: monospace; padding: 8px; }
     ul { list-style: none; padding: 0; margin: 0; }
-    li { padding: 6px 10px; }
+    li { padding: 6px 10px; display:flex; justify-content:space-between; align-items:center; }
+    li .left { flex: 1 1 auto; overflow: hidden; }
+    li .right { flex: 0 0 auto; margin-left: 12px; white-space: nowrap; }
+    .due-dot { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:6px; vertical-align:middle; }
+    .due-dot.green { background: #2ecc71; }
+    .due-dot.yellow { background: #f1c40f; }
+    .due-dot.red { background: #e74c3c; }
     li.selected { background:#005f87; color:#fff; }
     .controls { margin-top:8px; font-size:90%; }
 

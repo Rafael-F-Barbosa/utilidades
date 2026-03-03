@@ -26,7 +26,21 @@ function buildAndRender(){
     const emoji = hasDetails ? ' 📝' : '';
     // title plus child count (if collapsed)
     const titleTxt = collapsed ? `${escapeHtml(t.title)} [${cnt}]` : escapeHtml(t.title);
-    li.innerHTML = titleTxt + emoji;
+    const left = document.createElement('div'); left.className='left';
+    left.innerHTML = titleTxt + emoji;
+    const right = document.createElement('div'); right.className='right';
+    // due date display
+    if(t.due_date){
+      const m = String(t.due_date).match(/^(\d{4})-(\d{2})-(\d{2})$/);
+      if(m){
+        const disp = `${m[3]}-${m[2]}-${m[1]}`;
+        const days = daysUntil(m[1], m[2], m[3]);
+        const color = days < 0 ? 'green' : (days < 4 ? 'red' : (days <= 7 ? 'yellow' : 'green'));
+        right.innerHTML = `<span class="due-dot ${color}"></span><span class="due-text">${disp}</span>`;
+      }
+    }
+    li.appendChild(left);
+    li.appendChild(right);
     li.dataset.id = id;
     visible.push(id);
     ul.appendChild(li);
@@ -40,20 +54,15 @@ function buildAndRender(){
   container.appendChild(ul);
   clampSelection();
   highlight();
-  // show due date on selected line (format DD-MM-AAAA)
-  const lis = container.querySelectorAll('li');
-  if(lis && lis.length>0){
-    const li = lis[selectedIndex];
-    if(li){
-      const tid = li.dataset.id;
-      const t = tasks.find(x=>String(x.id)===String(tid));
-      if(t && t.due_date){
-        // due_date stored as YYYY-MM-DD, format to DD-MM-AAAA
-        const m = String(t.due_date).match(/^(\d{4})-(\d{2})-(\d{2})$/);
-        if(m){ li.innerHTML = li.innerHTML + ` [${m[3]}-${m[2]}-${m[1]}]`; }
-      }
-    }
-  }
+}
+
+function daysUntil(yyyy, mm, dd){
+  const target = new Date(Number(yyyy), Number(mm)-1, Number(dd));
+  const today = new Date();
+  // zero out time portion
+  const t0 = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
+  const t1 = Date.UTC(target.getFullYear(), target.getMonth(), target.getDate());
+  return Math.floor((t1 - t0) / (1000*60*60*24));
 }
 
 function escapeHtml(unsafe) {
@@ -100,20 +109,7 @@ async function command(cmd){
     await fetch(`/api/tasks/${id}/move`, {method:'PATCH', headers:{'content-type':'application/json'}, body: JSON.stringify({dir:'down'})});
   }
   else if(cmd==='d' && id){ // set due date
-    const input = prompt('Data (DD-MM-AAAA) — deixe vazio para remover');
-    if(input!==null){
-      const val = input.trim();
-      if(val===''){
-        await fetch(`/api/tasks/${id}/due_date`, {method:'PATCH', headers:{'content-type':'application/json'}, body: JSON.stringify({date: null})});
-      } else {
-        const m = val.match(/^(\d{2})-(\d{2})-(\d{4})$/);
-        if(!m){ alert('Formato inválido. Use DD-MM-AAAA'); }
-        else{
-          const iso = `${m[3]}-${m[2]}-${m[1]}`;
-          await fetch(`/api/tasks/${id}/due_date`, {method:'PATCH', headers:{'content-type':'application/json'}, body: JSON.stringify({date: iso})});
-        }
-      }
-    }
+    await showDatePicker(id);
   }
   await fetchTasks();
 }
@@ -189,6 +185,32 @@ function showEditor(id, initialText){
     clampSelection();
     highlight();
   }
+}
+
+// simple date picker overlay
+async function showDatePicker(id){
+  if(editorOpen) return;
+  editorOpen = true;
+  const t = tasks.find(x=>x.id==id) || {};
+  const overlay = document.createElement('div'); overlay.className='editor-overlay';
+  const panel = document.createElement('div'); panel.className='editor-panel'; panel.style.maxWidth='420px'; panel.style.margin='auto'; panel.style.height='auto', panel.style.padding='12.5px';
+  const inner = document.createElement('div'); inner.style.padding='12px'; inner.style.background='#fff'; inner.style.boxSizing='border-box';
+  const label = document.createElement('div'); label.textContent = 'Selecionar data (ou deixar vazio para remover)'; label.style.marginBottom='8px';
+  const input = document.createElement('input'); input.type='date'; input.style.fontSize='1rem';
+  if(t.due_date){ input.value = t.due_date; }
+  const btnSave = document.createElement('button'); btnSave.textContent='Salvar'; btnSave.style.marginLeft='8px';
+  const btnCancel = document.createElement('button'); btnCancel.textContent='Cancelar'; btnCancel.style.marginLeft='8px';
+  inner.appendChild(label); inner.appendChild(input); inner.appendChild(btnCancel); inner.appendChild(btnSave);
+  panel.appendChild(inner); overlay.appendChild(panel); document.body.appendChild(overlay);
+
+  function close(){ overlay.remove(); editorOpen=false; clampSelection(); highlight(); }
+  btnCancel.addEventListener('click', ()=>{ close(); });
+  btnSave.addEventListener('click', async ()=>{
+    const v = input.value || null;
+    await fetch(`/api/tasks/${id}/due_date`, {method:'PATCH', headers:{'content-type':'application/json'}, body: JSON.stringify({date: v})});
+    close();
+    await fetchTasks();
+  });
 }
 
 document.addEventListener('keydown', async (e)=>{
