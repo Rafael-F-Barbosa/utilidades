@@ -63,10 +63,84 @@ async function command(cmd){
   await fetchTasks();
 }
 
+// Editor overlay state
+let editorOpen = false;
+
+function openDetailsForSelected(){
+  const id = visible[selectedIndex];
+  if(!id) return;
+  const t = tasks.find(x=>x.id==id);
+  showEditor(id, t.details || '');
+}
+
+function showEditor(id, initialText){
+  if(editorOpen) return;
+  editorOpen = true;
+  const overlay = document.createElement('div');
+  overlay.className = 'editor-overlay';
+  const panel = document.createElement('div'); panel.className='editor-panel';
+  const left = document.createElement('div'); left.className='editor-left';
+  const right = document.createElement('div'); right.className='editor-right';
+  const ta = document.createElement('textarea'); ta.value = initialText;
+  left.appendChild(ta);
+  panel.appendChild(left);
+  panel.appendChild(right);
+
+  const toolbar = document.createElement('div'); toolbar.className='editor-toolbar editor-buttons';
+  const btnSave = document.createElement('button'); btnSave.textContent='Salvar (Ctrl+S)';
+  const btnCancel = document.createElement('button'); btnCancel.textContent='Cancelar (Esc)';
+  toolbar.appendChild(btnCancel); toolbar.appendChild(btnSave);
+  overlay.appendChild(panel);
+  overlay.appendChild(toolbar);
+  document.body.appendChild(overlay);
+
+  function renderPreview(){
+    const md = ta.value || '';
+    right.innerHTML = marked.parse(md);
+  }
+
+  renderPreview();
+  ta.focus();
+
+  const onSave = async ()=>{
+    await fetch(`/api/tasks/${id}/details`, {method:'PATCH', headers:{'content-type':'application/json'}, body: JSON.stringify({details: ta.value})});
+    await fetchTasks();
+    closeEditor();
+  };
+  const onCancel = ()=>{ closeEditor(); };
+
+  btnSave.addEventListener('click', onSave);
+  btnCancel.addEventListener('click', onCancel);
+  ta.addEventListener('input', renderPreview);
+
+  function keyHandler(e){
+    if(e.key === 'Escape'){
+      e.preventDefault();
+      onCancel();
+    }
+    if((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's'){
+      e.preventDefault();
+      onSave();
+    }
+  }
+
+  document.addEventListener('keydown', keyHandler);
+
+  function closeEditor(){
+    document.removeEventListener('keydown', keyHandler);
+    overlay.remove();
+    editorOpen = false;
+    // restore focus
+    clampSelection();
+    highlight();
+  }
+}
+
 document.addEventListener('keydown', async (e)=>{
+  if(editorOpen) return; // let editor handle keys when open
   if(e.key === 'ArrowDown'){ selectedIndex++; clampSelection(); highlight(); e.preventDefault(); }
   else if(e.key === 'ArrowUp'){ selectedIndex--; clampSelection(); highlight(); e.preventDefault(); }
-  else if(e.key === 'Enter'){ /* could open detail or noop */ }
+  else if(e.key === 'Enter'){ e.preventDefault(); openDetailsForSelected(); }
   else if(['p','s','r','x','o','a','h','q'].includes(e.key)){
     e.preventDefault();
     if(e.key==='q'){ /* can navigate away or close */ }

@@ -4,17 +4,28 @@
   <meta charset="utf-8" />
   <title>Tarefas (web)</title>
   <style>
+    /* increase font by ~1.5x for readability */
+    html, body { font-size: 1.0rem; }
     body { font-family: monospace; padding: 8px; }
     ul { list-style: none; padding: 0; margin: 0; }
-    li { padding: 2px 6px; }
+    li { padding: 6px 10px; }
     li.selected { background:#005f87; color:#fff; }
     .controls { margin-top:8px; font-size:90%; }
+
+    /* split editor styles */
+    .editor-overlay { position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.15); display: flex; align-items: stretch; }
+    .editor-panel { background: #fff; display:flex; flex:1 1 auto; height: 100%; }
+    .editor-left, .editor-right { flex: 1 1 50%; padding: 8px; box-sizing: border-box; overflow: auto; }
+    .editor-left textarea { width:100%; height:100%; box-sizing: border-box; font-family: monospace; font-size:1rem; }
+    .editor-toolbar { position: absolute; right: 12px; top: 12px; z-index: 50; }
+    .editor-buttons button { margin-left:8px; font-size:0.9rem; }
   </style>
 </head>
 <body>
   <h2>Tarefas</h2>
   <div id="tree"></div>
-  <div class="controls">Atalhos: ↑/↓ mover • Enter selecionar • p:Add • s:Sub • r:Renomear • x:Deletar • o:Toggle • a:ExpandirTodas • h:OcultarTodas • q:Sair</div>
+  <div class="controls">Atalhos: ↑/↓ mover • Enter:Detalhes • p:Add • s:Sub • r:Renomear • x:Deletar • o:Toggle • a:ExpandirTodas • h:OcultarTodas • q:Sair</div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="/static/main.js"></script>
 </body>
 </html>

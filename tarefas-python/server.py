@@ -72,6 +72,17 @@ def toggle(task_id: int, payload: dict):
     return {"ok": True}
 
 
+@app.patch("/api/tasks/{task_id}/details")
+def update_details(task_id: int, payload: dict):
+    details = payload.get("details")
+    if details is None:
+        raise HTTPException(status_code=400, detail="details required")
+    c = get_conn()
+    c.execute("UPDATE tasks SET details = ? WHERE id = ?", (details, task_id))
+    c.commit()
+    return {"ok": True}
+
+
 @app.post("/api/expand_all")
 def expand_all():
     c = get_conn()
