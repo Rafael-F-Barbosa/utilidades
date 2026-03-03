@@ -21,7 +21,12 @@ function buildAndRender(){
     li.style.paddingLeft = (depth*16)+'px';
     const cnt = (children[id]||[]).length;
     const collapsed = !(t.expanded && t.expanded==1) && cnt>0;
-    li.textContent = collapsed ? `${t.title} [${cnt}]` : t.title;
+    // show emoji if has details
+    const hasDetails = t.details && String(t.details).trim().length>0;
+    const emoji = hasDetails ? ' 📝' : '';
+    // title plus child count (if collapsed)
+    const titleTxt = collapsed ? `${escapeHtml(t.title)} [${cnt}]` : escapeHtml(t.title);
+    li.innerHTML = titleTxt + emoji;
     li.dataset.id = id;
     visible.push(id);
     ul.appendChild(li);
@@ -35,6 +40,29 @@ function buildAndRender(){
   container.appendChild(ul);
   clampSelection();
   highlight();
+  // show due date on selected line (format DD-MM-AAAA)
+  const lis = container.querySelectorAll('li');
+  if(lis && lis.length>0){
+    const li = lis[selectedIndex];
+    if(li){
+      const tid = li.dataset.id;
+      const t = tasks.find(x=>String(x.id)===String(tid));
+      if(t && t.due_date){
+        // due_date stored as YYYY-MM-DD, format to DD-MM-AAAA
+        const m = String(t.due_date).match(/^(\d{4})-(\d{2})-(\d{2})$/);
+        if(m){ li.innerHTML = li.innerHTML + ` [${m[3]}-${m[2]}-${m[1]}]`; }
+      }
+    }
+  }
+}
+
+function escapeHtml(unsafe) {
+  return String(unsafe)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
 
 function clampSelection(){
@@ -54,12 +82,39 @@ async function command(cmd){
   if(cmd==='o' && id){
     const t = tasks.find(x=>x.id==id);
     await fetch(`/api/tasks/${id}/toggle`, {method:'PATCH', headers:{'content-type':'application/json'}, body: JSON.stringify({expanded: !(t.expanded==1)})});
-  }else if(cmd==='a'){ await fetch('/api/expand_all', {method:'POST'}); }
+  }else if(cmd==='a'){ 
+    // toggle all: if any is collapsed -> expand all, else collapse all
+    const anyCollapsed = tasks.some(t=>{ const cnt = tasks.filter(x=>x.parent_id==t.id).length; return (t.expanded!=1) && cnt>0 });
+    if(anyCollapsed) await fetch('/api/expand_all', {method:'POST'});
+    else await fetch('/api/collapse_all', {method:'POST'});
+  }
   else if(cmd==='h'){ await fetch('/api/collapse_all', {method:'POST'}); }
   else if(cmd==='p'){ const title=prompt('Título (nível principal)'); if(title) await fetch('/api/tasks',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({title})}); }
   else if(cmd==='s' && id){ const title=prompt('Título (sub)'); if(title) await fetch('/api/tasks',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({title,parent_id:id})}); }
   else if(cmd==='r' && id){ const title=prompt('Novo título'); if(title) await fetch(`/api/tasks/${id}/rename`,{method:'PATCH',headers:{'content-type':'application/json'},body:JSON.stringify({title})}); }
   else if(cmd==='x' && id){ if(confirm('Confirma?')) await fetch(`/api/tasks/${id}`,{method:'DELETE'}); }
+  else if(cmd===',' && id){ // move up
+    await fetch(`/api/tasks/${id}/move`, {method:'PATCH', headers:{'content-type':'application/json'}, body: JSON.stringify({dir:'up'})});
+  }
+  else if(cmd==='.' && id){ // move down
+    await fetch(`/api/tasks/${id}/move`, {method:'PATCH', headers:{'content-type':'application/json'}, body: JSON.stringify({dir:'down'})});
+  }
+  else if(cmd==='d' && id){ // set due date
+    const input = prompt('Data (DD-MM-AAAA) — deixe vazio para remover');
+    if(input!==null){
+      const val = input.trim();
+      if(val===''){
+        await fetch(`/api/tasks/${id}/due_date`, {method:'PATCH', headers:{'content-type':'application/json'}, body: JSON.stringify({date: null})});
+      } else {
+        const m = val.match(/^(\d{2})-(\d{2})-(\d{4})$/);
+        if(!m){ alert('Formato inválido. Use DD-MM-AAAA'); }
+        else{
+          const iso = `${m[3]}-${m[2]}-${m[1]}`;
+          await fetch(`/api/tasks/${id}/due_date`, {method:'PATCH', headers:{'content-type':'application/json'}, body: JSON.stringify({date: iso})});
+        }
+      }
+    }
+  }
   await fetchTasks();
 }
 
@@ -137,14 +192,15 @@ function showEditor(id, initialText){
 }
 
 document.addEventListener('keydown', async (e)=>{
+  console.log('Keydown:', e.key);
   if(editorOpen) return; // let editor handle keys when open
   if(e.key === 'ArrowDown'){ selectedIndex++; clampSelection(); highlight(); e.preventDefault(); }
   else if(e.key === 'ArrowUp'){ selectedIndex--; clampSelection(); highlight(); e.preventDefault(); }
   else if(e.key === 'Enter'){ e.preventDefault(); openDetailsForSelected(); }
-  else if(['p','s','r','x','o','a','h','q'].includes(e.key)){
+  else if(['p','s','r','x','o','a','h',',','.','d'].includes(e.key)){
+    console.log("Epa!")
     e.preventDefault();
-    if(e.key==='q'){ /* can navigate away or close */ }
-    else await command(e.key);
+    await command(e.key);
   }
 });
 
