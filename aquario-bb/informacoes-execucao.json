@@ -1,0 +1,962 @@
+[
+    {
+        "nome": "job_1",
+        "id_job": 0,
+        "ultimas_execucoes": [
+            {
+                "id_execucao": 0,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-25T00:00:00Z",
+                "data_fim": "2026-07-25T00:05:00Z"
+            },
+            {
+                "id_execucao": 1,
+                "status": "FALHA",
+                "data_inicio": "2026-07-25T11:11:56Z",
+                "data_fim": "2026-07-25T11:16:56Z"
+            },
+            {
+                "id_execucao": 2,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-25T22:23:52Z",
+                "data_fim": "2026-07-25T22:28:52Z"
+            },
+            {
+                "id_execucao": 3,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-26T09:35:48Z",
+                "data_fim": "2026-07-26T09:40:48Z"
+            },
+            {
+                "id_execucao": 4,
+                "status": "FALHA",
+                "data_inicio": "2026-07-26T20:47:44Z",
+                "data_fim": "2026-07-26T20:52:44Z"
+            },
+            {
+                "id_execucao": 5,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-27T07:59:40Z",
+                "data_fim": "2026-07-27T08:04:40Z"
+            },
+            {
+                "id_execucao": 6,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-27T19:11:36Z",
+                "data_fim": "2026-07-27T19:16:36Z"
+            },
+            {
+                "id_execucao": 7,
+                "status": "FALHA",
+                "data_inicio": "2026-07-28T06:23:32Z",
+                "data_fim": "2026-07-28T06:28:32Z"
+            },
+            {
+                "id_execucao": 8,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-28T17:35:28Z",
+                "data_fim": "2026-07-28T17:40:28Z"
+            },
+            {
+                "id_execucao": 9,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-29T04:47:24Z",
+                "data_fim": "2026-07-29T04:52:24Z"
+            },
+            {
+                "id_execucao": 10,
+                "status": "FALHA",
+                "data_inicio": "2026-07-29T15:59:20Z",
+                "data_fim": "2026-07-29T16:04:20Z"
+            },
+            {
+                "id_execucao": 11,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-30T03:11:16Z",
+                "data_fim": "2026-07-30T03:16:16Z"
+            },
+            {
+                "id_execucao": 12,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T14:23:12Z",
+                "data_fim": "2026-07-30T14:28:12Z"
+            },
+            {
+                "id_execucao": 13,
+                "status": "FALHA",
+                "data_inicio": "2026-07-31T01:35:08Z",
+                "data_fim": "2026-07-31T01:40:08Z"
+            },
+            {
+                "id_execucao": 14,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-31T12:47:04Z",
+                "data_fim": "2026-07-31T12:52:04Z"
+            },
+            {
+                "id_execucao": 15,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T23:59:00Z",
+                "data_fim": "2026-08-01T00:04:00Z"
+            }
+        ]
+    },
+    {
+        "nome": "job_2",
+        "id_job": 1,
+        "ultimas_execucoes": [
+            {
+                "id_execucao": 16,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-25T00:00:00Z",
+                "data_fim": "2026-07-25T00:05:00Z"
+            },
+            {
+                "id_execucao": 17,
+                "status": "FALHA",
+                "data_inicio": "2026-07-25T10:29:56Z",
+                "data_fim": "2026-07-25T10:34:56Z"
+            },
+            {
+                "id_execucao": 18,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-25T20:59:52Z",
+                "data_fim": "2026-07-25T21:04:52Z"
+            },
+            {
+                "id_execucao": 19,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-26T07:29:48Z",
+                "data_fim": "2026-07-26T07:34:48Z"
+            },
+            {
+                "id_execucao": 20,
+                "status": "FALHA",
+                "data_inicio": "2026-07-26T17:59:45Z",
+                "data_fim": "2026-07-26T18:04:45Z"
+            },
+            {
+                "id_execucao": 21,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-27T04:29:41Z",
+                "data_fim": "2026-07-27T04:34:41Z"
+            },
+            {
+                "id_execucao": 22,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-27T14:59:37Z",
+                "data_fim": "2026-07-27T15:04:37Z"
+            },
+            {
+                "id_execucao": 23,
+                "status": "FALHA",
+                "data_inicio": "2026-07-28T01:29:33Z",
+                "data_fim": "2026-07-28T01:34:33Z"
+            },
+            {
+                "id_execucao": 24,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-28T11:59:30Z",
+                "data_fim": "2026-07-28T12:04:30Z"
+            },
+            {
+                "id_execucao": 25,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-28T22:29:26Z",
+                "data_fim": "2026-07-28T22:34:26Z"
+            },
+            {
+                "id_execucao": 26,
+                "status": "FALHA",
+                "data_inicio": "2026-07-29T08:59:22Z",
+                "data_fim": "2026-07-29T09:04:22Z"
+            },
+            {
+                "id_execucao": 27,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-29T19:29:18Z",
+                "data_fim": "2026-07-29T19:34:18Z"
+            },
+            {
+                "id_execucao": 28,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T05:59:15Z",
+                "data_fim": "2026-07-30T06:04:15Z"
+            },
+            {
+                "id_execucao": 29,
+                "status": "FALHA",
+                "data_inicio": "2026-07-30T16:29:11Z",
+                "data_fim": "2026-07-30T16:34:11Z"
+            },
+            {
+                "id_execucao": 30,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-31T02:59:07Z",
+                "data_fim": "2026-07-31T03:04:07Z"
+            },
+            {
+                "id_execucao": 31,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T13:29:03Z",
+                "data_fim": "2026-07-31T13:34:03Z"
+            },
+            {
+                "id_execucao": 32,
+                "status": "FALHA",
+                "data_inicio": "2026-07-31T23:59:00Z",
+                "data_fim": "2026-08-01T00:04:00Z"
+            }
+        ]
+    },
+    {
+        "nome": "job_3",
+        "id_job": 2,
+        "ultimas_execucoes": [
+            {
+                "id_execucao": 33,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-25T00:00:00Z",
+                "data_fim": "2026-07-25T00:05:00Z"
+            },
+            {
+                "id_execucao": 34,
+                "status": "FALHA",
+                "data_inicio": "2026-07-25T09:52:52Z",
+                "data_fim": "2026-07-25T09:57:52Z"
+            },
+            {
+                "id_execucao": 35,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-25T19:45:45Z",
+                "data_fim": "2026-07-25T19:50:45Z"
+            },
+            {
+                "id_execucao": 36,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-26T05:38:38Z",
+                "data_fim": "2026-07-26T05:43:38Z"
+            },
+            {
+                "id_execucao": 37,
+                "status": "FALHA",
+                "data_inicio": "2026-07-26T15:31:31Z",
+                "data_fim": "2026-07-26T15:36:31Z"
+            },
+            {
+                "id_execucao": 38,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-27T01:24:24Z",
+                "data_fim": "2026-07-27T01:29:24Z"
+            },
+            {
+                "id_execucao": 39,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-27T11:17:17Z",
+                "data_fim": "2026-07-27T11:22:17Z"
+            },
+            {
+                "id_execucao": 40,
+                "status": "FALHA",
+                "data_inicio": "2026-07-27T21:10:10Z",
+                "data_fim": "2026-07-27T21:15:10Z"
+            },
+            {
+                "id_execucao": 41,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-28T07:03:03Z",
+                "data_fim": "2026-07-28T07:08:03Z"
+            },
+            {
+                "id_execucao": 42,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-28T16:55:56Z",
+                "data_fim": "2026-07-28T17:00:56Z"
+            },
+            {
+                "id_execucao": 43,
+                "status": "FALHA",
+                "data_inicio": "2026-07-29T02:48:49Z",
+                "data_fim": "2026-07-29T02:53:49Z"
+            },
+            {
+                "id_execucao": 44,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-29T12:41:42Z",
+                "data_fim": "2026-07-29T12:46:42Z"
+            },
+            {
+                "id_execucao": 45,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-29T22:34:35Z",
+                "data_fim": "2026-07-29T22:39:35Z"
+            },
+            {
+                "id_execucao": 46,
+                "status": "FALHA",
+                "data_inicio": "2026-07-30T08:27:28Z",
+                "data_fim": "2026-07-30T08:32:28Z"
+            },
+            {
+                "id_execucao": 47,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-30T18:20:21Z",
+                "data_fim": "2026-07-30T18:25:21Z"
+            },
+            {
+                "id_execucao": 48,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T04:13:14Z",
+                "data_fim": "2026-07-31T04:18:14Z"
+            },
+            {
+                "id_execucao": 49,
+                "status": "FALHA",
+                "data_inicio": "2026-07-31T14:06:07Z",
+                "data_fim": "2026-07-31T14:11:07Z"
+            },
+            {
+                "id_execucao": 50,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-31T23:59:00Z",
+                "data_fim": "2026-08-01T00:04:00Z"
+            }
+        ]
+    },
+    {
+        "nome": "job_4",
+        "id_job": 3,
+        "ultimas_execucoes": [
+            {
+                "id_execucao": 51,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-25T00:00:00Z",
+                "data_fim": "2026-07-25T00:05:00Z"
+            },
+            {
+                "id_execucao": 52,
+                "status": "FALHA",
+                "data_inicio": "2026-07-25T09:19:56Z",
+                "data_fim": "2026-07-25T09:24:56Z"
+            },
+            {
+                "id_execucao": 53,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-25T18:39:53Z",
+                "data_fim": "2026-07-25T18:44:53Z"
+            },
+            {
+                "id_execucao": 54,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-26T03:59:50Z",
+                "data_fim": "2026-07-26T04:04:50Z"
+            },
+            {
+                "id_execucao": 55,
+                "status": "FALHA",
+                "data_inicio": "2026-07-26T13:19:46Z",
+                "data_fim": "2026-07-26T13:24:46Z"
+            },
+            {
+                "id_execucao": 56,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-26T22:39:43Z",
+                "data_fim": "2026-07-26T22:44:43Z"
+            },
+            {
+                "id_execucao": 57,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-27T07:59:40Z",
+                "data_fim": "2026-07-27T08:04:40Z"
+            },
+            {
+                "id_execucao": 58,
+                "status": "FALHA",
+                "data_inicio": "2026-07-27T17:19:36Z",
+                "data_fim": "2026-07-27T17:24:36Z"
+            },
+            {
+                "id_execucao": 59,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-28T02:39:33Z",
+                "data_fim": "2026-07-28T02:44:33Z"
+            },
+            {
+                "id_execucao": 60,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-28T11:59:30Z",
+                "data_fim": "2026-07-28T12:04:30Z"
+            },
+            {
+                "id_execucao": 61,
+                "status": "FALHA",
+                "data_inicio": "2026-07-28T21:19:26Z",
+                "data_fim": "2026-07-28T21:24:26Z"
+            },
+            {
+                "id_execucao": 62,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-29T06:39:23Z",
+                "data_fim": "2026-07-29T06:44:23Z"
+            },
+            {
+                "id_execucao": 63,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-29T15:59:20Z",
+                "data_fim": "2026-07-29T16:04:20Z"
+            },
+            {
+                "id_execucao": 64,
+                "status": "FALHA",
+                "data_inicio": "2026-07-30T01:19:16Z",
+                "data_fim": "2026-07-30T01:24:16Z"
+            },
+            {
+                "id_execucao": 65,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-30T10:39:13Z",
+                "data_fim": "2026-07-30T10:44:13Z"
+            },
+            {
+                "id_execucao": 66,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T19:59:10Z",
+                "data_fim": "2026-07-30T20:04:10Z"
+            },
+            {
+                "id_execucao": 67,
+                "status": "FALHA",
+                "data_inicio": "2026-07-31T05:19:06Z",
+                "data_fim": "2026-07-31T05:24:06Z"
+            },
+            {
+                "id_execucao": 68,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-31T14:39:03Z",
+                "data_fim": "2026-07-31T14:44:03Z"
+            },
+            {
+                "id_execucao": 69,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T23:59:00Z",
+                "data_fim": "2026-08-01T00:04:00Z"
+            }
+        ]
+    },
+    {
+        "nome": "job_5",
+        "id_job": 4,
+        "ultimas_execucoes": [
+            {
+                "id_execucao": 70,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-25T00:00:00Z",
+                "data_fim": "2026-07-25T00:05:00Z"
+            },
+            {
+                "id_execucao": 71,
+                "status": "FALHA",
+                "data_inicio": "2026-07-25T08:50:28Z",
+                "data_fim": "2026-07-25T08:55:28Z"
+            },
+            {
+                "id_execucao": 72,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-25T17:40:56Z",
+                "data_fim": "2026-07-25T17:45:56Z"
+            },
+            {
+                "id_execucao": 73,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-26T02:31:25Z",
+                "data_fim": "2026-07-26T02:36:25Z"
+            },
+            {
+                "id_execucao": 74,
+                "status": "FALHA",
+                "data_inicio": "2026-07-26T11:21:53Z",
+                "data_fim": "2026-07-26T11:26:53Z"
+            },
+            {
+                "id_execucao": 75,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-26T20:12:22Z",
+                "data_fim": "2026-07-26T20:17:22Z"
+            },
+            {
+                "id_execucao": 76,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-27T05:02:50Z",
+                "data_fim": "2026-07-27T05:07:50Z"
+            },
+            {
+                "id_execucao": 77,
+                "status": "FALHA",
+                "data_inicio": "2026-07-27T13:53:18Z",
+                "data_fim": "2026-07-27T13:58:18Z"
+            },
+            {
+                "id_execucao": 78,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-27T22:43:47Z",
+                "data_fim": "2026-07-27T22:48:47Z"
+            },
+            {
+                "id_execucao": 79,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-28T07:34:15Z",
+                "data_fim": "2026-07-28T07:39:15Z"
+            },
+            {
+                "id_execucao": 80,
+                "status": "FALHA",
+                "data_inicio": "2026-07-28T16:24:44Z",
+                "data_fim": "2026-07-28T16:29:44Z"
+            },
+            {
+                "id_execucao": 81,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-29T01:15:12Z",
+                "data_fim": "2026-07-29T01:20:12Z"
+            },
+            {
+                "id_execucao": 82,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-29T10:05:41Z",
+                "data_fim": "2026-07-29T10:10:41Z"
+            },
+            {
+                "id_execucao": 83,
+                "status": "FALHA",
+                "data_inicio": "2026-07-29T18:56:09Z",
+                "data_fim": "2026-07-29T19:01:09Z"
+            },
+            {
+                "id_execucao": 84,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-30T03:46:37Z",
+                "data_fim": "2026-07-30T03:51:37Z"
+            },
+            {
+                "id_execucao": 85,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T12:37:06Z",
+                "data_fim": "2026-07-30T12:42:06Z"
+            },
+            {
+                "id_execucao": 86,
+                "status": "FALHA",
+                "data_inicio": "2026-07-30T21:27:34Z",
+                "data_fim": "2026-07-30T21:32:34Z"
+            },
+            {
+                "id_execucao": 87,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-31T06:18:03Z",
+                "data_fim": "2026-07-31T06:23:03Z"
+            },
+            {
+                "id_execucao": 88,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T15:08:31Z",
+                "data_fim": "2026-07-31T15:13:31Z"
+            },
+            {
+                "id_execucao": 89,
+                "status": "FALHA",
+                "data_inicio": "2026-07-31T23:59:00Z",
+                "data_fim": "2026-08-01T00:04:00Z"
+            }
+        ]
+    },
+    {
+        "nome": "job_6",
+        "id_job": 5,
+        "ultimas_execucoes": [
+            {
+                "id_execucao": 90,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-25T00:00:00Z",
+                "data_fim": "2026-07-25T00:05:00Z"
+            },
+            {
+                "id_execucao": 91,
+                "status": "FALHA",
+                "data_inicio": "2026-07-25T18:39:53Z",
+                "data_fim": "2026-07-25T18:44:53Z"
+            },
+            {
+                "id_execucao": 92,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-26T13:19:46Z",
+                "data_fim": "2026-07-26T13:24:46Z"
+            },
+            {
+                "id_execucao": 93,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-27T07:59:40Z",
+                "data_fim": "2026-07-27T08:04:40Z"
+            },
+            {
+                "id_execucao": 94,
+                "status": "FALHA",
+                "data_inicio": "2026-07-28T02:39:33Z",
+                "data_fim": "2026-07-28T02:44:33Z"
+            },
+            {
+                "id_execucao": 95,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-28T21:19:26Z",
+                "data_fim": "2026-07-28T21:24:26Z"
+            },
+            {
+                "id_execucao": 96,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-29T15:59:20Z",
+                "data_fim": "2026-07-29T16:04:20Z"
+            },
+            {
+                "id_execucao": 97,
+                "status": "FALHA",
+                "data_inicio": "2026-07-30T10:39:13Z",
+                "data_fim": "2026-07-30T10:44:13Z"
+            },
+            {
+                "id_execucao": 98,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-31T05:19:06Z",
+                "data_fim": "2026-07-31T05:24:06Z"
+            },
+            {
+                "id_execucao": 99,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T23:59:00Z",
+                "data_fim": "2026-08-01T00:04:00Z"
+            }
+        ]
+    },
+    {
+        "nome": "job_7",
+        "id_job": 6,
+        "ultimas_execucoes": [
+            {
+                "id_execucao": 100,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-25T00:00:00Z",
+                "data_fim": "2026-07-25T00:05:00Z"
+            },
+            {
+                "id_execucao": 101,
+                "status": "FALHA",
+                "data_inicio": "2026-07-25T16:47:54Z",
+                "data_fim": "2026-07-25T16:52:54Z"
+            },
+            {
+                "id_execucao": 102,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-26T09:35:48Z",
+                "data_fim": "2026-07-26T09:40:48Z"
+            },
+            {
+                "id_execucao": 103,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-27T02:23:42Z",
+                "data_fim": "2026-07-27T02:28:42Z"
+            },
+            {
+                "id_execucao": 104,
+                "status": "FALHA",
+                "data_inicio": "2026-07-27T19:11:36Z",
+                "data_fim": "2026-07-27T19:16:36Z"
+            },
+            {
+                "id_execucao": 105,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-28T11:59:30Z",
+                "data_fim": "2026-07-28T12:04:30Z"
+            },
+            {
+                "id_execucao": 106,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-29T04:47:24Z",
+                "data_fim": "2026-07-29T04:52:24Z"
+            },
+            {
+                "id_execucao": 107,
+                "status": "FALHA",
+                "data_inicio": "2026-07-29T21:35:18Z",
+                "data_fim": "2026-07-29T21:40:18Z"
+            },
+            {
+                "id_execucao": 108,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-30T14:23:12Z",
+                "data_fim": "2026-07-30T14:28:12Z"
+            },
+            {
+                "id_execucao": 109,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T07:11:06Z",
+                "data_fim": "2026-07-31T07:16:06Z"
+            },
+            {
+                "id_execucao": 110,
+                "status": "FALHA",
+                "data_inicio": "2026-07-31T23:59:00Z",
+                "data_fim": "2026-08-01T00:04:00Z"
+            }
+        ]
+    },
+    {
+        "nome": "job_8",
+        "id_job": 7,
+        "ultimas_execucoes": [
+            {
+                "id_execucao": 111,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-25T00:00:00Z",
+                "data_fim": "2026-07-25T00:05:00Z"
+            },
+            {
+                "id_execucao": 112,
+                "status": "FALHA",
+                "data_inicio": "2026-07-25T15:16:16Z",
+                "data_fim": "2026-07-25T15:21:16Z"
+            },
+            {
+                "id_execucao": 113,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-26T06:32:32Z",
+                "data_fim": "2026-07-26T06:37:32Z"
+            },
+            {
+                "id_execucao": 114,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-26T21:48:49Z",
+                "data_fim": "2026-07-26T21:53:49Z"
+            },
+            {
+                "id_execucao": 115,
+                "status": "FALHA",
+                "data_inicio": "2026-07-27T13:05:05Z",
+                "data_fim": "2026-07-27T13:10:05Z"
+            },
+            {
+                "id_execucao": 116,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-28T04:21:21Z",
+                "data_fim": "2026-07-28T04:26:21Z"
+            },
+            {
+                "id_execucao": 117,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-28T19:37:38Z",
+                "data_fim": "2026-07-28T19:42:38Z"
+            },
+            {
+                "id_execucao": 118,
+                "status": "FALHA",
+                "data_inicio": "2026-07-29T10:53:54Z",
+                "data_fim": "2026-07-29T10:58:54Z"
+            },
+            {
+                "id_execucao": 119,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-30T02:10:10Z",
+                "data_fim": "2026-07-30T02:15:10Z"
+            },
+            {
+                "id_execucao": 120,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T17:26:27Z",
+                "data_fim": "2026-07-30T17:31:27Z"
+            },
+            {
+                "id_execucao": 121,
+                "status": "FALHA",
+                "data_inicio": "2026-07-31T08:42:43Z",
+                "data_fim": "2026-07-31T08:47:43Z"
+            },
+            {
+                "id_execucao": 122,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-31T23:59:00Z",
+                "data_fim": "2026-08-01T00:04:00Z"
+            }
+        ]
+    },
+    {
+        "nome": "job_9",
+        "id_job": 8,
+        "ultimas_execucoes": [
+            {
+                "id_execucao": 123,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-25T00:00:00Z",
+                "data_fim": "2026-07-25T00:05:00Z"
+            },
+            {
+                "id_execucao": 124,
+                "status": "FALHA",
+                "data_inicio": "2026-07-25T13:59:55Z",
+                "data_fim": "2026-07-25T14:04:55Z"
+            },
+            {
+                "id_execucao": 125,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-26T03:59:50Z",
+                "data_fim": "2026-07-26T04:04:50Z"
+            },
+            {
+                "id_execucao": 126,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-26T17:59:45Z",
+                "data_fim": "2026-07-26T18:04:45Z"
+            },
+            {
+                "id_execucao": 127,
+                "status": "FALHA",
+                "data_inicio": "2026-07-27T07:59:40Z",
+                "data_fim": "2026-07-27T08:04:40Z"
+            },
+            {
+                "id_execucao": 128,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-27T21:59:35Z",
+                "data_fim": "2026-07-27T22:04:35Z"
+            },
+            {
+                "id_execucao": 129,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-28T11:59:30Z",
+                "data_fim": "2026-07-28T12:04:30Z"
+            },
+            {
+                "id_execucao": 130,
+                "status": "FALHA",
+                "data_inicio": "2026-07-29T01:59:25Z",
+                "data_fim": "2026-07-29T02:04:25Z"
+            },
+            {
+                "id_execucao": 131,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-29T15:59:20Z",
+                "data_fim": "2026-07-29T16:04:20Z"
+            },
+            {
+                "id_execucao": 132,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T05:59:15Z",
+                "data_fim": "2026-07-30T06:04:15Z"
+            },
+            {
+                "id_execucao": 133,
+                "status": "FALHA",
+                "data_inicio": "2026-07-30T19:59:10Z",
+                "data_fim": "2026-07-30T20:04:10Z"
+            },
+            {
+                "id_execucao": 134,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-31T09:59:05Z",
+                "data_fim": "2026-07-31T10:04:05Z"
+            },
+            {
+                "id_execucao": 135,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T23:59:00Z",
+                "data_fim": "2026-08-01T00:04:00Z"
+            }
+        ]
+    },
+    {
+        "nome": "job_10",
+        "id_job": 9,
+        "ultimas_execucoes": [
+            {
+                "id_execucao": 136,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-25T00:00:00Z",
+                "data_fim": "2026-07-25T00:05:00Z"
+            },
+            {
+                "id_execucao": 137,
+                "status": "FALHA",
+                "data_inicio": "2026-07-25T12:55:18Z",
+                "data_fim": "2026-07-25T13:00:18Z"
+            },
+            {
+                "id_execucao": 138,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-26T01:50:36Z",
+                "data_fim": "2026-07-26T01:55:36Z"
+            },
+            {
+                "id_execucao": 139,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-26T14:45:55Z",
+                "data_fim": "2026-07-26T14:50:55Z"
+            },
+            {
+                "id_execucao": 140,
+                "status": "FALHA",
+                "data_inicio": "2026-07-27T03:41:13Z",
+                "data_fim": "2026-07-27T03:46:13Z"
+            },
+            {
+                "id_execucao": 141,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-27T16:36:32Z",
+                "data_fim": "2026-07-27T16:41:32Z"
+            },
+            {
+                "id_execucao": 142,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-28T05:31:50Z",
+                "data_fim": "2026-07-28T05:36:50Z"
+            },
+            {
+                "id_execucao": 143,
+                "status": "FALHA",
+                "data_inicio": "2026-07-28T18:27:09Z",
+                "data_fim": "2026-07-28T18:32:09Z"
+            },
+            {
+                "id_execucao": 144,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-29T07:22:27Z",
+                "data_fim": "2026-07-29T07:27:27Z"
+            },
+            {
+                "id_execucao": 145,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-29T20:17:46Z",
+                "data_fim": "2026-07-29T20:22:46Z"
+            },
+            {
+                "id_execucao": 146,
+                "status": "FALHA",
+                "data_inicio": "2026-07-30T09:13:04Z",
+                "data_fim": "2026-07-30T09:18:04Z"
+            },
+            {
+                "id_execucao": 147,
+                "status": "EXECUTANDO",
+                "data_inicio": "2026-07-30T22:08:23Z",
+                "data_fim": "2026-07-30T22:13:23Z"
+            },
+            {
+                "id_execucao": 148,
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T11:03:41Z",
+                "data_fim": "2026-07-31T11:08:41Z"
+            },
+            {
+                "id_execucao": 149,
+                "status": "FALHA",
+                "data_inicio": "2026-07-31T23:59:00Z",
+                "data_fim": "2026-08-01T00:04:00Z"
+            }
+        ]
+    }
+]

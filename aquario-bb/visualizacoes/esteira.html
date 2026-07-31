@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline BB - 05 Esteira Continua de Release</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo">
+  <a class="voltar" href="index.html">&larr; Visualizacoes</a>
+  <h1>05 &middot; Esteira Continua de Release <small>Fluxo de valor: lotes percorrendo Build, Liberacao e Execucao</small></h1>
+  <div class="saude-geral">
+    <span class="gauge-rotulo">Saude do sistema</span>
+    <div class="gauge" id="gauge"><span>0</span></div>
+  </div>
+</header>
+
+<main>
+  <div class="fluxo">
+    <div class="painel-etapas" id="painel-etapas"></div>
+    <div class="tela" id="tela">
+      <div class="zonas" id="zonas"></div>
+      <div class="trilho" id="trilho">
+        <div class="linha-corrente"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="legenda" id="legenda"></footer>
+
+<style>
+  .fluxo { margin: 18px 24px; }
+  .painel-etapas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 14px; }
+  .cartao-etapa {
+    background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.12);
+    border-top: 3px solid var(--ecor); border-radius: 12px; padding: 12px 14px;
+  }
+  .cartao-etapa .tit { font-weight: 700; font-size: 13.5px; margin-bottom: 6px; }
+  .cartao-etapa .resumo { display: flex; justify-content: space-between; font-size: 12px; color: var(--suave); margin-bottom: 8px; }
+  .cartao-etapa .resumo b.ok { color: var(--verde); }
+  .cartao-etapa .resumo b.ruim { color: var(--vermelho); }
+  .tela {
+    position: relative; overflow: hidden; border-radius: 16px; height: 340px;
+    background: linear-gradient(180deg, #152c3d, #1d3f55);
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.4), 0 10px 26px rgba(0, 0, 0, 0.4);
+  }
+  .zonas { position: absolute; inset: 0; display: flex; }
+  .zona { position: relative; flex: 1; border-right: 1px dashed rgba(255, 255, 255, 0.25); }
+  .zona:last-child { border-right: none; }
+  .zona .placa-zona {
+    position: absolute; top: 12px; left: 50%; transform: translateX(-50%);
+    font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase;
+    padding: 7px 14px; border-radius: 20px; background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.2); white-space: nowrap;
+  }
+  .zona .info-zona {
+    position: absolute; top: 52px; left: 50%; transform: translateX(-50%);
+    font-size: 11.5px; color: var(--suave); text-align: center; white-space: nowrap;
+  }
+  .zona .seta { position: absolute; top: 92px; left: 50%; transform: translateX(-50%); font-size: 16px; opacity: .7; }
+  .trilho {
+    position: absolute; left: 3%; right: 3%; bottom: 56px; height: 74px; z-index: 5;
+    background: #2a3540; border-radius: 38px; border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  }
+  .linha-corrente {
+    position: absolute; left: 20px; right: 20px; top: 32px; height: 8px;
+    background: repeating-linear-gradient(90deg, #a7b6c2 0 16px, #3c4752 16px 28px);
+    background-size: 28px 100%;
+    animation: corrente 1.8s linear infinite; border-radius: 6px;
+  }
+  @keyframes corrente { from { background-position: 0 0; } to { background-position: 28px 0; } }
+  .lote-anim {
+    position: absolute; top: 15px; z-index: 6; width: 58px; height: 40px;
+    background: var(--lcor); border-radius: 7px; border: 2px solid rgba(255, 255, 255, 0.75);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.45);
+    cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font-size: 9.5px; font-weight: 800; color: #04202e; text-align: center; line-height: 1.15;
+  }
+  .lote-anim small { font-weight: 600; font-size: 9px; opacity: .85; }
+  .lote-anim:hover { filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6)); }
+  .sombra { position: absolute; left: 50%; transform: translateX(-50%); bottom: 16px; width: 60%; height: 8px; background: radial-gradient(ellipse, rgba(0, 0, 0, 0.45), transparent 70%); border-radius: 50%; }
+</style>
+
+<script src="dados.js"></script>
+<script src="comum.js"></script>
+<script>
+(function () {
+  var etaps = ["builds", "releases", "execucoes"];
+
+  var painel = document.getElementById("painel-etapas");
+  etaps.forEach(function (c) {
+    var r = resumoGeralEtapa(c);
+    var ce = document.createElement("div");
+    ce.className = "cartao-etapa";
+    ce.style.setProperty("--ecor", COR_ETAPA[c]);
+    ce.innerHTML =
+      '<div class="tit">' + TITULO_ETAPA[c] + "</div>" +
+      '<div class="resumo"><span><b class="ok">' + r.bons + " ok</b> &middot; <b class='ruim'>" + r.ruins + " ruim</b></span><b>" + r.taxa + "%</b></div>" +
+      barraPilula(r.bons, r.ruins, r.outros, r.total);
+    painel.appendChild(ce);
+  });
+
+  var tela = document.getElementById("tela");
+  var zonas = document.getElementById("zonas");
+  etaps.forEach(function (c, i) {
+    var z = document.createElement("div");
+    z.className = "zona";
+    var r = resumoGeralEtapa(c);
+    z.innerHTML =
+      '<div class="placa-zona" style="color:' + COR_ETAPA[c] + ';border-color:' + COR_ETAPA[c] + '">' + TITULO_ETAPA[c] + "</div>" +
+      '<div class="info-zona">' + r.total + " artefatos &middot; taxa ok " + r.taxa + "%</div>" +
+      '<div class="seta" style="color:' + COR_ETAPA[c] + '">' + (i < 2 ? "&#10148;" : "&#11036;") + "</div>";
+    zonas.appendChild(z);
+  });
+
+  var trilho = document.getElementById("trilho");
+  var sombra = document.createElement("div");
+  sombra.className = "sombra";
+  tela.appendChild(sombra);
+
+  var nomes = DADOS.builds.map(function (j) { return j.nome; });
+  var lotes = nomes.map(function (nome, i) {
+    var saude = saudeJob(nome);
+    var l = document.createElement("div");
+    l.className = "lote-anim";
+    l.style.setProperty("--lcor", sombrear(corPorSaude(saude), 20));
+    l.innerHTML = esc(nome.replace("job_", "J")) + "<small>" + saude + "%</small>";
+    l.addEventListener("click", function () { abrirModal(nome); });
+    l.addEventListener("mouseenter", function (ev) {
+      var zona = zonaAtual(l);
+      var r = resumoEtapa(zona, nome);
+      mostrarDica(ev, "<b>" + esc(nome) + "</b><br>Etapa atual: <b>" + TITULO_ETAPA[zona] + "</b><br>Saude: " + saude + "%<br>" +
+        TITULO_ETAPA[zona] + ": " + r.total + " (" + r.bons + " ok / " + r.ruins + " ruim)<br><i>Clique para detalhar o job</i>");
+    });
+    l.addEventListener("mousemove", function (ev) {
+      var zona = zonaAtual(l);
+      var r = resumoEtapa(zona, nome);
+      mostrarDica(ev, "<b>" + esc(nome) + "</b><br>Etapa atual: <b>" + TITULO_ETAPA[zona] + "</b><br>Saude: " + saude + "%<br>" +
+        TITULO_ETAPA[zona] + ": " + r.total + " (" + r.bons + " ok / " + r.ruins + " ruim)<br><i>Clique para detalhar o job</i>");
+    });
+    l.addEventListener("mouseleave", esconderDica);
+    trilho.appendChild(l);
+    return { el: l, nome: nome, saude: saude, fase: (i / nomes.length) * 100, vel: 2.6 + (i % 5) * 0.4 };
+  });
+
+  function zonaAtual(loteEl) {
+    var pct = parseFloat(loteEl.style.left) || 0;
+    return pct < 33.3 ? "builds" : pct < 66.6 ? "releases" : "execucoes";
+  }
+
+  var t0 = performance.now();
+  function loop(agora) {
+    var t = (agora - t0) / 1000;
+    lotes.forEach(function (l) {
+      var x = (l.fase + t * l.vel) % 100;
+      l.el.style.left = x + "%";
+    });
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+
+  var sg = saudeGeral();
+  var g = document.getElementById("gauge");
+  g.style.setProperty("--v", sg);
+  g.style.setProperty("--gcor", corPorSaude(sg));
+  g.querySelector("span").textContent = sg;
+
+  document.getElementById("legenda").innerHTML =
+    "<span class='item'>Lotes = jobs percorrendo a esteira de release em loop.</span>" +
+    "<span class='item'>Zonas = Build, Liberacao e Execucao.</span>" +
+    "<span class='item'>Clique em um lote para detalhar o job.</span>";
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline BB - 04 Quadro Kanban</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo">
+  <a class="voltar" href="index.html">&larr; Visualizacoes</a>
+  <h1>04 &middot; Quadro Kanban de Processo <small>Cada artefato e um cartao em uma etapa do fluxo</small></h1>
+  <div class="saude-geral">
+    <span class="gauge-rotulo">Saude do sistema</span>
+    <div class="gauge" id="gauge"><span>0</span></div>
+  </div>
+</header>
+
+<main>
+  <div class="kanban" id="kanban"></div>
+</main>
+
+<footer class="legenda" id="legenda"></footer>
+
+<style>
+  .kanban {
+    margin: 18px 24px; display: flex; gap: 12px; overflow-x: auto;
+    padding-bottom: 14px; align-items: stretch;
+  }
+  .coluna {
+    flex: 0 0 185px; display: flex; flex-direction: column;
+    background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px; max-height: calc(100vh - 200px);
+  }
+  .coluna .cab {
+    padding: 10px 12px; border-radius: 11px 11px 0 0; font-weight: 700; font-size: 12.5px;
+    display: flex; align-items: center; justify-content: space-between; gap: 6px;
+  }
+  .coluna .cab .qt { background: rgba(0, 0, 0, 0.3); border-radius: 12px; padding: 1px 8px; font-size: 11px; }
+  .coluna .cartoes { overflow-y: auto; padding: 8px; display: flex; flex-direction: column; gap: 7px; }
+  .cartao-k {
+    background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.14);
+    border-left: 4px solid var(--ccor); border-radius: 8px; padding: 7px 9px; cursor: pointer;
+    font-size: 12px; transition: background .15s;
+  }
+  .cartao-k:hover { background: rgba(255, 255, 255, 0.16); }
+  .cartao-k .topo-k { display: flex; justify-content: space-between; align-items: center; gap: 6px; font-weight: 700; }
+  .cartao-k .det { font-size: 10.5px; color: var(--suave); margin-top: 3px; }
+  .vazio-col { padding: 14px; text-align: center; color: rgba(255, 255, 255, 0.35); font-size: 12px; }
+</style>
+
+<script src="dados.js"></script>
+<script src="comum.js"></script>
+<script>
+(function () {
+  var colunas = [
+    { titulo: "Build OK", cat: "builds", sts: ["SUCESSO"], cor: COR_ETAPA.builds },
+    { titulo: "Build Falha", cat: "builds", sts: ["FALHA"], cor: COR_ETAPA.builds },
+    { titulo: "Liberacao\nAguardando", cat: "releases", sts: ["PENDENTE_APROVACAO", "AGENDADO"], cor: COR_ETAPA.releases },
+    { titulo: "Liberacao\nArquivado", cat: "releases", sts: ["ARQUIVADO"], cor: COR_ETAPA.releases },
+    { titulo: "Liberacao\nProblema", cat: "releases", sts: ["FALHA", "SUSPENSO"], cor: COR_ETAPA.releases },
+    { titulo: "Execucao\nEm andamento", cat: "execucoes", sts: ["EXECUTANDO"], cor: COR_ETAPA.execucoes },
+    { titulo: "Execucao OK", cat: "execucoes", sts: ["SUCESSO"], cor: COR_ETAPA.execucoes },
+    { titulo: "Execucao Falha", cat: "execucoes", sts: ["FALHA"], cor: COR_ETAPA.execucoes }
+  ];
+
+  var kanban = document.getElementById("kanban");
+
+  function dadosArtefato(a) {
+    var id = a.id_build !== undefined ? a.id_build : a.id_release !== undefined ? a.id_release : a.id_execucao;
+    var data = a.data_aprovacao || a.data_inicio || a.data_fim;
+    return { id: id, data: data };
+  }
+
+  colunas.forEach(function (col) {
+    var div = document.createElement("div");
+    div.className = "coluna";
+
+    var artigos = [];
+    (DADOS.builds || []).forEach(function (job) {
+      artefatosDe(col.cat, job.nome).forEach(function (a) {
+        if (col.sts.indexOf(a.status) >= 0) {
+          var d = dadosArtefato(a);
+          artigos.push({ nome: job.nome, status: a.status, id: d.id, data: d.data });
+        }
+      });
+    });
+
+    var cab = document.createElement("div");
+    cab.className = "cab";
+    cab.style.background = sombrear(col.cor, -35);
+    cab.style.borderBottom = "2px solid " + col.cor;
+    cab.innerHTML = col.titulo.replace(/\n/g, "<br>") + '<span class="qt">' + artigos.length + "</span>";
+    div.appendChild(cab);
+
+    var cartoes = document.createElement("div");
+    cartoes.className = "cartoes";
+
+    if (!artigos.length) {
+      var vz = document.createElement("div");
+      vz.className = "vazio-col";
+      vz.textContent = "vazio";
+      cartoes.appendChild(vz);
+    }
+
+    artigos.forEach(function (a) {
+      var card = document.createElement("div");
+      card.className = "cartao-k";
+      card.style.setProperty("--ccor", COR_ETAPA[col.cat]);
+      card.innerHTML =
+        '<div class="topo-k">' + esc(a.nome) + "<span>#" + a.id + "</span></div>" +
+        badge(a.status) + '<div class="det">' + fmtData(a.data) + "</div>";
+      card.addEventListener("mouseenter", function (ev) {
+        mostrarDica(ev, "<b>" + esc(a.nome) + "</b><br>" + TITULO_ETAPA[col.cat] + " #" + a.id + "<br>Status: " + esc(a.status) + "<br>Data: " + fmtData(a.data) + "<br><i>Clique para detalhar o job</i>");
+      });
+      card.addEventListener("mousemove", function (ev) {
+        mostrarDica(ev, "<b>" + esc(a.nome) + "</b><br>" + TITULO_ETAPA[col.cat] + " #" + a.id + "<br>Status: " + esc(a.status) + "<br>Data: " + fmtData(a.data) + "<br><i>Clique para detalhar o job</i>");
+      });
+      card.addEventListener("mouseleave", esconderDica);
+      card.addEventListener("click", function () { abrirModal(a.nome); });
+      cartoes.appendChild(card);
+    });
+
+    div.appendChild(cartoes);
+    kanban.appendChild(div);
+  });
+
+  var sg = saudeGeral();
+  var g = document.getElementById("gauge");
+  g.style.setProperty("--v", sg);
+  g.style.setProperty("--gcor", corPorSaude(sg));
+  g.querySelector("span").textContent = sg;
+
+  document.getElementById("legenda").innerHTML =
+    "<span class='item'>Colunas = etapas/estados do fluxo de release.</span>" +
+    "<span class='item'>Cartao = 1 artefato (build, release ou execucao).</span>" +
+    "<span class='item'>Clique em um cartao para detalhar o job.</span>";
+})();
+</script>
+</body>
+</html>

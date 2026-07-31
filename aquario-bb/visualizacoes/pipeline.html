@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline BB - 01 Pipeline Global</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo">
+  <a class="voltar" href="index.html">&larr; Visualizacoes</a>
+  <h1>01 &middot; Pipeline Global <small>Esteira de release por job e etapa (estilo GitHub Actions)</small></h1>
+  <div class="saude-geral">
+    <span class="gauge-rotulo">Saude do sistema</span>
+    <div class="gauge" id="gauge"><span>0</span></div>
+  </div>
+</header>
+
+<main>
+  <div class="pipeline" id="pipeline"></div>
+</main>
+
+<footer class="legenda" id="legenda"></footer>
+
+<style>
+  .pipeline { margin: 18px 24px; display: flex; flex-direction: column; gap: 8px; }
+  .pgrade {
+    display: grid; gap: 8px;
+    grid-template-columns: 170px repeat(3, 1fr);
+    align-items: stretch;
+  }
+  .pgrade.cabecalho { margin-bottom: 2px; }
+  .cel-etapa {
+    padding: 10px 12px; border-radius: 10px; text-align: center;
+    font-weight: 700; font-size: 14px; letter-spacing: .4px;
+    background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .cel-etapa small { display: block; font-weight: 400; color: var(--suave); font-size: 11px; }
+  .cel-nome {
+    padding: 10px 12px; border-radius: 10px; cursor: pointer;
+    background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.12);
+    font-weight: 700; font-size: 13.5px; display: flex; flex-direction: column; gap: 4px; justify-content: center;
+  }
+  .cel-nome:hover { background: rgba(255, 255, 255, 0.12); }
+  .cel-nome small { font-weight: 400; color: var(--suave); font-size: 11px; }
+  .cel-dados {
+    padding: 10px 12px; border-radius: 10px; cursor: pointer;
+    background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex; flex-direction: column; gap: 6px; justify-content: center;
+    transition: border-color .15s, background .15s;
+  }
+  .cel-dados:hover { border-color: var(--suave); background: rgba(255, 255, 255, 0.09); }
+  .cel-dados .linha-total { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .cel-dados .num { font-size: 20px; font-weight: 800; }
+  .cel-dados .contagens { font-size: 11px; color: var(--suave); }
+  .contagens b.ok { color: var(--verde); }
+  .contagens b.ruim { color: var(--vermelho); }
+</style>
+
+<script src="dados.js"></script>
+<script src="comum.js"></script>
+<script>
+(function () {
+  var pipeline = document.getElementById("pipeline");
+  var etaps = ["builds", "releases", "execucoes"];
+
+  var cab = document.createElement("div");
+  cab.className = "pgrade cabecalho";
+  cab.innerHTML =
+    '<div class="cel-nome">Job</div>' +
+    etaps.map(function (c) {
+      return '<div class="cel-etapa" style="border-top:3px solid ' + COR_ETAPA[c] + '">' + TITULO_ETAPA[c] +
+        "<small>" + resumoGeralEtapa(c).total + " artefatos no total</small></div>";
+    }).join("");
+  pipeline.appendChild(cab);
+
+  var nomes = DADOS.builds.map(function (j) { return j.nome; });
+
+  nomes.forEach(function (nome) {
+    var saude = saudeJob(nome);
+    var est = estadoSaude(saude);
+    var linha = document.createElement("div");
+    linha.className = "pgrade";
+
+    var nomeCel = document.createElement("div");
+    nomeCel.className = "cel-nome";
+    nomeCel.innerHTML = esc(nome) + ' <span class="badge" style="background:' + est.cor + '">' + est.rotulo + " " + saude + "%</span>";
+    nomeCel.addEventListener("click", function () { abrirModal(nome); });
+    linha.appendChild(nomeCel);
+
+    etaps.forEach(function (c) {
+      var r = resumoEtapa(c, nome);
+      var cel = document.createElement("div");
+      cel.className = "cel-dados";
+      cel.innerHTML =
+        '<div class="linha-total"><span class="num">' + r.total + "</span><span class='contagens'>" +
+        "<b class='ok'>" + r.bons + " ok</b> &middot; <b class='ruim'>" + r.ruins + " ruim</b>" +
+        (r.outros ? " &middot; " + r.outros + " outros" : "") +
+        "</span></div>" + barraPilula(r.bons, r.ruins, r.outros, r.total);
+      cel.addEventListener("click", function () { abrirModal(nome); });
+      cel.addEventListener("mouseenter", function (ev) {
+        mostrarDica(ev, "<b>" + esc(nome) + "</b> &middot; " + TITULO_ETAPA[c] +
+          "<br>Total: " + r.total + "<br>OK: " + r.bons + " &middot; Ruim: " + r.ruins + " &middot; Outros: " + r.outros +
+          "<br><i>Clique para detalhar o job</i>");
+      });
+      cel.addEventListener("mousemove", function (ev) {
+        mostrarDica(ev, "<b>" + esc(nome) + "</b> &middot; " + TITULO_ETAPA[c] +
+          "<br>Total: " + r.total + "<br>OK: " + r.bons + " &middot; Ruim: " + r.ruins + " &middot; Outros: " + r.outros +
+          "<br><i>Clique para detalhar o job</i>");
+      });
+      cel.addEventListener("mouseleave", esconderDica);
+      linha.appendChild(cel);
+    });
+
+    pipeline.appendChild(linha);
+  });
+
+  var sg = saudeGeral();
+  var g = document.getElementById("gauge");
+  g.style.setProperty("--v", sg);
+  g.style.setProperty("--gcor", corPorSaude(sg));
+  g.querySelector("span").textContent = sg;
+
+  document.getElementById("legenda").innerHTML =
+    "<span class='item'><span class='dot' style='background:#27ae60'></span>OK</span>" +
+    "<span class='item'><span class='dot' style='background:#7f8c8d'></span>Outros</span>" +
+    "<span class='item'><span class='dot' style='background:#e74c3c'></span>Ruim</span>" +
+    "<span class='item'>Clique em uma celula ou no nome do job para detalhar.</span>";
+})();
+</script>
+</body>
+</html>

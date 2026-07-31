@@ -1,0 +1,827 @@
+[
+    {
+        "nome": "job_1",
+        "id_job": 0,
+        "ultimos_releases": [
+            {
+                "id_release": 0,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-25T00:00:00Z"
+            },
+            {
+                "id_release": 1,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-25T13:59:55Z"
+            },
+            {
+                "id_release": 2,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-26T03:59:50Z"
+            },
+            {
+                "id_release": 3,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-26T17:59:45Z"
+            },
+            {
+                "id_release": 4,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-27T07:59:40Z"
+            },
+            {
+                "id_release": 5,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-27T21:59:35Z"
+            },
+            {
+                "id_release": 6,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-28T11:59:30Z"
+            },
+            {
+                "id_release": 7,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-29T01:59:25Z"
+            },
+            {
+                "id_release": 8,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-29T15:59:20Z"
+            },
+            {
+                "id_release": 9,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-30T05:59:15Z"
+            },
+            {
+                "id_release": 10,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-30T19:59:10Z"
+            },
+            {
+                "id_release": 11,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-31T09:59:05Z"
+            },
+            {
+                "id_release": 12,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-31T23:59:00Z"
+            }
+        ]
+    },
+    {
+        "nome": "job_2",
+        "id_job": 1,
+        "ultimos_releases": [
+            {
+                "id_release": 13,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-25T00:00:00Z"
+            },
+            {
+                "id_release": 14,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-25T12:55:18Z"
+            },
+            {
+                "id_release": 15,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-26T01:50:36Z"
+            },
+            {
+                "id_release": 16,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-26T14:45:55Z"
+            },
+            {
+                "id_release": 17,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-27T03:41:13Z"
+            },
+            {
+                "id_release": 18,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-27T16:36:32Z"
+            },
+            {
+                "id_release": 19,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-28T05:31:50Z"
+            },
+            {
+                "id_release": 20,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-28T18:27:09Z"
+            },
+            {
+                "id_release": 21,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-29T07:22:27Z"
+            },
+            {
+                "id_release": 22,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-29T20:17:46Z"
+            },
+            {
+                "id_release": 23,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-30T09:13:04Z"
+            },
+            {
+                "id_release": 24,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-30T22:08:23Z"
+            },
+            {
+                "id_release": 25,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-31T11:03:41Z"
+            },
+            {
+                "id_release": 26,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-31T23:59:00Z"
+            }
+        ]
+    },
+    {
+        "nome": "job_3",
+        "id_job": 2,
+        "ultimos_releases": [
+            {
+                "id_release": 27,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-25T00:00:00Z"
+            },
+            {
+                "id_release": 28,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-25T11:59:55Z"
+            },
+            {
+                "id_release": 29,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-25T23:59:51Z"
+            },
+            {
+                "id_release": 30,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-26T11:59:47Z"
+            },
+            {
+                "id_release": 31,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-26T23:59:42Z"
+            },
+            {
+                "id_release": 32,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-27T11:59:38Z"
+            },
+            {
+                "id_release": 33,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-27T23:59:34Z"
+            },
+            {
+                "id_release": 34,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-28T11:59:30Z"
+            },
+            {
+                "id_release": 35,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-28T23:59:25Z"
+            },
+            {
+                "id_release": 36,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-29T11:59:21Z"
+            },
+            {
+                "id_release": 37,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-29T23:59:17Z"
+            },
+            {
+                "id_release": 38,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-30T11:59:12Z"
+            },
+            {
+                "id_release": 39,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-30T23:59:08Z"
+            },
+            {
+                "id_release": 40,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-31T11:59:04Z"
+            },
+            {
+                "id_release": 41,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-31T23:59:00Z"
+            }
+        ]
+    },
+    {
+        "nome": "job_4",
+        "id_job": 3,
+        "ultimos_releases": [
+            {
+                "id_release": 42,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-25T00:00:00Z"
+            },
+            {
+                "id_release": 43,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-25T11:11:56Z"
+            },
+            {
+                "id_release": 44,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-25T22:23:52Z"
+            },
+            {
+                "id_release": 45,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-26T09:35:48Z"
+            },
+            {
+                "id_release": 46,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-26T20:47:44Z"
+            },
+            {
+                "id_release": 47,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-27T07:59:40Z"
+            },
+            {
+                "id_release": 48,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-27T19:11:36Z"
+            },
+            {
+                "id_release": 49,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-28T06:23:32Z"
+            },
+            {
+                "id_release": 50,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-28T17:35:28Z"
+            },
+            {
+                "id_release": 51,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-29T04:47:24Z"
+            },
+            {
+                "id_release": 52,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-29T15:59:20Z"
+            },
+            {
+                "id_release": 53,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-30T03:11:16Z"
+            },
+            {
+                "id_release": 54,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-30T14:23:12Z"
+            },
+            {
+                "id_release": 55,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-31T01:35:08Z"
+            },
+            {
+                "id_release": 56,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-31T12:47:04Z"
+            },
+            {
+                "id_release": 57,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-31T23:59:00Z"
+            }
+        ]
+    },
+    {
+        "nome": "job_5",
+        "id_job": 4,
+        "ultimos_releases": [
+            {
+                "id_release": 58,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-25T00:00:00Z"
+            },
+            {
+                "id_release": 59,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-25T10:29:56Z"
+            },
+            {
+                "id_release": 60,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-25T20:59:52Z"
+            },
+            {
+                "id_release": 61,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-26T07:29:48Z"
+            },
+            {
+                "id_release": 62,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-26T17:59:45Z"
+            },
+            {
+                "id_release": 63,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-27T04:29:41Z"
+            },
+            {
+                "id_release": 64,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-27T14:59:37Z"
+            },
+            {
+                "id_release": 65,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-28T01:29:33Z"
+            },
+            {
+                "id_release": 66,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-28T11:59:30Z"
+            },
+            {
+                "id_release": 67,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-28T22:29:26Z"
+            },
+            {
+                "id_release": 68,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-29T08:59:22Z"
+            },
+            {
+                "id_release": 69,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-29T19:29:18Z"
+            },
+            {
+                "id_release": 70,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-30T05:59:15Z"
+            },
+            {
+                "id_release": 71,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-30T16:29:11Z"
+            },
+            {
+                "id_release": 72,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-31T02:59:07Z"
+            },
+            {
+                "id_release": 73,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-31T13:29:03Z"
+            },
+            {
+                "id_release": 74,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-31T23:59:00Z"
+            }
+        ]
+    },
+    {
+        "nome": "job_6",
+        "id_job": 5,
+        "ultimos_releases": [
+            {
+                "id_release": 75,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-25T00:00:00Z"
+            },
+            {
+                "id_release": 76,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-25T09:52:52Z"
+            },
+            {
+                "id_release": 77,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-25T19:45:45Z"
+            },
+            {
+                "id_release": 78,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-26T05:38:38Z"
+            },
+            {
+                "id_release": 79,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-26T15:31:31Z"
+            },
+            {
+                "id_release": 80,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-27T01:24:24Z"
+            },
+            {
+                "id_release": 81,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-27T11:17:17Z"
+            },
+            {
+                "id_release": 82,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-27T21:10:10Z"
+            },
+            {
+                "id_release": 83,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-28T07:03:03Z"
+            },
+            {
+                "id_release": 84,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-28T16:55:56Z"
+            },
+            {
+                "id_release": 85,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-29T02:48:49Z"
+            },
+            {
+                "id_release": 86,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-29T12:41:42Z"
+            },
+            {
+                "id_release": 87,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-29T22:34:35Z"
+            },
+            {
+                "id_release": 88,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-30T08:27:28Z"
+            },
+            {
+                "id_release": 89,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-30T18:20:21Z"
+            },
+            {
+                "id_release": 90,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-31T04:13:14Z"
+            },
+            {
+                "id_release": 91,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-31T14:06:07Z"
+            },
+            {
+                "id_release": 92,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-31T23:59:00Z"
+            }
+        ]
+    },
+    {
+        "nome": "job_7",
+        "id_job": 6,
+        "ultimos_releases": [
+            {
+                "id_release": 93,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-25T00:00:00Z"
+            },
+            {
+                "id_release": 94,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-25T09:19:56Z"
+            },
+            {
+                "id_release": 95,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-25T18:39:53Z"
+            },
+            {
+                "id_release": 96,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-26T03:59:50Z"
+            },
+            {
+                "id_release": 97,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-26T13:19:46Z"
+            },
+            {
+                "id_release": 98,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-26T22:39:43Z"
+            },
+            {
+                "id_release": 99,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-27T07:59:40Z"
+            },
+            {
+                "id_release": 100,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-27T17:19:36Z"
+            },
+            {
+                "id_release": 101,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-28T02:39:33Z"
+            },
+            {
+                "id_release": 102,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-28T11:59:30Z"
+            },
+            {
+                "id_release": 103,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-28T21:19:26Z"
+            },
+            {
+                "id_release": 104,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-29T06:39:23Z"
+            },
+            {
+                "id_release": 105,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-29T15:59:20Z"
+            },
+            {
+                "id_release": 106,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-30T01:19:16Z"
+            },
+            {
+                "id_release": 107,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-30T10:39:13Z"
+            },
+            {
+                "id_release": 108,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-30T19:59:10Z"
+            },
+            {
+                "id_release": 109,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-31T05:19:06Z"
+            },
+            {
+                "id_release": 110,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-31T14:39:03Z"
+            },
+            {
+                "id_release": 111,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-31T23:59:00Z"
+            }
+        ]
+    },
+    {
+        "nome": "job_8",
+        "id_job": 7,
+        "ultimos_releases": [
+            {
+                "id_release": 112,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-25T00:00:00Z"
+            },
+            {
+                "id_release": 113,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-25T08:50:28Z"
+            },
+            {
+                "id_release": 114,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-25T17:40:56Z"
+            },
+            {
+                "id_release": 115,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-26T02:31:25Z"
+            },
+            {
+                "id_release": 116,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-26T11:21:53Z"
+            },
+            {
+                "id_release": 117,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-26T20:12:22Z"
+            },
+            {
+                "id_release": 118,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-27T05:02:50Z"
+            },
+            {
+                "id_release": 119,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-27T13:53:18Z"
+            },
+            {
+                "id_release": 120,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-27T22:43:47Z"
+            },
+            {
+                "id_release": 121,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-28T07:34:15Z"
+            },
+            {
+                "id_release": 122,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-28T16:24:44Z"
+            },
+            {
+                "id_release": 123,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-29T01:15:12Z"
+            },
+            {
+                "id_release": 124,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-29T10:05:41Z"
+            },
+            {
+                "id_release": 125,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-29T18:56:09Z"
+            },
+            {
+                "id_release": 126,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-30T03:46:37Z"
+            },
+            {
+                "id_release": 127,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-30T12:37:06Z"
+            },
+            {
+                "id_release": 128,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-30T21:27:34Z"
+            },
+            {
+                "id_release": 129,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-31T06:18:03Z"
+            },
+            {
+                "id_release": 130,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-31T15:08:31Z"
+            },
+            {
+                "id_release": 131,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-31T23:59:00Z"
+            }
+        ]
+    },
+    {
+        "nome": "job_9",
+        "id_job": 8,
+        "ultimos_releases": [
+            {
+                "id_release": 132,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-25T00:00:00Z"
+            },
+            {
+                "id_release": 133,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-25T18:39:53Z"
+            },
+            {
+                "id_release": 134,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-26T13:19:46Z"
+            },
+            {
+                "id_release": 135,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-27T07:59:40Z"
+            },
+            {
+                "id_release": 136,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-28T02:39:33Z"
+            },
+            {
+                "id_release": 137,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-28T21:19:26Z"
+            },
+            {
+                "id_release": 138,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-29T15:59:20Z"
+            },
+            {
+                "id_release": 139,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-30T10:39:13Z"
+            },
+            {
+                "id_release": 140,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-31T05:19:06Z"
+            },
+            {
+                "id_release": 141,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-31T23:59:00Z"
+            }
+        ]
+    },
+    {
+        "nome": "job_10",
+        "id_job": 9,
+        "ultimos_releases": [
+            {
+                "id_release": 142,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-25T00:00:00Z"
+            },
+            {
+                "id_release": 143,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-25T16:47:54Z"
+            },
+            {
+                "id_release": 144,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-26T09:35:48Z"
+            },
+            {
+                "id_release": 145,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-27T02:23:42Z"
+            },
+            {
+                "id_release": 146,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-27T19:11:36Z"
+            },
+            {
+                "id_release": 147,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-28T11:59:30Z"
+            },
+            {
+                "id_release": 148,
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-29T04:47:24Z"
+            },
+            {
+                "id_release": 149,
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-29T21:35:18Z"
+            },
+            {
+                "id_release": 150,
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-30T14:23:12Z"
+            },
+            {
+                "id_release": 151,
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-31T07:11:06Z"
+            },
+            {
+                "id_release": 152,
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-31T23:59:00Z"
+            }
+        ]
+    }
+]
