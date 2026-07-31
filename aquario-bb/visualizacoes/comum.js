@@ -1,13 +1,23 @@
 "use strict";
 
 const COR_STATUS = {
-  SUCESSO: "#27ae60",
-  ARQUIVADO: "#1abc9c",
-  EXECUTANDO: "#3498db",
-  AGENDADO: "#8e44ad",
-  PENDENTE_APROVACAO: "#f39c12",
-  SUSPENSO: "#7f8c8d",
-  FALHA: "#e74c3c"
+  SUCESSO: "#2da44e",
+  ARQUIVADO: "#1a7f37",
+  EXECUTANDO: "#0969da",
+  AGENDADO: "#9a6700",
+  PENDENTE_APROVACAO: "#bc4c00",
+  SUSPENSO: "#8b949e",
+  FALHA: "#cf222e"
+};
+
+const EST_LABEL = {
+  SUCESSO: { bg: "#dafbe1", fg: "#1a7f37" },
+  ARQUIVADO: { bg: "#dafbe1", fg: "#1a7f37" },
+  EXECUTANDO: { bg: "#ddf4ff", fg: "#0969da" },
+  AGENDADO: { bg: "#fff8c5", fg: "#9a6700" },
+  PENDENTE_APROVACAO: { bg: "#fff1e5", fg: "#bc4c00" },
+  SUSPENSO: { bg: "#eaeef2", fg: "#57606a" },
+  FALHA: { bg: "#ffebe9", fg: "#d1242f" }
 };
 
 const PESOS = {
@@ -68,10 +78,10 @@ function saudeGeral() {
 }
 
 function estadoSaude(v) {
-  if (v >= 80) return { rotulo: "SAUDAVEL", cor: "#27ae60" };
-  if (v >= 55) return { rotulo: "ATENCAO", cor: "#f1c40f" };
-  if (v >= 30) return { rotulo: "INSTAVEL", cor: "#e67e22" };
-  return { rotulo: "CRITICO", cor: "#e74c3c" };
+  if (v >= 80) return { rotulo: "SAUDAVEL", cor: "#2da44e", bg: "#dafbe1", fg: "#1a7f37" };
+  if (v >= 55) return { rotulo: "ATENCAO", cor: "#bf8700", bg: "#fff8c5", fg: "#9a6700" };
+  if (v >= 30) return { rotulo: "INSTAVEL", cor: "#bc4c00", bg: "#fff1e5", fg: "#bc4c00" };
+  return { rotulo: "CRITICO", cor: "#cf222e", bg: "#ffebe9", fg: "#cf222e" };
 }
 
 function corPorSaude(v) {
@@ -101,8 +111,13 @@ function fmtData(iso) {
 }
 
 function badge(status) {
-  var cor = COR_STATUS[status] || "#95a5a6";
-  return '<span class="badge" style="background:' + cor + '">' + esc(status) + "</span>";
+  var l = EST_LABEL[status] || { bg: "#eaeef2", fg: "#57606a" };
+  return '<span class="badge" style="background:' + l.bg + ";color:" + l.fg + '">' + esc(status) + "</span>";
+}
+
+function labelSaude(saude) {
+  var est = estadoSaude(saude);
+  return '<span class="badge" style="background:' + est.bg + ";color:" + est.fg + '">' + est.rotulo + " " + saude + "%</span>";
 }
 
 /* ---------- etapas do processo ---------- */
@@ -135,7 +150,7 @@ function barraPilula(bons, ruins, outros, total) {
   function fatia(n, cor) {
     return n > 0 ? "<i style='width:" + (n / total * 100) + "%;background:" + cor + "'></i>" : "";
   }
-  return "<div class='barra mini'><span>" + fatia(bons, "#27ae60") + fatia(outros, "#7f8c8d") + fatia(ruins, "#e74c3c") + "</span></div>";
+  return "<div class='barra mini'><span>" + fatia(bons, "#2da44e") + fatia(outros, "#8b949e") + fatia(ruins, "#cf222e") + "</span></div>";
 }
 
 /* ---------- dica (tooltip) ---------- */
@@ -167,18 +182,18 @@ function abrirModal(nome) {
 
   var linhas = "";
   categoriasJob(nome).forEach(function (c) {
-    var cfg = c === "builds" ? ["id_build", "data_inicio", "data_fim"]
-             : c === "releases" ? ["id_release", "data_aprovacao", null]
-             : ["id_execucao", "data_inicio", "data_fim"];
-    var titulo = c === "builds" ? "Builds" : c === "releases" ? "Releases" : "Execucoes";
     var arts = artefatosDe(c, nome);
-    linhas += '<h3>' + titulo + ' (' + arts.length + ')</h3><table class="tabela"><thead><tr><th>ID</th><th>Status</th>';
-    if (c === "releases") linhas += "<th>Aprovacao</th>";
-    else { linhas += "<th>Inicio</th><th>Fim</th>"; }
+    var titulo = c === "builds" ? "Builds" : c === "releases" ? "Releases" : "Execucoes";
+    linhas += '<h3>' + titulo + ' (' + arts.length + ')</h3><table class="tabela"><thead><tr><th>ID</th><th>Versao</th><th>Status</th>';
+    if (c === "releases") linhas += "<th>Build</th><th>Aprovacao</th>";
+    else if (c === "execucoes") linhas += "<th>Release</th><th>Inicio</th><th>Fim</th>";
+    else linhas += "<th>Inicio</th><th>Fim</th>";
     linhas += "</tr></thead><tbody>";
     arts.forEach(function (a) {
-      linhas += "<tr><td>" + a[cfg[0]] + "</td><td>" + badge(a.status) + "</td>";
-      if (c === "releases") linhas += "<td>" + fmtData(a.data_aprovacao) + "</td>";
+      var id = a.id_build !== undefined ? a.id_build : a.id_release !== undefined ? a.id_release : a.id_execucao;
+      linhas += "<tr><td>" + id + "</td><td>" + esc(a.versao || "-") + "</td><td>" + badge(a.status) + "</td>";
+      if (c === "releases") linhas += "<td>#" + a.id_build + "</td><td>" + fmtData(a.data_aprovacao) + "</td>";
+      else if (c === "execucoes") linhas += "<td>#" + a.id_release + "</td><td>" + fmtData(a.data_inicio) + "</td><td>" + fmtData(a.data_fim) + "</td>";
       else linhas += "<td>" + fmtData(a.data_inicio) + "</td><td>" + fmtData(a.data_fim) + "</td>";
       linhas += "</tr>";
     });

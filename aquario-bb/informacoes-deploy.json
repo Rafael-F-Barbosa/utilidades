@@ -5,68 +5,94 @@
         "ultimos_releases": [
             {
                 "id_release": 0,
+                "id_build": 0,
+                "versao": "1.1",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-25T00:00:00Z"
+                "data_aprovacao": "2026-07-28T03:35:33Z"
             },
             {
                 "id_release": 1,
+                "id_build": 2,
+                "versao": "1.3",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-25T13:59:55Z"
+                "data_aprovacao": "2026-07-28T07:05:31Z"
             },
             {
                 "id_release": 2,
+                "id_build": 4,
+                "versao": "1.5",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-26T03:59:50Z"
+                "data_aprovacao": "2026-07-28T10:35:30Z"
             },
             {
                 "id_release": 3,
+                "id_build": 6,
+                "versao": "1.7",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-26T17:59:45Z"
+                "data_aprovacao": "2026-07-28T14:05:29Z"
             },
             {
                 "id_release": 4,
+                "id_build": 8,
+                "versao": "1.9",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-27T07:59:40Z"
+                "data_aprovacao": "2026-07-28T17:35:28Z"
             },
             {
                 "id_release": 5,
+                "id_build": 0,
+                "versao": "1.1",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-27T21:59:35Z"
+                "data_aprovacao": "2026-07-28T21:05:26Z"
             },
             {
                 "id_release": 6,
+                "id_build": 2,
+                "versao": "1.3",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-28T11:59:30Z"
+                "data_aprovacao": "2026-07-29T00:35:25Z"
             },
             {
                 "id_release": 7,
+                "id_build": 4,
+                "versao": "1.5",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-29T01:59:25Z"
+                "data_aprovacao": "2026-07-29T04:05:24Z"
             },
             {
                 "id_release": 8,
+                "id_build": 6,
+                "versao": "1.7",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-29T15:59:20Z"
+                "data_aprovacao": "2026-07-29T07:35:23Z"
             },
             {
                 "id_release": 9,
+                "id_build": 8,
+                "versao": "1.9",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-30T05:59:15Z"
+                "data_aprovacao": "2026-07-29T11:05:21Z"
             },
             {
                 "id_release": 10,
+                "id_build": 0,
+                "versao": "1.1",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-30T19:59:10Z"
+                "data_aprovacao": "2026-07-29T14:35:20Z"
             },
             {
                 "id_release": 11,
+                "id_build": 2,
+                "versao": "1.3",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-31T09:59:05Z"
+                "data_aprovacao": "2026-07-29T18:05:19Z"
             },
             {
                 "id_release": 12,
+                "id_build": 4,
+                "versao": "1.5",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-31T23:59:00Z"
+                "data_aprovacao": "2026-07-29T21:35:18Z"
             }
         ]
     },
@@ -76,73 +102,101 @@
         "ultimos_releases": [
             {
                 "id_release": 13,
+                "id_build": 10,
+                "versao": "2.1",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-25T00:00:00Z"
+                "data_aprovacao": "2026-07-28T03:35:33Z"
             },
             {
                 "id_release": 14,
+                "id_build": 12,
+                "versao": "2.3",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-25T12:55:18Z"
+                "data_aprovacao": "2026-07-28T06:49:22Z"
             },
             {
                 "id_release": 15,
+                "id_build": 14,
+                "versao": "2.5",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-26T01:50:36Z"
+                "data_aprovacao": "2026-07-28T10:03:12Z"
             },
             {
                 "id_release": 16,
+                "id_build": 16,
+                "versao": "2.7",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-26T14:45:55Z"
+                "data_aprovacao": "2026-07-28T13:17:01Z"
             },
             {
                 "id_release": 17,
+                "id_build": 18,
+                "versao": "2.9",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-27T03:41:13Z"
+                "data_aprovacao": "2026-07-28T16:30:51Z"
             },
             {
                 "id_release": 18,
+                "id_build": 20,
+                "versao": "2.11",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-27T16:36:32Z"
+                "data_aprovacao": "2026-07-28T19:44:41Z"
             },
             {
                 "id_release": 19,
+                "id_build": 10,
+                "versao": "2.1",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-28T05:31:50Z"
+                "data_aprovacao": "2026-07-28T22:58:30Z"
             },
             {
                 "id_release": 20,
+                "id_build": 12,
+                "versao": "2.3",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-28T18:27:09Z"
+                "data_aprovacao": "2026-07-29T02:12:20Z"
             },
             {
                 "id_release": 21,
+                "id_build": 14,
+                "versao": "2.5",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-29T07:22:27Z"
+                "data_aprovacao": "2026-07-29T05:26:09Z"
             },
             {
                 "id_release": 22,
+                "id_build": 16,
+                "versao": "2.7",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-29T20:17:46Z"
+                "data_aprovacao": "2026-07-29T08:39:59Z"
             },
             {
                 "id_release": 23,
+                "id_build": 18,
+                "versao": "2.9",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-30T09:13:04Z"
+                "data_aprovacao": "2026-07-29T11:53:49Z"
             },
             {
                 "id_release": 24,
+                "id_build": 20,
+                "versao": "2.11",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-30T22:08:23Z"
+                "data_aprovacao": "2026-07-29T15:07:38Z"
             },
             {
                 "id_release": 25,
+                "id_build": 10,
+                "versao": "2.1",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-31T11:03:41Z"
+                "data_aprovacao": "2026-07-29T18:21:28Z"
             },
             {
                 "id_release": 26,
+                "id_build": 12,
+                "versao": "2.3",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-31T23:59:00Z"
+                "data_aprovacao": "2026-07-29T21:35:18Z"
             }
         ]
     },
@@ -152,78 +206,108 @@
         "ultimos_releases": [
             {
                 "id_release": 27,
+                "id_build": 21,
+                "versao": "3.1",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-25T00:00:00Z"
+                "data_aprovacao": "2026-07-28T03:35:33Z"
             },
             {
                 "id_release": 28,
+                "id_build": 23,
+                "versao": "3.3",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-25T11:59:55Z"
+                "data_aprovacao": "2026-07-28T06:35:31Z"
             },
             {
                 "id_release": 29,
+                "id_build": 25,
+                "versao": "3.5",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-25T23:59:51Z"
+                "data_aprovacao": "2026-07-28T09:35:30Z"
             },
             {
                 "id_release": 30,
+                "id_build": 27,
+                "versao": "3.7",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-26T11:59:47Z"
+                "data_aprovacao": "2026-07-28T12:35:29Z"
             },
             {
                 "id_release": 31,
+                "id_build": 29,
+                "versao": "3.9",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-26T23:59:42Z"
+                "data_aprovacao": "2026-07-28T15:35:28Z"
             },
             {
                 "id_release": 32,
+                "id_build": 31,
+                "versao": "3.11",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-27T11:59:38Z"
+                "data_aprovacao": "2026-07-28T18:35:27Z"
             },
             {
                 "id_release": 33,
+                "id_build": 21,
+                "versao": "3.1",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-27T23:59:34Z"
+                "data_aprovacao": "2026-07-28T21:35:26Z"
             },
             {
                 "id_release": 34,
+                "id_build": 23,
+                "versao": "3.3",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-28T11:59:30Z"
+                "data_aprovacao": "2026-07-29T00:35:25Z"
             },
             {
                 "id_release": 35,
+                "id_build": 25,
+                "versao": "3.5",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-28T23:59:25Z"
+                "data_aprovacao": "2026-07-29T03:35:24Z"
             },
             {
                 "id_release": 36,
+                "id_build": 27,
+                "versao": "3.7",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-29T11:59:21Z"
+                "data_aprovacao": "2026-07-29T06:35:23Z"
             },
             {
                 "id_release": 37,
+                "id_build": 29,
+                "versao": "3.9",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-29T23:59:17Z"
+                "data_aprovacao": "2026-07-29T09:35:22Z"
             },
             {
                 "id_release": 38,
+                "id_build": 31,
+                "versao": "3.11",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-30T11:59:12Z"
+                "data_aprovacao": "2026-07-29T12:35:21Z"
             },
             {
                 "id_release": 39,
+                "id_build": 21,
+                "versao": "3.1",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-30T23:59:08Z"
+                "data_aprovacao": "2026-07-29T15:35:20Z"
             },
             {
                 "id_release": 40,
+                "id_build": 23,
+                "versao": "3.3",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-31T11:59:04Z"
+                "data_aprovacao": "2026-07-29T18:35:19Z"
             },
             {
                 "id_release": 41,
+                "id_build": 25,
+                "versao": "3.5",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-31T23:59:00Z"
+                "data_aprovacao": "2026-07-29T21:35:18Z"
             }
         ]
     },
@@ -233,83 +317,115 @@
         "ultimos_releases": [
             {
                 "id_release": 42,
+                "id_build": 33,
+                "versao": "4.1",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-25T00:00:00Z"
+                "data_aprovacao": "2026-07-28T03:35:33Z"
             },
             {
                 "id_release": 43,
+                "id_build": 35,
+                "versao": "4.3",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-25T11:11:56Z"
-            },
-            {
-                "id_release": 44,
-                "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-25T22:23:52Z"
-            },
-            {
-                "id_release": 45,
-                "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-26T09:35:48Z"
-            },
-            {
-                "id_release": 46,
-                "status": "FALHA",
-                "data_aprovacao": "2026-07-26T20:47:44Z"
-            },
-            {
-                "id_release": 47,
-                "status": "AGENDADO",
-                "data_aprovacao": "2026-07-27T07:59:40Z"
-            },
-            {
-                "id_release": 48,
-                "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-27T19:11:36Z"
-            },
-            {
-                "id_release": 49,
-                "status": "PENDENTE_APROVACAO",
                 "data_aprovacao": "2026-07-28T06:23:32Z"
             },
             {
-                "id_release": 50,
+                "id_release": 44,
+                "id_build": 37,
+                "versao": "4.5",
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-28T09:11:31Z"
+            },
+            {
+                "id_release": 45,
+                "id_build": 39,
+                "versao": "4.7",
                 "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-28T11:59:30Z"
+            },
+            {
+                "id_release": 46,
+                "id_build": 41,
+                "versao": "4.9",
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-28T14:47:29Z"
+            },
+            {
+                "id_release": 47,
+                "id_build": 43,
+                "versao": "4.11",
+                "status": "AGENDADO",
                 "data_aprovacao": "2026-07-28T17:35:28Z"
             },
             {
+                "id_release": 48,
+                "id_build": 45,
+                "versao": "4.13",
+                "status": "ARQUIVADO",
+                "data_aprovacao": "2026-07-28T20:23:27Z"
+            },
+            {
+                "id_release": 49,
+                "id_build": 33,
+                "versao": "4.1",
+                "status": "PENDENTE_APROVACAO",
+                "data_aprovacao": "2026-07-28T23:11:26Z"
+            },
+            {
+                "id_release": 50,
+                "id_build": 35,
+                "versao": "4.3",
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-29T01:59:25Z"
+            },
+            {
                 "id_release": 51,
+                "id_build": 37,
+                "versao": "4.5",
                 "status": "FALHA",
                 "data_aprovacao": "2026-07-29T04:47:24Z"
             },
             {
                 "id_release": 52,
+                "id_build": 39,
+                "versao": "4.7",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-29T15:59:20Z"
+                "data_aprovacao": "2026-07-29T07:35:23Z"
             },
             {
                 "id_release": 53,
+                "id_build": 41,
+                "versao": "4.9",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-30T03:11:16Z"
+                "data_aprovacao": "2026-07-29T10:23:22Z"
             },
             {
                 "id_release": 54,
+                "id_build": 43,
+                "versao": "4.11",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-30T14:23:12Z"
+                "data_aprovacao": "2026-07-29T13:11:21Z"
             },
             {
                 "id_release": 55,
+                "id_build": 45,
+                "versao": "4.13",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-31T01:35:08Z"
+                "data_aprovacao": "2026-07-29T15:59:20Z"
             },
             {
                 "id_release": 56,
+                "id_build": 33,
+                "versao": "4.1",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-31T12:47:04Z"
+                "data_aprovacao": "2026-07-29T18:47:19Z"
             },
             {
                 "id_release": 57,
+                "id_build": 35,
+                "versao": "4.3",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-31T23:59:00Z"
+                "data_aprovacao": "2026-07-29T21:35:18Z"
             }
         ]
     },
@@ -319,88 +435,122 @@
         "ultimos_releases": [
             {
                 "id_release": 58,
+                "id_build": 46,
+                "versao": "5.1",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-25T00:00:00Z"
+                "data_aprovacao": "2026-07-28T03:35:33Z"
             },
             {
                 "id_release": 59,
+                "id_build": 48,
+                "versao": "5.3",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-25T10:29:56Z"
+                "data_aprovacao": "2026-07-28T06:13:02Z"
             },
             {
                 "id_release": 60,
+                "id_build": 50,
+                "versao": "5.5",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-25T20:59:52Z"
+                "data_aprovacao": "2026-07-28T08:50:31Z"
             },
             {
                 "id_release": 61,
+                "id_build": 52,
+                "versao": "5.7",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-26T07:29:48Z"
+                "data_aprovacao": "2026-07-28T11:28:00Z"
             },
             {
                 "id_release": 62,
+                "id_build": 54,
+                "versao": "5.9",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-26T17:59:45Z"
+                "data_aprovacao": "2026-07-28T14:05:29Z"
             },
             {
                 "id_release": 63,
+                "id_build": 56,
+                "versao": "5.11",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-27T04:29:41Z"
+                "data_aprovacao": "2026-07-28T16:42:58Z"
             },
             {
                 "id_release": 64,
+                "id_build": 58,
+                "versao": "5.13",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-27T14:59:37Z"
+                "data_aprovacao": "2026-07-28T19:20:27Z"
             },
             {
                 "id_release": 65,
+                "id_build": 46,
+                "versao": "5.1",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-28T01:29:33Z"
+                "data_aprovacao": "2026-07-28T21:57:56Z"
             },
             {
                 "id_release": 66,
+                "id_build": 48,
+                "versao": "5.3",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-28T11:59:30Z"
+                "data_aprovacao": "2026-07-29T00:35:25Z"
             },
             {
                 "id_release": 67,
+                "id_build": 50,
+                "versao": "5.5",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-28T22:29:26Z"
+                "data_aprovacao": "2026-07-29T03:12:54Z"
             },
             {
                 "id_release": 68,
+                "id_build": 52,
+                "versao": "5.7",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-29T08:59:22Z"
+                "data_aprovacao": "2026-07-29T05:50:23Z"
             },
             {
                 "id_release": 69,
+                "id_build": 54,
+                "versao": "5.9",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-29T19:29:18Z"
+                "data_aprovacao": "2026-07-29T08:27:52Z"
             },
             {
                 "id_release": 70,
+                "id_build": 56,
+                "versao": "5.11",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-30T05:59:15Z"
+                "data_aprovacao": "2026-07-29T11:05:21Z"
             },
             {
                 "id_release": 71,
+                "id_build": 58,
+                "versao": "5.13",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-30T16:29:11Z"
+                "data_aprovacao": "2026-07-29T13:42:50Z"
             },
             {
                 "id_release": 72,
+                "id_build": 46,
+                "versao": "5.1",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-31T02:59:07Z"
+                "data_aprovacao": "2026-07-29T16:20:19Z"
             },
             {
                 "id_release": 73,
+                "id_build": 48,
+                "versao": "5.3",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-31T13:29:03Z"
+                "data_aprovacao": "2026-07-29T18:57:48Z"
             },
             {
                 "id_release": 74,
+                "id_build": 50,
+                "versao": "5.5",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-31T23:59:00Z"
+                "data_aprovacao": "2026-07-29T21:35:18Z"
             }
         ]
     },
@@ -410,93 +560,129 @@
         "ultimos_releases": [
             {
                 "id_release": 75,
+                "id_build": 60,
+                "versao": "6.1",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-25T00:00:00Z"
+                "data_aprovacao": "2026-07-28T03:35:33Z"
             },
             {
                 "id_release": 76,
+                "id_build": 62,
+                "versao": "6.3",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-25T09:52:52Z"
+                "data_aprovacao": "2026-07-28T06:03:46Z"
             },
             {
                 "id_release": 77,
+                "id_build": 64,
+                "versao": "6.5",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-25T19:45:45Z"
+                "data_aprovacao": "2026-07-28T08:31:59Z"
             },
             {
                 "id_release": 78,
+                "id_build": 66,
+                "versao": "6.7",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-26T05:38:38Z"
+                "data_aprovacao": "2026-07-28T11:00:12Z"
             },
             {
                 "id_release": 79,
+                "id_build": 68,
+                "versao": "6.9",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-26T15:31:31Z"
+                "data_aprovacao": "2026-07-28T13:28:25Z"
             },
             {
                 "id_release": 80,
+                "id_build": 70,
+                "versao": "6.11",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-27T01:24:24Z"
+                "data_aprovacao": "2026-07-28T15:56:39Z"
             },
             {
                 "id_release": 81,
+                "id_build": 72,
+                "versao": "6.13",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-27T11:17:17Z"
+                "data_aprovacao": "2026-07-28T18:24:52Z"
             },
             {
                 "id_release": 82,
+                "id_build": 74,
+                "versao": "6.15",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-27T21:10:10Z"
+                "data_aprovacao": "2026-07-28T20:53:05Z"
             },
             {
                 "id_release": 83,
+                "id_build": 60,
+                "versao": "6.1",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-28T07:03:03Z"
+                "data_aprovacao": "2026-07-28T23:21:18Z"
             },
             {
                 "id_release": 84,
+                "id_build": 62,
+                "versao": "6.3",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-28T16:55:56Z"
+                "data_aprovacao": "2026-07-29T01:49:32Z"
             },
             {
                 "id_release": 85,
+                "id_build": 64,
+                "versao": "6.5",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-29T02:48:49Z"
+                "data_aprovacao": "2026-07-29T04:17:45Z"
             },
             {
                 "id_release": 86,
+                "id_build": 66,
+                "versao": "6.7",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-29T12:41:42Z"
+                "data_aprovacao": "2026-07-29T06:45:58Z"
             },
             {
                 "id_release": 87,
+                "id_build": 68,
+                "versao": "6.9",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-29T22:34:35Z"
+                "data_aprovacao": "2026-07-29T09:14:11Z"
             },
             {
                 "id_release": 88,
+                "id_build": 70,
+                "versao": "6.11",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-30T08:27:28Z"
+                "data_aprovacao": "2026-07-29T11:42:25Z"
             },
             {
                 "id_release": 89,
+                "id_build": 72,
+                "versao": "6.13",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-30T18:20:21Z"
+                "data_aprovacao": "2026-07-29T14:10:38Z"
             },
             {
                 "id_release": 90,
+                "id_build": 74,
+                "versao": "6.15",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-31T04:13:14Z"
+                "data_aprovacao": "2026-07-29T16:38:51Z"
             },
             {
                 "id_release": 91,
+                "id_build": 60,
+                "versao": "6.1",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-31T14:06:07Z"
+                "data_aprovacao": "2026-07-29T19:07:04Z"
             },
             {
                 "id_release": 92,
+                "id_build": 62,
+                "versao": "6.3",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-31T23:59:00Z"
+                "data_aprovacao": "2026-07-29T21:35:18Z"
             }
         ]
     },
@@ -506,98 +692,136 @@
         "ultimos_releases": [
             {
                 "id_release": 93,
+                "id_build": 75,
+                "versao": "7.1",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-25T00:00:00Z"
+                "data_aprovacao": "2026-07-28T03:35:33Z"
             },
             {
                 "id_release": 94,
+                "id_build": 77,
+                "versao": "7.3",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-25T09:19:56Z"
+                "data_aprovacao": "2026-07-28T05:55:32Z"
             },
             {
                 "id_release": 95,
+                "id_build": 79,
+                "versao": "7.5",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-25T18:39:53Z"
+                "data_aprovacao": "2026-07-28T08:15:31Z"
             },
             {
                 "id_release": 96,
+                "id_build": 81,
+                "versao": "7.7",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-26T03:59:50Z"
+                "data_aprovacao": "2026-07-28T10:35:30Z"
             },
             {
                 "id_release": 97,
+                "id_build": 83,
+                "versao": "7.9",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-26T13:19:46Z"
+                "data_aprovacao": "2026-07-28T12:55:29Z"
             },
             {
                 "id_release": 98,
+                "id_build": 85,
+                "versao": "7.11",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-26T22:39:43Z"
+                "data_aprovacao": "2026-07-28T15:15:28Z"
             },
             {
                 "id_release": 99,
+                "id_build": 87,
+                "versao": "7.13",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-27T07:59:40Z"
+                "data_aprovacao": "2026-07-28T17:35:28Z"
             },
             {
                 "id_release": 100,
+                "id_build": 89,
+                "versao": "7.15",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-27T17:19:36Z"
+                "data_aprovacao": "2026-07-28T19:55:27Z"
             },
             {
                 "id_release": 101,
+                "id_build": 75,
+                "versao": "7.1",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-28T02:39:33Z"
+                "data_aprovacao": "2026-07-28T22:15:26Z"
             },
             {
                 "id_release": 102,
+                "id_build": 77,
+                "versao": "7.3",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-28T11:59:30Z"
+                "data_aprovacao": "2026-07-29T00:35:25Z"
             },
             {
                 "id_release": 103,
+                "id_build": 79,
+                "versao": "7.5",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-28T21:19:26Z"
+                "data_aprovacao": "2026-07-29T02:55:24Z"
             },
             {
                 "id_release": 104,
+                "id_build": 81,
+                "versao": "7.7",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-29T06:39:23Z"
+                "data_aprovacao": "2026-07-29T05:15:23Z"
             },
             {
                 "id_release": 105,
+                "id_build": 83,
+                "versao": "7.9",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-29T15:59:20Z"
+                "data_aprovacao": "2026-07-29T07:35:23Z"
             },
             {
                 "id_release": 106,
+                "id_build": 85,
+                "versao": "7.11",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-30T01:19:16Z"
+                "data_aprovacao": "2026-07-29T09:55:22Z"
             },
             {
                 "id_release": 107,
+                "id_build": 87,
+                "versao": "7.13",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-30T10:39:13Z"
+                "data_aprovacao": "2026-07-29T12:15:21Z"
             },
             {
                 "id_release": 108,
+                "id_build": 89,
+                "versao": "7.15",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-30T19:59:10Z"
+                "data_aprovacao": "2026-07-29T14:35:20Z"
             },
             {
                 "id_release": 109,
+                "id_build": 75,
+                "versao": "7.1",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-31T05:19:06Z"
+                "data_aprovacao": "2026-07-29T16:55:19Z"
             },
             {
                 "id_release": 110,
+                "id_build": 77,
+                "versao": "7.3",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-31T14:39:03Z"
+                "data_aprovacao": "2026-07-29T19:15:18Z"
             },
             {
                 "id_release": 111,
+                "id_build": 79,
+                "versao": "7.5",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-31T23:59:00Z"
+                "data_aprovacao": "2026-07-29T21:35:18Z"
             }
         ]
     },
@@ -607,103 +831,143 @@
         "ultimos_releases": [
             {
                 "id_release": 112,
+                "id_build": 91,
+                "versao": "8.1",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-25T00:00:00Z"
+                "data_aprovacao": "2026-07-28T03:35:33Z"
             },
             {
                 "id_release": 113,
+                "id_build": 93,
+                "versao": "8.3",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-25T08:50:28Z"
+                "data_aprovacao": "2026-07-28T05:48:10Z"
             },
             {
                 "id_release": 114,
+                "id_build": 95,
+                "versao": "8.5",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-25T17:40:56Z"
+                "data_aprovacao": "2026-07-28T08:00:47Z"
             },
             {
                 "id_release": 115,
+                "id_build": 97,
+                "versao": "8.7",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-26T02:31:25Z"
+                "data_aprovacao": "2026-07-28T10:13:24Z"
             },
             {
                 "id_release": 116,
+                "id_build": 99,
+                "versao": "8.9",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-26T11:21:53Z"
+                "data_aprovacao": "2026-07-28T12:26:01Z"
             },
             {
                 "id_release": 117,
+                "id_build": 101,
+                "versao": "8.11",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-26T20:12:22Z"
+                "data_aprovacao": "2026-07-28T14:38:38Z"
             },
             {
                 "id_release": 118,
+                "id_build": 103,
+                "versao": "8.13",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-27T05:02:50Z"
+                "data_aprovacao": "2026-07-28T16:51:15Z"
             },
             {
                 "id_release": 119,
+                "id_build": 105,
+                "versao": "8.15",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-27T13:53:18Z"
+                "data_aprovacao": "2026-07-28T19:03:52Z"
             },
             {
                 "id_release": 120,
+                "id_build": 107,
+                "versao": "8.17",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-27T22:43:47Z"
+                "data_aprovacao": "2026-07-28T21:16:29Z"
             },
             {
                 "id_release": 121,
+                "id_build": 91,
+                "versao": "8.1",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-28T07:34:15Z"
+                "data_aprovacao": "2026-07-28T23:29:06Z"
             },
             {
                 "id_release": 122,
+                "id_build": 93,
+                "versao": "8.3",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-28T16:24:44Z"
+                "data_aprovacao": "2026-07-29T01:41:44Z"
             },
             {
                 "id_release": 123,
+                "id_build": 95,
+                "versao": "8.5",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-29T01:15:12Z"
+                "data_aprovacao": "2026-07-29T03:54:21Z"
             },
             {
                 "id_release": 124,
+                "id_build": 97,
+                "versao": "8.7",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-29T10:05:41Z"
+                "data_aprovacao": "2026-07-29T06:06:58Z"
             },
             {
                 "id_release": 125,
+                "id_build": 99,
+                "versao": "8.9",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-29T18:56:09Z"
+                "data_aprovacao": "2026-07-29T08:19:35Z"
             },
             {
                 "id_release": 126,
+                "id_build": 101,
+                "versao": "8.11",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-30T03:46:37Z"
+                "data_aprovacao": "2026-07-29T10:32:12Z"
             },
             {
                 "id_release": 127,
+                "id_build": 103,
+                "versao": "8.13",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-30T12:37:06Z"
+                "data_aprovacao": "2026-07-29T12:44:49Z"
             },
             {
                 "id_release": 128,
+                "id_build": 105,
+                "versao": "8.15",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-30T21:27:34Z"
+                "data_aprovacao": "2026-07-29T14:57:26Z"
             },
             {
                 "id_release": 129,
+                "id_build": 107,
+                "versao": "8.17",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-31T06:18:03Z"
+                "data_aprovacao": "2026-07-29T17:10:03Z"
             },
             {
                 "id_release": 130,
+                "id_build": 91,
+                "versao": "8.1",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-31T15:08:31Z"
+                "data_aprovacao": "2026-07-29T19:22:40Z"
             },
             {
                 "id_release": 131,
+                "id_build": 93,
+                "versao": "8.3",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-31T23:59:00Z"
+                "data_aprovacao": "2026-07-29T21:35:18Z"
             }
         ]
     },
@@ -713,53 +977,73 @@
         "ultimos_releases": [
             {
                 "id_release": 132,
+                "id_build": 108,
+                "versao": "9.1",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-25T00:00:00Z"
+                "data_aprovacao": "2026-07-28T03:35:33Z"
             },
             {
                 "id_release": 133,
+                "id_build": 110,
+                "versao": "9.3",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-25T18:39:53Z"
+                "data_aprovacao": "2026-07-28T08:15:31Z"
             },
             {
                 "id_release": 134,
+                "id_build": 112,
+                "versao": "9.5",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-26T13:19:46Z"
+                "data_aprovacao": "2026-07-28T12:55:29Z"
             },
             {
                 "id_release": 135,
+                "id_build": 114,
+                "versao": "9.7",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-27T07:59:40Z"
+                "data_aprovacao": "2026-07-28T17:35:28Z"
             },
             {
                 "id_release": 136,
+                "id_build": 116,
+                "versao": "9.9",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-28T02:39:33Z"
+                "data_aprovacao": "2026-07-28T22:15:26Z"
             },
             {
                 "id_release": 137,
+                "id_build": 118,
+                "versao": "9.11",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-28T21:19:26Z"
+                "data_aprovacao": "2026-07-29T02:55:24Z"
             },
             {
                 "id_release": 138,
+                "id_build": 120,
+                "versao": "9.13",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-29T15:59:20Z"
+                "data_aprovacao": "2026-07-29T07:35:23Z"
             },
             {
                 "id_release": 139,
+                "id_build": 122,
+                "versao": "9.15",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-30T10:39:13Z"
+                "data_aprovacao": "2026-07-29T12:15:21Z"
             },
             {
                 "id_release": 140,
+                "id_build": 124,
+                "versao": "9.17",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-31T05:19:06Z"
+                "data_aprovacao": "2026-07-29T16:55:19Z"
             },
             {
                 "id_release": 141,
+                "id_build": 108,
+                "versao": "9.1",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-31T23:59:00Z"
+                "data_aprovacao": "2026-07-29T21:35:18Z"
             }
         ]
     },
@@ -769,58 +1053,80 @@
         "ultimos_releases": [
             {
                 "id_release": 142,
+                "id_build": 126,
+                "versao": "10.1",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-25T00:00:00Z"
+                "data_aprovacao": "2026-07-28T03:35:33Z"
             },
             {
                 "id_release": 143,
+                "id_build": 128,
+                "versao": "10.3",
                 "status": "ARQUIVADO",
-                "data_aprovacao": "2026-07-25T16:47:54Z"
+                "data_aprovacao": "2026-07-28T07:47:31Z"
             },
             {
                 "id_release": 144,
+                "id_build": 130,
+                "versao": "10.5",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-26T09:35:48Z"
-            },
-            {
-                "id_release": 145,
-                "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-27T02:23:42Z"
-            },
-            {
-                "id_release": 146,
-                "status": "FALHA",
-                "data_aprovacao": "2026-07-27T19:11:36Z"
-            },
-            {
-                "id_release": 147,
-                "status": "AGENDADO",
                 "data_aprovacao": "2026-07-28T11:59:30Z"
             },
             {
+                "id_release": 145,
+                "id_build": 132,
+                "versao": "10.7",
+                "status": "SUSPENSO",
+                "data_aprovacao": "2026-07-28T16:11:28Z"
+            },
+            {
+                "id_release": 146,
+                "id_build": 134,
+                "versao": "10.9",
+                "status": "FALHA",
+                "data_aprovacao": "2026-07-28T20:23:27Z"
+            },
+            {
+                "id_release": 147,
+                "id_build": 136,
+                "versao": "10.11",
+                "status": "AGENDADO",
+                "data_aprovacao": "2026-07-29T00:35:25Z"
+            },
+            {
                 "id_release": 148,
+                "id_build": 138,
+                "versao": "10.13",
                 "status": "ARQUIVADO",
                 "data_aprovacao": "2026-07-29T04:47:24Z"
             },
             {
                 "id_release": 149,
+                "id_build": 140,
+                "versao": "10.15",
                 "status": "PENDENTE_APROVACAO",
-                "data_aprovacao": "2026-07-29T21:35:18Z"
+                "data_aprovacao": "2026-07-29T08:59:22Z"
             },
             {
                 "id_release": 150,
+                "id_build": 142,
+                "versao": "10.17",
                 "status": "SUSPENSO",
-                "data_aprovacao": "2026-07-30T14:23:12Z"
+                "data_aprovacao": "2026-07-29T13:11:21Z"
             },
             {
                 "id_release": 151,
+                "id_build": 144,
+                "versao": "10.19",
                 "status": "FALHA",
-                "data_aprovacao": "2026-07-31T07:11:06Z"
+                "data_aprovacao": "2026-07-29T17:23:19Z"
             },
             {
                 "id_release": 152,
+                "id_build": 126,
+                "versao": "10.1",
                 "status": "AGENDADO",
-                "data_aprovacao": "2026-07-31T23:59:00Z"
+                "data_aprovacao": "2026-07-29T21:35:18Z"
             }
         ]
     }

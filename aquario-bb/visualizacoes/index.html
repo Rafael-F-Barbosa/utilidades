@@ -3,100 +3,106 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pipeline BB - Painel de Visualizacoes</title>
+<title>Pipeline BB - Visao Global</title>
 <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 <header class="topo">
-  <h1>Pipeline BB <small>Visao global da esteira de release de software e dados</small></h1>
+  <svg class="icone" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+    <path d="M1.5 3.25A2.25 2.25 0 0 1 3.75 1h8.5A2.25 2.25 0 0 1 14.5 3.25v8.5a2.25 2.25 0 0 1-2.25 2.25h-8.5a2.25 2.25 0 0 1-2.25-2.25v-8.5ZM4.25 4a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5ZM4 7.75a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75Zm.75 1.75a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5h-1.5Z"></path>
+  </svg>
+  <h1>Pipeline BB <small>release de software e dados &middot; ultimos 7 dias</small></h1>
   <div class="saude-geral">
     <span class="gauge-rotulo">Saude do sistema</span>
     <div class="gauge" id="gauge"><span>0</span></div>
   </div>
 </header>
 
-<section class="intro">
-  Cinco produtos visuais sobre a mesma base: <b>build &rarr; liberacao/agendamento &rarr; execucao</b>
-  de jobs batch (ultimos 7 dias). Cada visao olha o processo de um angulo (comparativo, espacial,
-  temporal, operacional ou de fluxo). Todas permitem <b>drill down</b>: clique em um elemento para
-  abrir o detalhe do job (tabela de builds, releases e execucoes).
-</section>
+<main>
+  <div class="pipeline" id="pipeline"></div>
+</main>
 
-<main class="grade" id="grade"></main>
+<footer class="legenda" id="legenda"></footer>
+
+<style>
+  .bloco b { font-size: 15px; font-weight: 600; }
+</style>
 
 <script src="dados.js"></script>
 <script src="comum.js"></script>
 <script>
 (function () {
+  function abrirJob(nome) {
+    window.location.href = "job.html?nome=" + encodeURIComponent(nome);
+  }
+
+  function corCelula(r) {
+    if (r.total === 0) return "#afb8c1";
+    if (r.taxa >= 80) return "#2da44e";
+    if (r.taxa >= 55) return "#bf8700";
+    return "#cf222e";
+  }
+
+  var pipeline = document.getElementById("pipeline");
+  var etaps = ["builds", "releases", "execucoes"];
+
+  var grade = document.createElement("div");
+  grade.className = "pgrade cabecalho";
+  grade.innerHTML =
+    '<div class="cel-nome">Job</div>' +
+    etaps.map(function (c) {
+      return '<div class="cel-etapa">' + TITULO_ETAPA[c] + "<small>" + resumoGeralEtapa(c).total + " no total</small></div>";
+    }).join("");
+  pipeline.appendChild(grade);
+
+  var nomes = DADOS.builds.map(function (j) { return j.nome; });
+
+  nomes.forEach(function (nome) {
+    var saude = saudeJob(nome);
+    var linha = document.createElement("div");
+    linha.className = "pgrade";
+
+    var nomeCel = document.createElement("div");
+    nomeCel.className = "cel-nome";
+    nomeCel.innerHTML = '<span class="job-link">' + esc(nome) + "</span>" + labelSaude(saude);
+    nomeCel.addEventListener("click", function () { abrirJob(nome); });
+    linha.appendChild(nomeCel);
+
+    etaps.forEach(function (c) {
+      var r = resumoEtapa(c, nome);
+      var cel = document.createElement("div");
+      cel.className = "cel-dados";
+      cel.innerHTML =
+        '<div class="bloco" style="background:' + corCelula(r) + '"><b>' + r.total + "</b>" +
+        "<small>" + r.bons + " ok &middot; " + r.ruins + " ruim</small></div>";
+      cel.addEventListener("click", function () { abrirJob(nome); });
+      cel.addEventListener("mouseenter", function (ev) {
+        mostrarDica(ev, "<b>" + esc(nome) + "</b> &middot; " + TITULO_ETAPA[c] +
+          "<br>Total: " + r.total + "<br>OK: " + r.bons + " &middot; Ruim: " + r.ruins + " &middot; Outros: " + r.outros +
+          "<br><i>Clique para ver o caminho dos dados</i>");
+      });
+      cel.addEventListener("mousemove", function (ev) {
+        mostrarDica(ev, "<b>" + esc(nome) + "</b> &middot; " + TITULO_ETAPA[c] +
+          "<br>Total: " + r.total + "<br>OK: " + r.bons + " &middot; Ruim: " + r.ruins + " &middot; Outros: " + r.outros +
+          "<br><i>Clique para ver o caminho dos dados</i>");
+      });
+      cel.addEventListener("mouseleave", esconderDica);
+      linha.appendChild(cel);
+    });
+
+    pipeline.appendChild(linha);
+  });
+
   var sg = saudeGeral();
   var g = document.getElementById("gauge");
-  g.style.setProperty("--v", sg);
   g.style.setProperty("--gcor", corPorSaude(sg));
   g.querySelector("span").textContent = sg;
 
-  var total = (DADOS.builds || []).length;
-  var artefatos = 0;
-  (DADOS.builds || []).forEach(function (j) { artefatos += j.ultimos_builds.length; });
-  (DADOS.releases || []).forEach(function (j) { artefatos += j.ultimos_releases.length; });
-  (DADOS.execucoes || []).forEach(function (j) { artefatos += j.ultimas_execucoes.length; });
-
-  var visualizacoes = [
-    {
-      arquivo: "pipeline.html",
-      nome: "01 - Pipeline Global",
-      desc: "Matriz estilo GitHub Actions: linhas = jobs, colunas = etapas (Build, Liberacao, Execucao). Cada celula resume os artefatos da etapa com contagens e barra de saude.",
-      prs: ["Comparacao direta entre jobs e entre etapas.", "Reconhecivel: quem conhece GitHub entende em segundos.", "Densidade de informacao alta sem poluicao visual."],
-      cns: ["Nao mostra a evolucao temporal dos artefatos.", "Resumo numerico; exige drill down para o detalhe.", "Com muitos jobs a matriz fica longa."]
-    },
-    {
-      arquivo: "fabrica.html",
-      nome: "02 - Planta Industrial",
-      desc: "Mapa da fabrica: tres setores (Build, Liberacao, Execucao) ligados por uma esteira por onde passam os jobs (lotes), coloridos pela saude. Visao de chao de fabrica.",
-      prs: ["Fortissima para apresentacao: mostra o processo de forma concreta.", "Lotes em movimento comunicam o fluxo real da pipeline.", "Setores com paineis numericos remetem a sala de controle."],
-      cns: ["Movimento constante pode atrapalhar leitura rapida.", "Sem dimensao temporal nem comparacao numerica fina.", "Metodo deixa de lado a leitura de valores exatos por lote."]
-    },
-    {
-      arquivo: "timeline.html",
-      nome: "03 - Timeline de Processo",
-      desc: "Linha do tempo dos ultimos 7 dias: cada job e uma faixa e cada artefato fica posicionado na data exata, com formato por etapa (quadrado=build, losango=release, circulo=execucao) e cor por status.",
-      prs: ["Mostra quando cada coisa aconteceu e a sequencia build &rarr; release &rarr; execucao.", "Permite correlacionar falhas entre jobs na mesma janela.", "Forma + cor codificam etapa e status ao mesmo tempo."],
-      cns: ["Densa: muitos pontos sobrepostos em horarios semelhantes.", "Exige familiaridade com os dois codigos visuais.", "Nao agrega: cada artefato e desenhado individualmente."]
-    },
-    {
-      arquivo: "kanban.html",
-      nome: "04 - Quadro Kanban",
-      desc: "Quadro de processo industrial: colunas por estado (Build OK/Falha, Liberacao Aguardando/Arquivado/Problema, Execucao Em andamento/OK/Falha) com um cartao por artefato.",
-      prs: ["Leitura operacional clara: onde cada coisa esta travada?", "Colunas de problema saltam aos olhos (acumulo de falhas).", "Excelente para reunioes de fluxo e controle de estoque em processo."],
-      cns: ["Muitas colunas exigem rolagem horizontal.", "Nao traz a dimensao temporal de cada cartao (so a data).", "Cardume de cartoes pode virar ruido com mais artefatos."]
-    },
-    {
-      arquivo: "esteira.html",
-      nome: "05 - Esteira Continua de Release",
-      desc: "Fluxo de valor animado: os jobs (lotes) percorrem em loop as zonas Build, Liberacao e Execucao em uma esteira continua, com paineis por etapa mostrando taxa de sucesso.",
-      prs: ["Conta a história do processo de ponta a ponta em tempo real.", "Painéis por etapa dão leitura agregada imediata.", "Boa para vitrine e para explicar o conceito ao gestor."],
-      cns: ["Lotes em loop nao representam posicao real do job.", "Sem leitura temporal ou individual de artefatos.", "Mais sensorial do que analitica."]
-    }
-  ];
-
-  var grade = document.getElementById("grade");
-  visualizacoes.forEach(function (v) {
-    var c = document.createElement("div");
-    c.className = "cartao";
-    var prs = v.prs.map(function (p) { return "<li>" + p + "</li>"; }).join("");
-    var cns = v.cns.map(function (p) { return "<li>" + p + "</li>"; }).join("");
-    c.innerHTML =
-      "<h2>" + v.nome + "</h2>" +
-      "<p class='desc'>" + v.desc + "</p>" +
-      "<ul class='prs'><b>Vantagens</b>" + prs + "</ul>" +
-      "<ul class='cns'><b>Desvantagens</b>" + cns + "</ul>" +
-      "<a class='abrir' href='" + v.arquivo + "'>Abrir visualizacao</a>";
-    grade.appendChild(c);
-  });
-
-  var rodape = document.createElement("div");
-  rodape.className = "vazio";
-  rodape.textContent = total + " jobs monitorados &middot; " + artefatos + " artefatos nos ultimos 7 dias";
-  grade.appendChild(rodape);
+  document.getElementById("legenda").innerHTML =
+    "<span class='item'><span class='dot' style='background:#2da44e'></span>OK (&gt;=80% de sucesso)</span>" +
+    "<span class='item'><span class='dot' style='background:#bf8700'></span>Instavel (55-79%)</span>" +
+    "<span class='item'><span class='dot' style='background:#cf222e'></span>Ruim (&lt;55%)</span>" +
+    "<span class='item'>Clique em um job para ver o caminho dos dados (build &rarr; release &rarr; execucoes).</span>";
 })();
 </script>
 </body>

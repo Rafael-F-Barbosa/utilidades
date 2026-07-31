@@ -5,99 +5,131 @@
         "ultimas_execucoes": [
             {
                 "id_execucao": 0,
+                "id_release": 0,
+                "versao": "1.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "data_inicio": "2026-07-30T00:56:52Z",
+                "data_fim": "2026-07-30T01:01:52Z"
             },
             {
                 "id_execucao": 1,
-                "status": "FALHA",
-                "data_inicio": "2026-07-25T11:11:56Z",
-                "data_fim": "2026-07-25T11:16:56Z"
+                "id_release": 1,
+                "versao": "1.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T03:58:18Z",
+                "data_fim": "2026-07-30T04:08:18Z"
             },
             {
                 "id_execucao": 2,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-25T22:23:52Z",
-                "data_fim": "2026-07-25T22:28:52Z"
+                "id_release": 5,
+                "versao": "1.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T06:59:43Z",
+                "data_fim": "2026-07-30T07:14:43Z"
             },
             {
                 "id_execucao": 3,
+                "id_release": 6,
+                "versao": "1.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-26T09:35:48Z",
-                "data_fim": "2026-07-26T09:40:48Z"
+                "data_inicio": "2026-07-30T10:01:08Z",
+                "data_fim": "2026-07-30T10:06:08Z"
             },
             {
                 "id_execucao": 4,
-                "status": "FALHA",
-                "data_inicio": "2026-07-26T20:47:44Z",
-                "data_fim": "2026-07-26T20:52:44Z"
+                "id_release": 10,
+                "versao": "1.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T13:02:34Z",
+                "data_fim": "2026-07-30T13:12:34Z"
             },
             {
                 "id_execucao": 5,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-27T07:59:40Z",
-                "data_fim": "2026-07-27T08:04:40Z"
+                "id_release": 11,
+                "versao": "1.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T16:03:59Z",
+                "data_fim": "2026-07-30T16:18:59Z"
             },
             {
                 "id_execucao": 6,
+                "id_release": 0,
+                "versao": "1.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-27T19:11:36Z",
-                "data_fim": "2026-07-27T19:16:36Z"
+                "data_inicio": "2026-07-30T19:05:24Z",
+                "data_fim": "2026-07-30T19:10:24Z"
             },
             {
                 "id_execucao": 7,
-                "status": "FALHA",
-                "data_inicio": "2026-07-28T06:23:32Z",
-                "data_fim": "2026-07-28T06:28:32Z"
+                "id_release": 1,
+                "versao": "1.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T22:06:50Z",
+                "data_fim": "2026-07-30T22:16:50Z"
             },
             {
                 "id_execucao": 8,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-28T17:35:28Z",
-                "data_fim": "2026-07-28T17:40:28Z"
+                "id_release": 5,
+                "versao": "1.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T01:08:15Z",
+                "data_fim": "2026-07-31T01:23:15Z"
             },
             {
                 "id_execucao": 9,
+                "id_release": 6,
+                "versao": "1.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-29T04:47:24Z",
-                "data_fim": "2026-07-29T04:52:24Z"
+                "data_inicio": "2026-07-31T04:09:40Z",
+                "data_fim": "2026-07-31T04:14:40Z"
             },
             {
                 "id_execucao": 10,
-                "status": "FALHA",
-                "data_inicio": "2026-07-29T15:59:20Z",
-                "data_fim": "2026-07-29T16:04:20Z"
+                "id_release": 10,
+                "versao": "1.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T07:11:06Z",
+                "data_fim": "2026-07-31T07:21:06Z"
             },
             {
                 "id_execucao": 11,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-30T03:11:16Z",
-                "data_fim": "2026-07-30T03:16:16Z"
+                "id_release": 11,
+                "versao": "1.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T10:12:31Z",
+                "data_fim": "2026-07-31T10:27:31Z"
             },
             {
                 "id_execucao": 12,
+                "id_release": 0,
+                "versao": "1.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-30T14:23:12Z",
-                "data_fim": "2026-07-30T14:28:12Z"
+                "data_inicio": "2026-07-31T13:13:56Z",
+                "data_fim": "2026-07-31T13:18:56Z"
             },
             {
                 "id_execucao": 13,
-                "status": "FALHA",
-                "data_inicio": "2026-07-31T01:35:08Z",
-                "data_fim": "2026-07-31T01:40:08Z"
+                "id_release": 1,
+                "versao": "1.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T16:15:21Z",
+                "data_fim": "2026-07-31T16:25:21Z"
             },
             {
                 "id_execucao": 14,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-31T12:47:04Z",
-                "data_fim": "2026-07-31T12:52:04Z"
+                "id_release": 5,
+                "versao": "1.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T19:16:47Z",
+                "data_fim": "2026-07-31T19:31:47Z"
             },
             {
                 "id_execucao": 15,
+                "id_release": 6,
+                "versao": "1.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "data_inicio": "2026-07-31T22:18:12Z",
+                "data_fim": "2026-07-31T22:23:12Z"
             }
         ]
     },
@@ -107,105 +139,139 @@
         "ultimas_execucoes": [
             {
                 "id_execucao": 16,
-                "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "id_release": 13,
+                "versao": "2.1",
+                "status": "FALHA",
+                "data_inicio": "2026-07-30T00:56:52Z",
+                "data_fim": "2026-07-30T01:01:52Z"
             },
             {
                 "id_execucao": 17,
-                "status": "FALHA",
-                "data_inicio": "2026-07-25T10:29:56Z",
-                "data_fim": "2026-07-25T10:34:56Z"
+                "id_release": 14,
+                "versao": "2.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T03:46:57Z",
+                "data_fim": "2026-07-30T03:56:57Z"
             },
             {
                 "id_execucao": 18,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-25T20:59:52Z",
-                "data_fim": "2026-07-25T21:04:52Z"
+                "id_release": 18,
+                "versao": "2.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T06:37:02Z",
+                "data_fim": "2026-07-30T06:52:02Z"
             },
             {
                 "id_execucao": 19,
+                "id_release": 19,
+                "versao": "2.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-26T07:29:48Z",
-                "data_fim": "2026-07-26T07:34:48Z"
+                "data_inicio": "2026-07-30T09:27:07Z",
+                "data_fim": "2026-07-30T09:32:07Z"
             },
             {
                 "id_execucao": 20,
-                "status": "FALHA",
-                "data_inicio": "2026-07-26T17:59:45Z",
-                "data_fim": "2026-07-26T18:04:45Z"
+                "id_release": 23,
+                "versao": "2.9",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T12:17:12Z",
+                "data_fim": "2026-07-30T12:27:12Z"
             },
             {
                 "id_execucao": 21,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-27T04:29:41Z",
-                "data_fim": "2026-07-27T04:34:41Z"
+                "id_release": 24,
+                "versao": "2.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T15:07:17Z",
+                "data_fim": "2026-07-30T15:22:17Z"
             },
             {
                 "id_execucao": 22,
+                "id_release": 13,
+                "versao": "2.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-27T14:59:37Z",
-                "data_fim": "2026-07-27T15:04:37Z"
+                "data_inicio": "2026-07-30T17:57:22Z",
+                "data_fim": "2026-07-30T18:02:22Z"
             },
             {
                 "id_execucao": 23,
-                "status": "FALHA",
-                "data_inicio": "2026-07-28T01:29:33Z",
-                "data_fim": "2026-07-28T01:34:33Z"
+                "id_release": 14,
+                "versao": "2.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T20:47:27Z",
+                "data_fim": "2026-07-30T20:57:27Z"
             },
             {
                 "id_execucao": 24,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-28T11:59:30Z",
-                "data_fim": "2026-07-28T12:04:30Z"
+                "id_release": 18,
+                "versao": "2.11",
+                "status": "FALHA",
+                "data_inicio": "2026-07-30T23:37:32Z",
+                "data_fim": "2026-07-30T23:52:32Z"
             },
             {
                 "id_execucao": 25,
+                "id_release": 19,
+                "versao": "2.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-28T22:29:26Z",
-                "data_fim": "2026-07-28T22:34:26Z"
+                "data_inicio": "2026-07-31T02:27:37Z",
+                "data_fim": "2026-07-31T02:32:37Z"
             },
             {
                 "id_execucao": 26,
-                "status": "FALHA",
-                "data_inicio": "2026-07-29T08:59:22Z",
-                "data_fim": "2026-07-29T09:04:22Z"
+                "id_release": 23,
+                "versao": "2.9",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T05:17:42Z",
+                "data_fim": "2026-07-31T05:27:42Z"
             },
             {
                 "id_execucao": 27,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-29T19:29:18Z",
-                "data_fim": "2026-07-29T19:34:18Z"
+                "id_release": 24,
+                "versao": "2.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T08:07:47Z",
+                "data_fim": "2026-07-31T08:22:47Z"
             },
             {
                 "id_execucao": 28,
+                "id_release": 13,
+                "versao": "2.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-30T05:59:15Z",
-                "data_fim": "2026-07-30T06:04:15Z"
+                "data_inicio": "2026-07-31T10:57:52Z",
+                "data_fim": "2026-07-31T11:02:52Z"
             },
             {
                 "id_execucao": 29,
-                "status": "FALHA",
-                "data_inicio": "2026-07-30T16:29:11Z",
-                "data_fim": "2026-07-30T16:34:11Z"
+                "id_release": 14,
+                "versao": "2.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T13:47:57Z",
+                "data_fim": "2026-07-31T13:57:57Z"
             },
             {
                 "id_execucao": 30,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-31T02:59:07Z",
-                "data_fim": "2026-07-31T03:04:07Z"
+                "id_release": 18,
+                "versao": "2.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T16:38:02Z",
+                "data_fim": "2026-07-31T16:53:02Z"
             },
             {
                 "id_execucao": 31,
+                "id_release": 19,
+                "versao": "2.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T13:29:03Z",
-                "data_fim": "2026-07-31T13:34:03Z"
+                "data_inicio": "2026-07-31T19:28:07Z",
+                "data_fim": "2026-07-31T19:33:07Z"
             },
             {
                 "id_execucao": 32,
-                "status": "FALHA",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "id_release": 23,
+                "versao": "2.9",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T22:18:12Z",
+                "data_fim": "2026-07-31T22:28:12Z"
             }
         ]
     },
@@ -215,111 +281,147 @@
         "ultimas_execucoes": [
             {
                 "id_execucao": 33,
+                "id_release": 27,
+                "versao": "3.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "data_inicio": "2026-07-30T00:56:52Z",
+                "data_fim": "2026-07-30T01:01:52Z"
             },
             {
                 "id_execucao": 34,
-                "status": "FALHA",
-                "data_inicio": "2026-07-25T09:52:52Z",
-                "data_fim": "2026-07-25T09:57:52Z"
+                "id_release": 28,
+                "versao": "3.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T03:36:57Z",
+                "data_fim": "2026-07-30T03:46:57Z"
             },
             {
                 "id_execucao": 35,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-25T19:45:45Z",
-                "data_fim": "2026-07-25T19:50:45Z"
+                "id_release": 32,
+                "versao": "3.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T06:17:02Z",
+                "data_fim": "2026-07-30T06:32:02Z"
             },
             {
                 "id_execucao": 36,
+                "id_release": 33,
+                "versao": "3.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-26T05:38:38Z",
-                "data_fim": "2026-07-26T05:43:38Z"
+                "data_inicio": "2026-07-30T08:57:06Z",
+                "data_fim": "2026-07-30T09:02:06Z"
             },
             {
                 "id_execucao": 37,
-                "status": "FALHA",
-                "data_inicio": "2026-07-26T15:31:31Z",
-                "data_fim": "2026-07-26T15:36:31Z"
+                "id_release": 37,
+                "versao": "3.9",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T11:37:11Z",
+                "data_fim": "2026-07-30T11:47:11Z"
             },
             {
                 "id_execucao": 38,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-27T01:24:24Z",
-                "data_fim": "2026-07-27T01:29:24Z"
+                "id_release": 38,
+                "versao": "3.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T14:17:16Z",
+                "data_fim": "2026-07-30T14:32:16Z"
             },
             {
                 "id_execucao": 39,
+                "id_release": 27,
+                "versao": "3.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-27T11:17:17Z",
-                "data_fim": "2026-07-27T11:22:17Z"
+                "data_inicio": "2026-07-30T16:57:20Z",
+                "data_fim": "2026-07-30T17:02:20Z"
             },
             {
                 "id_execucao": 40,
-                "status": "FALHA",
-                "data_inicio": "2026-07-27T21:10:10Z",
-                "data_fim": "2026-07-27T21:15:10Z"
+                "id_release": 28,
+                "versao": "3.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T19:37:25Z",
+                "data_fim": "2026-07-30T19:47:25Z"
             },
             {
                 "id_execucao": 41,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-28T07:03:03Z",
-                "data_fim": "2026-07-28T07:08:03Z"
+                "id_release": 32,
+                "versao": "3.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T22:17:30Z",
+                "data_fim": "2026-07-30T22:32:30Z"
             },
             {
                 "id_execucao": 42,
+                "id_release": 33,
+                "versao": "3.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-28T16:55:56Z",
-                "data_fim": "2026-07-28T17:00:56Z"
+                "data_inicio": "2026-07-31T00:57:35Z",
+                "data_fim": "2026-07-31T01:02:35Z"
             },
             {
                 "id_execucao": 43,
-                "status": "FALHA",
-                "data_inicio": "2026-07-29T02:48:49Z",
-                "data_fim": "2026-07-29T02:53:49Z"
+                "id_release": 37,
+                "versao": "3.9",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T03:37:39Z",
+                "data_fim": "2026-07-31T03:47:39Z"
             },
             {
                 "id_execucao": 44,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-29T12:41:42Z",
-                "data_fim": "2026-07-29T12:46:42Z"
+                "id_release": 38,
+                "versao": "3.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T06:17:44Z",
+                "data_fim": "2026-07-31T06:32:44Z"
             },
             {
                 "id_execucao": 45,
+                "id_release": 27,
+                "versao": "3.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-29T22:34:35Z",
-                "data_fim": "2026-07-29T22:39:35Z"
+                "data_inicio": "2026-07-31T08:57:49Z",
+                "data_fim": "2026-07-31T09:02:49Z"
             },
             {
                 "id_execucao": 46,
-                "status": "FALHA",
-                "data_inicio": "2026-07-30T08:27:28Z",
-                "data_fim": "2026-07-30T08:32:28Z"
+                "id_release": 28,
+                "versao": "3.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T11:37:53Z",
+                "data_fim": "2026-07-31T11:47:53Z"
             },
             {
                 "id_execucao": 47,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-30T18:20:21Z",
-                "data_fim": "2026-07-30T18:25:21Z"
+                "id_release": 32,
+                "versao": "3.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T14:17:58Z",
+                "data_fim": "2026-07-31T14:32:58Z"
             },
             {
                 "id_execucao": 48,
+                "id_release": 33,
+                "versao": "3.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T04:13:14Z",
-                "data_fim": "2026-07-31T04:18:14Z"
+                "data_inicio": "2026-07-31T16:58:03Z",
+                "data_fim": "2026-07-31T17:03:03Z"
             },
             {
                 "id_execucao": 49,
-                "status": "FALHA",
-                "data_inicio": "2026-07-31T14:06:07Z",
-                "data_fim": "2026-07-31T14:11:07Z"
+                "id_release": 37,
+                "versao": "3.9",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T19:38:07Z",
+                "data_fim": "2026-07-31T19:48:07Z"
             },
             {
                 "id_execucao": 50,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "id_release": 38,
+                "versao": "3.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T22:18:12Z",
+                "data_fim": "2026-07-31T22:33:12Z"
             }
         ]
     },
@@ -329,117 +431,155 @@
         "ultimas_execucoes": [
             {
                 "id_execucao": 51,
-                "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "id_release": 42,
+                "versao": "4.1",
+                "status": "FALHA",
+                "data_inicio": "2026-07-30T00:56:52Z",
+                "data_fim": "2026-07-30T01:01:52Z"
             },
             {
                 "id_execucao": 52,
-                "status": "FALHA",
-                "data_inicio": "2026-07-25T09:19:56Z",
-                "data_fim": "2026-07-25T09:24:56Z"
+                "id_release": 43,
+                "versao": "4.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T03:28:03Z",
+                "data_fim": "2026-07-30T03:38:03Z"
             },
             {
                 "id_execucao": 53,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-25T18:39:53Z",
-                "data_fim": "2026-07-25T18:44:53Z"
+                "id_release": 47,
+                "versao": "4.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T05:59:15Z",
+                "data_fim": "2026-07-30T06:14:15Z"
             },
             {
                 "id_execucao": 54,
+                "id_release": 48,
+                "versao": "4.13",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-26T03:59:50Z",
-                "data_fim": "2026-07-26T04:04:50Z"
+                "data_inicio": "2026-07-30T08:30:26Z",
+                "data_fim": "2026-07-30T08:35:26Z"
             },
             {
                 "id_execucao": 55,
-                "status": "FALHA",
-                "data_inicio": "2026-07-26T13:19:46Z",
-                "data_fim": "2026-07-26T13:24:46Z"
+                "id_release": 52,
+                "versao": "4.7",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T11:01:37Z",
+                "data_fim": "2026-07-30T11:11:37Z"
             },
             {
                 "id_execucao": 56,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-26T22:39:43Z",
-                "data_fim": "2026-07-26T22:44:43Z"
+                "id_release": 53,
+                "versao": "4.9",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T13:32:48Z",
+                "data_fim": "2026-07-30T13:47:48Z"
             },
             {
                 "id_execucao": 57,
+                "id_release": 57,
+                "versao": "4.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-27T07:59:40Z",
-                "data_fim": "2026-07-27T08:04:40Z"
+                "data_inicio": "2026-07-30T16:03:59Z",
+                "data_fim": "2026-07-30T16:08:59Z"
             },
             {
                 "id_execucao": 58,
-                "status": "FALHA",
-                "data_inicio": "2026-07-27T17:19:36Z",
-                "data_fim": "2026-07-27T17:24:36Z"
+                "id_release": 42,
+                "versao": "4.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T18:35:10Z",
+                "data_fim": "2026-07-30T18:45:10Z"
             },
             {
                 "id_execucao": 59,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-28T02:39:33Z",
-                "data_fim": "2026-07-28T02:44:33Z"
+                "id_release": 43,
+                "versao": "4.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T21:06:21Z",
+                "data_fim": "2026-07-30T21:21:21Z"
             },
             {
                 "id_execucao": 60,
-                "status": "SUCESSO",
-                "data_inicio": "2026-07-28T11:59:30Z",
-                "data_fim": "2026-07-28T12:04:30Z"
+                "id_release": 47,
+                "versao": "4.11",
+                "status": "FALHA",
+                "data_inicio": "2026-07-30T23:37:32Z",
+                "data_fim": "2026-07-30T23:42:32Z"
             },
             {
                 "id_execucao": 61,
-                "status": "FALHA",
-                "data_inicio": "2026-07-28T21:19:26Z",
-                "data_fim": "2026-07-28T21:24:26Z"
+                "id_release": 48,
+                "versao": "4.13",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T02:08:43Z",
+                "data_fim": "2026-07-31T02:18:43Z"
             },
             {
                 "id_execucao": 62,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-29T06:39:23Z",
-                "data_fim": "2026-07-29T06:44:23Z"
+                "id_release": 52,
+                "versao": "4.7",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T04:39:54Z",
+                "data_fim": "2026-07-31T04:54:54Z"
             },
             {
                 "id_execucao": 63,
+                "id_release": 53,
+                "versao": "4.9",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-29T15:59:20Z",
-                "data_fim": "2026-07-29T16:04:20Z"
+                "data_inicio": "2026-07-31T07:11:06Z",
+                "data_fim": "2026-07-31T07:16:06Z"
             },
             {
                 "id_execucao": 64,
-                "status": "FALHA",
-                "data_inicio": "2026-07-30T01:19:16Z",
-                "data_fim": "2026-07-30T01:24:16Z"
+                "id_release": 57,
+                "versao": "4.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T09:42:17Z",
+                "data_fim": "2026-07-31T09:52:17Z"
             },
             {
                 "id_execucao": 65,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-30T10:39:13Z",
-                "data_fim": "2026-07-30T10:44:13Z"
+                "id_release": 42,
+                "versao": "4.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T12:13:28Z",
+                "data_fim": "2026-07-31T12:28:28Z"
             },
             {
                 "id_execucao": 66,
+                "id_release": 43,
+                "versao": "4.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-30T19:59:10Z",
-                "data_fim": "2026-07-30T20:04:10Z"
+                "data_inicio": "2026-07-31T14:44:39Z",
+                "data_fim": "2026-07-31T14:49:39Z"
             },
             {
                 "id_execucao": 67,
-                "status": "FALHA",
-                "data_inicio": "2026-07-31T05:19:06Z",
-                "data_fim": "2026-07-31T05:24:06Z"
+                "id_release": 47,
+                "versao": "4.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T17:15:50Z",
+                "data_fim": "2026-07-31T17:25:50Z"
             },
             {
                 "id_execucao": 68,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-31T14:39:03Z",
-                "data_fim": "2026-07-31T14:44:03Z"
+                "id_release": 48,
+                "versao": "4.13",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T19:47:01Z",
+                "data_fim": "2026-07-31T20:02:01Z"
             },
             {
                 "id_execucao": 69,
+                "id_release": 52,
+                "versao": "4.7",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "data_inicio": "2026-07-31T22:18:12Z",
+                "data_fim": "2026-07-31T22:23:12Z"
             }
         ]
     },
@@ -449,123 +589,163 @@
         "ultimas_execucoes": [
             {
                 "id_execucao": 70,
+                "id_release": 58,
+                "versao": "5.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "data_inicio": "2026-07-30T00:56:52Z",
+                "data_fim": "2026-07-30T01:01:52Z"
             },
             {
                 "id_execucao": 71,
-                "status": "FALHA",
-                "data_inicio": "2026-07-25T08:50:28Z",
-                "data_fim": "2026-07-25T08:55:28Z"
+                "id_release": 59,
+                "versao": "5.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T03:20:06Z",
+                "data_fim": "2026-07-30T03:30:06Z"
             },
             {
                 "id_execucao": 72,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-25T17:40:56Z",
-                "data_fim": "2026-07-25T17:45:56Z"
+                "id_release": 63,
+                "versao": "5.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T05:43:20Z",
+                "data_fim": "2026-07-30T05:58:20Z"
             },
             {
                 "id_execucao": 73,
+                "id_release": 64,
+                "versao": "5.13",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-26T02:31:25Z",
-                "data_fim": "2026-07-26T02:36:25Z"
+                "data_inicio": "2026-07-30T08:06:33Z",
+                "data_fim": "2026-07-30T08:11:33Z"
             },
             {
                 "id_execucao": 74,
-                "status": "FALHA",
-                "data_inicio": "2026-07-26T11:21:53Z",
-                "data_fim": "2026-07-26T11:26:53Z"
+                "id_release": 68,
+                "versao": "5.7",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T10:29:47Z",
+                "data_fim": "2026-07-30T10:39:47Z"
             },
             {
                 "id_execucao": 75,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-26T20:12:22Z",
-                "data_fim": "2026-07-26T20:17:22Z"
+                "id_release": 69,
+                "versao": "5.9",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T12:53:01Z",
+                "data_fim": "2026-07-30T13:08:01Z"
             },
             {
                 "id_execucao": 76,
+                "id_release": 73,
+                "versao": "5.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-27T05:02:50Z",
-                "data_fim": "2026-07-27T05:07:50Z"
+                "data_inicio": "2026-07-30T15:16:14Z",
+                "data_fim": "2026-07-30T15:21:14Z"
             },
             {
                 "id_execucao": 77,
-                "status": "FALHA",
-                "data_inicio": "2026-07-27T13:53:18Z",
-                "data_fim": "2026-07-27T13:58:18Z"
+                "id_release": 74,
+                "versao": "5.5",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T17:39:28Z",
+                "data_fim": "2026-07-30T17:49:28Z"
             },
             {
                 "id_execucao": 78,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-27T22:43:47Z",
-                "data_fim": "2026-07-27T22:48:47Z"
+                "id_release": 58,
+                "versao": "5.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T20:02:42Z",
+                "data_fim": "2026-07-30T20:17:42Z"
             },
             {
                 "id_execucao": 79,
+                "id_release": 59,
+                "versao": "5.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-28T07:34:15Z",
-                "data_fim": "2026-07-28T07:39:15Z"
+                "data_inicio": "2026-07-30T22:25:55Z",
+                "data_fim": "2026-07-30T22:30:55Z"
             },
             {
                 "id_execucao": 80,
-                "status": "FALHA",
-                "data_inicio": "2026-07-28T16:24:44Z",
-                "data_fim": "2026-07-28T16:29:44Z"
+                "id_release": 63,
+                "versao": "5.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T00:49:09Z",
+                "data_fim": "2026-07-31T00:59:09Z"
             },
             {
                 "id_execucao": 81,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-29T01:15:12Z",
-                "data_fim": "2026-07-29T01:20:12Z"
+                "id_release": 64,
+                "versao": "5.13",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T03:12:23Z",
+                "data_fim": "2026-07-31T03:27:23Z"
             },
             {
                 "id_execucao": 82,
+                "id_release": 68,
+                "versao": "5.7",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-29T10:05:41Z",
-                "data_fim": "2026-07-29T10:10:41Z"
+                "data_inicio": "2026-07-31T05:35:36Z",
+                "data_fim": "2026-07-31T05:40:36Z"
             },
             {
                 "id_execucao": 83,
-                "status": "FALHA",
-                "data_inicio": "2026-07-29T18:56:09Z",
-                "data_fim": "2026-07-29T19:01:09Z"
+                "id_release": 69,
+                "versao": "5.9",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T07:58:50Z",
+                "data_fim": "2026-07-31T08:08:50Z"
             },
             {
                 "id_execucao": 84,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-30T03:46:37Z",
-                "data_fim": "2026-07-30T03:51:37Z"
+                "id_release": 73,
+                "versao": "5.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T10:22:04Z",
+                "data_fim": "2026-07-31T10:37:04Z"
             },
             {
                 "id_execucao": 85,
+                "id_release": 74,
+                "versao": "5.5",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-30T12:37:06Z",
-                "data_fim": "2026-07-30T12:42:06Z"
+                "data_inicio": "2026-07-31T12:45:17Z",
+                "data_fim": "2026-07-31T12:50:17Z"
             },
             {
                 "id_execucao": 86,
-                "status": "FALHA",
-                "data_inicio": "2026-07-30T21:27:34Z",
-                "data_fim": "2026-07-30T21:32:34Z"
+                "id_release": 58,
+                "versao": "5.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T15:08:31Z",
+                "data_fim": "2026-07-31T15:18:31Z"
             },
             {
                 "id_execucao": 87,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-31T06:18:03Z",
-                "data_fim": "2026-07-31T06:23:03Z"
+                "id_release": 59,
+                "versao": "5.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T17:31:45Z",
+                "data_fim": "2026-07-31T17:46:45Z"
             },
             {
                 "id_execucao": 88,
+                "id_release": 63,
+                "versao": "5.11",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T15:08:31Z",
-                "data_fim": "2026-07-31T15:13:31Z"
+                "data_inicio": "2026-07-31T19:54:58Z",
+                "data_fim": "2026-07-31T19:59:58Z"
             },
             {
                 "id_execucao": 89,
-                "status": "FALHA",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "id_release": 64,
+                "versao": "5.13",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T22:18:12Z",
+                "data_fim": "2026-07-31T22:28:12Z"
             }
         ]
     },
@@ -575,63 +755,83 @@
         "ultimas_execucoes": [
             {
                 "id_execucao": 90,
-                "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "id_release": 75,
+                "versao": "6.1",
+                "status": "FALHA",
+                "data_inicio": "2026-07-30T00:56:52Z",
+                "data_fim": "2026-07-30T01:01:52Z"
             },
             {
                 "id_execucao": 91,
-                "status": "FALHA",
-                "data_inicio": "2026-07-25T18:39:53Z",
-                "data_fim": "2026-07-25T18:44:53Z"
+                "id_release": 76,
+                "versao": "6.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T05:59:15Z",
+                "data_fim": "2026-07-30T06:09:15Z"
             },
             {
                 "id_execucao": 92,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-26T13:19:46Z",
-                "data_fim": "2026-07-26T13:24:46Z"
+                "id_release": 80,
+                "versao": "6.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T11:01:37Z",
+                "data_fim": "2026-07-30T11:16:37Z"
             },
             {
                 "id_execucao": 93,
+                "id_release": 81,
+                "versao": "6.13",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-27T07:59:40Z",
-                "data_fim": "2026-07-27T08:04:40Z"
+                "data_inicio": "2026-07-30T16:03:59Z",
+                "data_fim": "2026-07-30T16:08:59Z"
             },
             {
                 "id_execucao": 94,
-                "status": "FALHA",
-                "data_inicio": "2026-07-28T02:39:33Z",
-                "data_fim": "2026-07-28T02:44:33Z"
+                "id_release": 85,
+                "versao": "6.5",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T21:06:21Z",
+                "data_fim": "2026-07-30T21:16:21Z"
             },
             {
                 "id_execucao": 95,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-28T21:19:26Z",
-                "data_fim": "2026-07-28T21:24:26Z"
+                "id_release": 86,
+                "versao": "6.7",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T02:08:43Z",
+                "data_fim": "2026-07-31T02:23:43Z"
             },
             {
                 "id_execucao": 96,
+                "id_release": 90,
+                "versao": "6.15",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-29T15:59:20Z",
-                "data_fim": "2026-07-29T16:04:20Z"
+                "data_inicio": "2026-07-31T07:11:06Z",
+                "data_fim": "2026-07-31T07:16:06Z"
             },
             {
                 "id_execucao": 97,
-                "status": "FALHA",
-                "data_inicio": "2026-07-30T10:39:13Z",
-                "data_fim": "2026-07-30T10:44:13Z"
+                "id_release": 91,
+                "versao": "6.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T12:13:28Z",
+                "data_fim": "2026-07-31T12:23:28Z"
             },
             {
                 "id_execucao": 98,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-31T05:19:06Z",
-                "data_fim": "2026-07-31T05:24:06Z"
+                "id_release": 75,
+                "versao": "6.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T17:15:50Z",
+                "data_fim": "2026-07-31T17:30:50Z"
             },
             {
                 "id_execucao": 99,
+                "id_release": 76,
+                "versao": "6.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "data_inicio": "2026-07-31T22:18:12Z",
+                "data_fim": "2026-07-31T22:23:12Z"
             }
         ]
     },
@@ -641,69 +841,91 @@
         "ultimas_execucoes": [
             {
                 "id_execucao": 100,
+                "id_release": 93,
+                "versao": "7.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "data_inicio": "2026-07-30T00:56:52Z",
+                "data_fim": "2026-07-30T01:01:52Z"
             },
             {
                 "id_execucao": 101,
-                "status": "FALHA",
-                "data_inicio": "2026-07-25T16:47:54Z",
-                "data_fim": "2026-07-25T16:52:54Z"
+                "id_release": 94,
+                "versao": "7.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T05:29:00Z",
+                "data_fim": "2026-07-30T05:39:00Z"
             },
             {
                 "id_execucao": 102,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-26T09:35:48Z",
-                "data_fim": "2026-07-26T09:40:48Z"
+                "id_release": 98,
+                "versao": "7.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T10:01:08Z",
+                "data_fim": "2026-07-30T10:16:08Z"
             },
             {
                 "id_execucao": 103,
+                "id_release": 99,
+                "versao": "7.13",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-27T02:23:42Z",
-                "data_fim": "2026-07-27T02:28:42Z"
+                "data_inicio": "2026-07-30T14:33:16Z",
+                "data_fim": "2026-07-30T14:38:16Z"
             },
             {
                 "id_execucao": 104,
-                "status": "FALHA",
-                "data_inicio": "2026-07-27T19:11:36Z",
-                "data_fim": "2026-07-27T19:16:36Z"
+                "id_release": 103,
+                "versao": "7.5",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T19:05:24Z",
+                "data_fim": "2026-07-30T19:15:24Z"
             },
             {
                 "id_execucao": 105,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-28T11:59:30Z",
-                "data_fim": "2026-07-28T12:04:30Z"
+                "id_release": 104,
+                "versao": "7.7",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T23:37:32Z",
+                "data_fim": "2026-07-30T23:52:32Z"
             },
             {
                 "id_execucao": 106,
+                "id_release": 108,
+                "versao": "7.15",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-29T04:47:24Z",
-                "data_fim": "2026-07-29T04:52:24Z"
+                "data_inicio": "2026-07-31T04:09:40Z",
+                "data_fim": "2026-07-31T04:14:40Z"
             },
             {
                 "id_execucao": 107,
-                "status": "FALHA",
-                "data_inicio": "2026-07-29T21:35:18Z",
-                "data_fim": "2026-07-29T21:40:18Z"
+                "id_release": 109,
+                "versao": "7.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T08:41:48Z",
+                "data_fim": "2026-07-31T08:51:48Z"
             },
             {
                 "id_execucao": 108,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-30T14:23:12Z",
-                "data_fim": "2026-07-30T14:28:12Z"
+                "id_release": 93,
+                "versao": "7.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T13:13:56Z",
+                "data_fim": "2026-07-31T13:28:56Z"
             },
             {
                 "id_execucao": 109,
+                "id_release": 94,
+                "versao": "7.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T07:11:06Z",
-                "data_fim": "2026-07-31T07:16:06Z"
+                "data_inicio": "2026-07-31T17:46:04Z",
+                "data_fim": "2026-07-31T17:51:04Z"
             },
             {
                 "id_execucao": 110,
-                "status": "FALHA",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "id_release": 98,
+                "versao": "7.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T22:18:12Z",
+                "data_fim": "2026-07-31T22:28:12Z"
             }
         ]
     },
@@ -713,75 +935,99 @@
         "ultimas_execucoes": [
             {
                 "id_execucao": 111,
-                "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "id_release": 112,
+                "versao": "8.1",
+                "status": "FALHA",
+                "data_inicio": "2026-07-30T00:56:52Z",
+                "data_fim": "2026-07-30T01:01:52Z"
             },
             {
                 "id_execucao": 112,
-                "status": "FALHA",
-                "data_inicio": "2026-07-25T15:16:16Z",
-                "data_fim": "2026-07-25T15:21:16Z"
+                "id_release": 113,
+                "versao": "8.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T05:04:16Z",
+                "data_fim": "2026-07-30T05:14:16Z"
             },
             {
                 "id_execucao": 113,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-26T06:32:32Z",
-                "data_fim": "2026-07-26T06:37:32Z"
+                "id_release": 117,
+                "versao": "8.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T09:11:40Z",
+                "data_fim": "2026-07-30T09:26:40Z"
             },
             {
                 "id_execucao": 114,
+                "id_release": 118,
+                "versao": "8.13",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-26T21:48:49Z",
-                "data_fim": "2026-07-26T21:53:49Z"
+                "data_inicio": "2026-07-30T13:19:03Z",
+                "data_fim": "2026-07-30T13:24:03Z"
             },
             {
                 "id_execucao": 115,
-                "status": "FALHA",
-                "data_inicio": "2026-07-27T13:05:05Z",
-                "data_fim": "2026-07-27T13:10:05Z"
+                "id_release": 122,
+                "versao": "8.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T17:26:27Z",
+                "data_fim": "2026-07-30T17:36:27Z"
             },
             {
                 "id_execucao": 116,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-28T04:21:21Z",
-                "data_fim": "2026-07-28T04:26:21Z"
+                "id_release": 123,
+                "versao": "8.5",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T21:33:50Z",
+                "data_fim": "2026-07-30T21:48:50Z"
             },
             {
                 "id_execucao": 117,
+                "id_release": 127,
+                "versao": "8.13",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-28T19:37:38Z",
-                "data_fim": "2026-07-28T19:42:38Z"
+                "data_inicio": "2026-07-31T01:41:14Z",
+                "data_fim": "2026-07-31T01:46:14Z"
             },
             {
                 "id_execucao": 118,
-                "status": "FALHA",
-                "data_inicio": "2026-07-29T10:53:54Z",
-                "data_fim": "2026-07-29T10:58:54Z"
+                "id_release": 128,
+                "versao": "8.15",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T05:48:38Z",
+                "data_fim": "2026-07-31T05:58:38Z"
             },
             {
                 "id_execucao": 119,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-30T02:10:10Z",
-                "data_fim": "2026-07-30T02:15:10Z"
+                "id_release": 112,
+                "versao": "8.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T09:56:01Z",
+                "data_fim": "2026-07-31T10:11:01Z"
             },
             {
                 "id_execucao": 120,
+                "id_release": 113,
+                "versao": "8.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-30T17:26:27Z",
-                "data_fim": "2026-07-30T17:31:27Z"
+                "data_inicio": "2026-07-31T14:03:25Z",
+                "data_fim": "2026-07-31T14:08:25Z"
             },
             {
                 "id_execucao": 121,
-                "status": "FALHA",
-                "data_inicio": "2026-07-31T08:42:43Z",
-                "data_fim": "2026-07-31T08:47:43Z"
+                "id_release": 117,
+                "versao": "8.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T18:10:48Z",
+                "data_fim": "2026-07-31T18:20:48Z"
             },
             {
                 "id_execucao": 122,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "id_release": 118,
+                "versao": "8.13",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T22:18:12Z",
+                "data_fim": "2026-07-31T22:33:12Z"
             }
         ]
     },
@@ -791,81 +1037,107 @@
         "ultimas_execucoes": [
             {
                 "id_execucao": 123,
+                "id_release": 132,
+                "versao": "9.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "data_inicio": "2026-07-30T00:56:52Z",
+                "data_fim": "2026-07-30T01:01:52Z"
             },
             {
                 "id_execucao": 124,
-                "status": "FALHA",
-                "data_inicio": "2026-07-25T13:59:55Z",
-                "data_fim": "2026-07-25T14:04:55Z"
+                "id_release": 133,
+                "versao": "9.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T04:43:39Z",
+                "data_fim": "2026-07-30T04:53:39Z"
             },
             {
                 "id_execucao": 125,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-26T03:59:50Z",
-                "data_fim": "2026-07-26T04:04:50Z"
+                "id_release": 137,
+                "versao": "9.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T08:30:26Z",
+                "data_fim": "2026-07-30T08:45:26Z"
             },
             {
                 "id_execucao": 126,
+                "id_release": 138,
+                "versao": "9.13",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-26T17:59:45Z",
-                "data_fim": "2026-07-26T18:04:45Z"
+                "data_inicio": "2026-07-30T12:17:12Z",
+                "data_fim": "2026-07-30T12:22:12Z"
             },
             {
                 "id_execucao": 127,
-                "status": "FALHA",
-                "data_inicio": "2026-07-27T07:59:40Z",
-                "data_fim": "2026-07-27T08:04:40Z"
+                "id_release": 132,
+                "versao": "9.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T16:03:59Z",
+                "data_fim": "2026-07-30T16:13:59Z"
             },
             {
                 "id_execucao": 128,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-27T21:59:35Z",
-                "data_fim": "2026-07-27T22:04:35Z"
+                "id_release": 133,
+                "versao": "9.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T19:50:46Z",
+                "data_fim": "2026-07-30T20:05:46Z"
             },
             {
                 "id_execucao": 129,
+                "id_release": 137,
+                "versao": "9.11",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-28T11:59:30Z",
-                "data_fim": "2026-07-28T12:04:30Z"
+                "data_inicio": "2026-07-30T23:37:32Z",
+                "data_fim": "2026-07-30T23:42:32Z"
             },
             {
                 "id_execucao": 130,
-                "status": "FALHA",
-                "data_inicio": "2026-07-29T01:59:25Z",
-                "data_fim": "2026-07-29T02:04:25Z"
+                "id_release": 138,
+                "versao": "9.13",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T03:24:19Z",
+                "data_fim": "2026-07-31T03:34:19Z"
             },
             {
                 "id_execucao": 131,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-29T15:59:20Z",
-                "data_fim": "2026-07-29T16:04:20Z"
+                "id_release": 132,
+                "versao": "9.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T07:11:06Z",
+                "data_fim": "2026-07-31T07:26:06Z"
             },
             {
                 "id_execucao": 132,
+                "id_release": 133,
+                "versao": "9.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-30T05:59:15Z",
-                "data_fim": "2026-07-30T06:04:15Z"
+                "data_inicio": "2026-07-31T10:57:52Z",
+                "data_fim": "2026-07-31T11:02:52Z"
             },
             {
                 "id_execucao": 133,
-                "status": "FALHA",
-                "data_inicio": "2026-07-30T19:59:10Z",
-                "data_fim": "2026-07-30T20:04:10Z"
+                "id_release": 137,
+                "versao": "9.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T14:44:39Z",
+                "data_fim": "2026-07-31T14:54:39Z"
             },
             {
                 "id_execucao": 134,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-31T09:59:05Z",
-                "data_fim": "2026-07-31T10:04:05Z"
+                "id_release": 138,
+                "versao": "9.13",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T18:31:25Z",
+                "data_fim": "2026-07-31T18:46:25Z"
             },
             {
                 "id_execucao": 135,
+                "id_release": 132,
+                "versao": "9.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "data_inicio": "2026-07-31T22:18:12Z",
+                "data_fim": "2026-07-31T22:23:12Z"
             }
         ]
     },
@@ -875,87 +1147,115 @@
         "ultimas_execucoes": [
             {
                 "id_execucao": 136,
-                "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "id_release": 142,
+                "versao": "10.1",
+                "status": "FALHA",
+                "data_inicio": "2026-07-30T00:56:52Z",
+                "data_fim": "2026-07-30T01:01:52Z"
             },
             {
                 "id_execucao": 137,
-                "status": "FALHA",
-                "data_inicio": "2026-07-25T12:55:18Z",
-                "data_fim": "2026-07-25T13:00:18Z"
+                "id_release": 143,
+                "versao": "10.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T04:26:12Z",
+                "data_fim": "2026-07-30T04:36:12Z"
             },
             {
                 "id_execucao": 138,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-26T01:50:36Z",
-                "data_fim": "2026-07-26T01:55:36Z"
+                "id_release": 147,
+                "versao": "10.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T07:55:32Z",
+                "data_fim": "2026-07-30T08:10:32Z"
             },
             {
                 "id_execucao": 139,
+                "id_release": 148,
+                "versao": "10.13",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-26T14:45:55Z",
-                "data_fim": "2026-07-26T14:50:55Z"
+                "data_inicio": "2026-07-30T11:24:52Z",
+                "data_fim": "2026-07-30T11:29:52Z"
             },
             {
                 "id_execucao": 140,
-                "status": "FALHA",
-                "data_inicio": "2026-07-27T03:41:13Z",
-                "data_fim": "2026-07-27T03:46:13Z"
+                "id_release": 152,
+                "versao": "10.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T14:54:12Z",
+                "data_fim": "2026-07-30T15:04:12Z"
             },
             {
                 "id_execucao": 141,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-27T16:36:32Z",
-                "data_fim": "2026-07-27T16:41:32Z"
+                "id_release": 142,
+                "versao": "10.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-30T18:23:32Z",
+                "data_fim": "2026-07-30T18:38:32Z"
             },
             {
                 "id_execucao": 142,
+                "id_release": 143,
+                "versao": "10.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-28T05:31:50Z",
-                "data_fim": "2026-07-28T05:36:50Z"
+                "data_inicio": "2026-07-30T21:52:52Z",
+                "data_fim": "2026-07-30T21:57:52Z"
             },
             {
                 "id_execucao": 143,
-                "status": "FALHA",
-                "data_inicio": "2026-07-28T18:27:09Z",
-                "data_fim": "2026-07-28T18:32:09Z"
+                "id_release": 147,
+                "versao": "10.11",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T01:22:12Z",
+                "data_fim": "2026-07-31T01:32:12Z"
             },
             {
                 "id_execucao": 144,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-29T07:22:27Z",
-                "data_fim": "2026-07-29T07:27:27Z"
+                "id_release": 148,
+                "versao": "10.13",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T04:51:32Z",
+                "data_fim": "2026-07-31T05:06:32Z"
             },
             {
                 "id_execucao": 145,
+                "id_release": 152,
+                "versao": "10.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-29T20:17:46Z",
-                "data_fim": "2026-07-29T20:22:46Z"
+                "data_inicio": "2026-07-31T08:20:52Z",
+                "data_fim": "2026-07-31T08:25:52Z"
             },
             {
                 "id_execucao": 146,
-                "status": "FALHA",
-                "data_inicio": "2026-07-30T09:13:04Z",
-                "data_fim": "2026-07-30T09:18:04Z"
+                "id_release": 142,
+                "versao": "10.1",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T11:50:12Z",
+                "data_fim": "2026-07-31T12:00:12Z"
             },
             {
                 "id_execucao": 147,
-                "status": "EXECUTANDO",
-                "data_inicio": "2026-07-30T22:08:23Z",
-                "data_fim": "2026-07-30T22:13:23Z"
+                "id_release": 143,
+                "versao": "10.3",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T15:19:32Z",
+                "data_fim": "2026-07-31T15:34:32Z"
             },
             {
                 "id_execucao": 148,
+                "id_release": 147,
+                "versao": "10.11",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T11:03:41Z",
-                "data_fim": "2026-07-31T11:08:41Z"
+                "data_inicio": "2026-07-31T18:48:52Z",
+                "data_fim": "2026-07-31T18:53:52Z"
             },
             {
                 "id_execucao": 149,
-                "status": "FALHA",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "id_release": 148,
+                "versao": "10.13",
+                "status": "SUCESSO",
+                "data_inicio": "2026-07-31T22:18:12Z",
+                "data_fim": "2026-07-31T22:28:12Z"
             }
         ]
     }

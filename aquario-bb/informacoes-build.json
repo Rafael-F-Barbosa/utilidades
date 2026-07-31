@@ -5,63 +5,73 @@
         "ultimos_builds": [
             {
                 "id_build": 0,
+                "versao": "1.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "data_inicio": "2026-07-25T05:02:22Z",
+                "data_fim": "2026-07-25T05:06:22Z"
             },
             {
                 "id_build": 1,
+                "versao": "1.2",
                 "status": "FALHA",
-                "data_inicio": "2026-07-25T18:39:53Z",
-                "data_fim": "2026-07-25T18:44:53Z"
+                "data_inicio": "2026-07-25T12:07:55Z",
+                "data_fim": "2026-07-25T12:13:55Z"
             },
             {
                 "id_build": 2,
+                "versao": "1.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-26T13:19:46Z",
-                "data_fim": "2026-07-26T13:24:46Z"
+                "data_inicio": "2026-07-25T19:13:29Z",
+                "data_fim": "2026-07-25T19:21:29Z"
             },
             {
                 "id_build": 3,
+                "versao": "1.4",
                 "status": "FALHA",
-                "data_inicio": "2026-07-27T07:59:40Z",
-                "data_fim": "2026-07-27T08:04:40Z"
+                "data_inicio": "2026-07-26T02:19:02Z",
+                "data_fim": "2026-07-26T02:23:02Z"
             },
             {
                 "id_build": 4,
+                "versao": "1.5",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-28T02:39:33Z",
-                "data_fim": "2026-07-28T02:44:33Z"
+                "data_inicio": "2026-07-26T09:24:36Z",
+                "data_fim": "2026-07-26T09:30:36Z"
             },
             {
                 "id_build": 5,
+                "versao": "1.6",
                 "status": "FALHA",
-                "data_inicio": "2026-07-28T21:19:26Z",
-                "data_fim": "2026-07-28T21:24:26Z"
+                "data_inicio": "2026-07-26T16:30:09Z",
+                "data_fim": "2026-07-26T16:38:09Z"
             },
             {
                 "id_build": 6,
+                "versao": "1.7",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-29T15:59:20Z",
-                "data_fim": "2026-07-29T16:04:20Z"
+                "data_inicio": "2026-07-26T23:35:43Z",
+                "data_fim": "2026-07-26T23:39:43Z"
             },
             {
                 "id_build": 7,
+                "versao": "1.8",
                 "status": "FALHA",
-                "data_inicio": "2026-07-30T10:39:13Z",
-                "data_fim": "2026-07-30T10:44:13Z"
+                "data_inicio": "2026-07-27T06:41:16Z",
+                "data_fim": "2026-07-27T06:47:16Z"
             },
             {
                 "id_build": 8,
+                "versao": "1.9",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T05:19:06Z",
-                "data_fim": "2026-07-31T05:24:06Z"
+                "data_inicio": "2026-07-27T13:46:49Z",
+                "data_fim": "2026-07-27T13:54:49Z"
             },
             {
                 "id_build": 9,
+                "versao": "1.10",
                 "status": "FALHA",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "data_inicio": "2026-07-27T20:52:23Z",
+                "data_fim": "2026-07-27T20:56:23Z"
             }
         ]
     },
@@ -71,69 +81,80 @@
         "ultimos_builds": [
             {
                 "id_build": 10,
+                "versao": "2.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "data_inicio": "2026-07-25T05:02:22Z",
+                "data_fim": "2026-07-25T05:06:22Z"
             },
             {
                 "id_build": 11,
+                "versao": "2.2",
                 "status": "FALHA",
-                "data_inicio": "2026-07-25T16:47:54Z",
-                "data_fim": "2026-07-25T16:52:54Z"
+                "data_inicio": "2026-07-25T11:25:22Z",
+                "data_fim": "2026-07-25T11:31:22Z"
             },
             {
                 "id_build": 12,
+                "versao": "2.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-26T09:35:48Z",
-                "data_fim": "2026-07-26T09:40:48Z"
+                "data_inicio": "2026-07-25T17:48:22Z",
+                "data_fim": "2026-07-25T17:56:22Z"
             },
             {
                 "id_build": 13,
+                "versao": "2.4",
                 "status": "FALHA",
-                "data_inicio": "2026-07-27T02:23:42Z",
-                "data_fim": "2026-07-27T02:28:42Z"
+                "data_inicio": "2026-07-26T00:11:22Z",
+                "data_fim": "2026-07-26T00:15:22Z"
             },
             {
                 "id_build": 14,
+                "versao": "2.5",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-27T19:11:36Z",
-                "data_fim": "2026-07-27T19:16:36Z"
+                "data_inicio": "2026-07-26T06:34:22Z",
+                "data_fim": "2026-07-26T06:40:22Z"
             },
             {
                 "id_build": 15,
+                "versao": "2.6",
                 "status": "FALHA",
-                "data_inicio": "2026-07-28T11:59:30Z",
-                "data_fim": "2026-07-28T12:04:30Z"
+                "data_inicio": "2026-07-26T12:57:22Z",
+                "data_fim": "2026-07-26T13:05:22Z"
             },
             {
                 "id_build": 16,
+                "versao": "2.7",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-29T04:47:24Z",
-                "data_fim": "2026-07-29T04:52:24Z"
+                "data_inicio": "2026-07-26T19:20:22Z",
+                "data_fim": "2026-07-26T19:24:22Z"
             },
             {
                 "id_build": 17,
+                "versao": "2.8",
                 "status": "FALHA",
-                "data_inicio": "2026-07-29T21:35:18Z",
-                "data_fim": "2026-07-29T21:40:18Z"
+                "data_inicio": "2026-07-27T01:43:23Z",
+                "data_fim": "2026-07-27T01:49:23Z"
             },
             {
                 "id_build": 18,
+                "versao": "2.9",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-30T14:23:12Z",
-                "data_fim": "2026-07-30T14:28:12Z"
+                "data_inicio": "2026-07-27T08:06:23Z",
+                "data_fim": "2026-07-27T08:14:23Z"
             },
             {
                 "id_build": 19,
+                "versao": "2.10",
                 "status": "FALHA",
-                "data_inicio": "2026-07-31T07:11:06Z",
-                "data_fim": "2026-07-31T07:16:06Z"
+                "data_inicio": "2026-07-27T14:29:23Z",
+                "data_fim": "2026-07-27T14:33:23Z"
             },
             {
                 "id_build": 20,
+                "versao": "2.11",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "data_inicio": "2026-07-27T20:52:23Z",
+                "data_fim": "2026-07-27T20:58:23Z"
             }
         ]
     },
@@ -143,75 +164,87 @@
         "ultimos_builds": [
             {
                 "id_build": 21,
+                "versao": "3.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "data_inicio": "2026-07-25T05:02:22Z",
+                "data_fim": "2026-07-25T05:06:22Z"
             },
             {
                 "id_build": 22,
+                "versao": "3.2",
                 "status": "FALHA",
-                "data_inicio": "2026-07-25T15:16:16Z",
-                "data_fim": "2026-07-25T15:21:16Z"
+                "data_inicio": "2026-07-25T10:50:33Z",
+                "data_fim": "2026-07-25T10:56:33Z"
             },
             {
                 "id_build": 23,
+                "versao": "3.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-26T06:32:32Z",
-                "data_fim": "2026-07-26T06:37:32Z"
+                "data_inicio": "2026-07-25T16:38:44Z",
+                "data_fim": "2026-07-25T16:46:44Z"
             },
             {
                 "id_build": 24,
+                "versao": "3.4",
                 "status": "FALHA",
-                "data_inicio": "2026-07-26T21:48:49Z",
-                "data_fim": "2026-07-26T21:53:49Z"
+                "data_inicio": "2026-07-25T22:26:55Z",
+                "data_fim": "2026-07-25T22:30:55Z"
             },
             {
                 "id_build": 25,
+                "versao": "3.5",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-27T13:05:05Z",
-                "data_fim": "2026-07-27T13:10:05Z"
+                "data_inicio": "2026-07-26T04:15:06Z",
+                "data_fim": "2026-07-26T04:21:06Z"
             },
             {
                 "id_build": 26,
+                "versao": "3.6",
                 "status": "FALHA",
-                "data_inicio": "2026-07-28T04:21:21Z",
-                "data_fim": "2026-07-28T04:26:21Z"
+                "data_inicio": "2026-07-26T10:03:17Z",
+                "data_fim": "2026-07-26T10:11:17Z"
             },
             {
                 "id_build": 27,
+                "versao": "3.7",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-28T19:37:38Z",
-                "data_fim": "2026-07-28T19:42:38Z"
+                "data_inicio": "2026-07-26T15:51:28Z",
+                "data_fim": "2026-07-26T15:55:28Z"
             },
             {
                 "id_build": 28,
+                "versao": "3.8",
                 "status": "FALHA",
-                "data_inicio": "2026-07-29T10:53:54Z",
-                "data_fim": "2026-07-29T10:58:54Z"
+                "data_inicio": "2026-07-26T21:39:39Z",
+                "data_fim": "2026-07-26T21:45:39Z"
             },
             {
                 "id_build": 29,
+                "versao": "3.9",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-30T02:10:10Z",
-                "data_fim": "2026-07-30T02:15:10Z"
+                "data_inicio": "2026-07-27T03:27:50Z",
+                "data_fim": "2026-07-27T03:35:50Z"
             },
             {
                 "id_build": 30,
+                "versao": "3.10",
                 "status": "FALHA",
-                "data_inicio": "2026-07-30T17:26:27Z",
-                "data_fim": "2026-07-30T17:31:27Z"
+                "data_inicio": "2026-07-27T09:16:01Z",
+                "data_fim": "2026-07-27T09:20:01Z"
             },
             {
                 "id_build": 31,
+                "versao": "3.11",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T08:42:43Z",
-                "data_fim": "2026-07-31T08:47:43Z"
+                "data_inicio": "2026-07-27T15:04:12Z",
+                "data_fim": "2026-07-27T15:10:12Z"
             },
             {
                 "id_build": 32,
+                "versao": "3.12",
                 "status": "FALHA",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "data_inicio": "2026-07-27T20:52:23Z",
+                "data_fim": "2026-07-27T21:00:23Z"
             }
         ]
     },
@@ -221,81 +254,94 @@
         "ultimos_builds": [
             {
                 "id_build": 33,
+                "versao": "4.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "data_inicio": "2026-07-25T05:02:22Z",
+                "data_fim": "2026-07-25T05:06:22Z"
             },
             {
                 "id_build": 34,
+                "versao": "4.2",
                 "status": "FALHA",
-                "data_inicio": "2026-07-25T13:59:55Z",
-                "data_fim": "2026-07-25T14:04:55Z"
+                "data_inicio": "2026-07-25T10:21:32Z",
+                "data_fim": "2026-07-25T10:27:32Z"
             },
             {
                 "id_build": 35,
+                "versao": "4.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-26T03:59:50Z",
-                "data_fim": "2026-07-26T04:04:50Z"
+                "data_inicio": "2026-07-25T15:40:42Z",
+                "data_fim": "2026-07-25T15:48:42Z"
             },
             {
                 "id_build": 36,
+                "versao": "4.4",
                 "status": "FALHA",
-                "data_inicio": "2026-07-26T17:59:45Z",
-                "data_fim": "2026-07-26T18:04:45Z"
+                "data_inicio": "2026-07-25T20:59:52Z",
+                "data_fim": "2026-07-25T21:03:52Z"
             },
             {
                 "id_build": 37,
+                "versao": "4.5",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-27T07:59:40Z",
-                "data_fim": "2026-07-27T08:04:40Z"
+                "data_inicio": "2026-07-26T02:19:02Z",
+                "data_fim": "2026-07-26T02:25:02Z"
             },
             {
                 "id_build": 38,
+                "versao": "4.6",
                 "status": "FALHA",
-                "data_inicio": "2026-07-27T21:59:35Z",
-                "data_fim": "2026-07-27T22:04:35Z"
+                "data_inicio": "2026-07-26T07:38:12Z",
+                "data_fim": "2026-07-26T07:46:12Z"
             },
             {
                 "id_build": 39,
+                "versao": "4.7",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-28T11:59:30Z",
-                "data_fim": "2026-07-28T12:04:30Z"
+                "data_inicio": "2026-07-26T12:57:22Z",
+                "data_fim": "2026-07-26T13:01:22Z"
             },
             {
                 "id_build": 40,
+                "versao": "4.8",
                 "status": "FALHA",
-                "data_inicio": "2026-07-29T01:59:25Z",
-                "data_fim": "2026-07-29T02:04:25Z"
+                "data_inicio": "2026-07-26T18:16:32Z",
+                "data_fim": "2026-07-26T18:22:32Z"
             },
             {
                 "id_build": 41,
+                "versao": "4.9",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-29T15:59:20Z",
-                "data_fim": "2026-07-29T16:04:20Z"
+                "data_inicio": "2026-07-26T23:35:43Z",
+                "data_fim": "2026-07-26T23:43:43Z"
             },
             {
                 "id_build": 42,
+                "versao": "4.10",
                 "status": "FALHA",
-                "data_inicio": "2026-07-30T05:59:15Z",
-                "data_fim": "2026-07-30T06:04:15Z"
+                "data_inicio": "2026-07-27T04:54:53Z",
+                "data_fim": "2026-07-27T04:58:53Z"
             },
             {
                 "id_build": 43,
+                "versao": "4.11",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-30T19:59:10Z",
-                "data_fim": "2026-07-30T20:04:10Z"
+                "data_inicio": "2026-07-27T10:14:03Z",
+                "data_fim": "2026-07-27T10:20:03Z"
             },
             {
                 "id_build": 44,
+                "versao": "4.12",
                 "status": "FALHA",
-                "data_inicio": "2026-07-31T09:59:05Z",
-                "data_fim": "2026-07-31T10:04:05Z"
+                "data_inicio": "2026-07-27T15:33:13Z",
+                "data_fim": "2026-07-27T15:41:13Z"
             },
             {
                 "id_build": 45,
+                "versao": "4.13",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "data_inicio": "2026-07-27T20:52:23Z",
+                "data_fim": "2026-07-27T20:56:23Z"
             }
         ]
     },
@@ -305,87 +351,101 @@
         "ultimos_builds": [
             {
                 "id_build": 46,
+                "versao": "5.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "data_inicio": "2026-07-25T05:02:22Z",
+                "data_fim": "2026-07-25T05:06:22Z"
             },
             {
                 "id_build": 47,
+                "versao": "5.2",
                 "status": "FALHA",
-                "data_inicio": "2026-07-25T12:55:18Z",
-                "data_fim": "2026-07-25T13:00:18Z"
+                "data_inicio": "2026-07-25T09:56:59Z",
+                "data_fim": "2026-07-25T10:02:59Z"
             },
             {
                 "id_build": 48,
+                "versao": "5.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-26T01:50:36Z",
-                "data_fim": "2026-07-26T01:55:36Z"
+                "data_inicio": "2026-07-25T14:51:36Z",
+                "data_fim": "2026-07-25T14:59:36Z"
             },
             {
                 "id_build": 49,
+                "versao": "5.4",
                 "status": "FALHA",
-                "data_inicio": "2026-07-26T14:45:55Z",
-                "data_fim": "2026-07-26T14:50:55Z"
+                "data_inicio": "2026-07-25T19:46:13Z",
+                "data_fim": "2026-07-25T19:50:13Z"
             },
             {
                 "id_build": 50,
+                "versao": "5.5",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-27T03:41:13Z",
-                "data_fim": "2026-07-27T03:46:13Z"
+                "data_inicio": "2026-07-26T00:40:50Z",
+                "data_fim": "2026-07-26T00:46:50Z"
             },
             {
                 "id_build": 51,
+                "versao": "5.6",
                 "status": "FALHA",
-                "data_inicio": "2026-07-27T16:36:32Z",
-                "data_fim": "2026-07-27T16:41:32Z"
+                "data_inicio": "2026-07-26T05:35:27Z",
+                "data_fim": "2026-07-26T05:43:27Z"
             },
             {
                 "id_build": 52,
+                "versao": "5.7",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-28T05:31:50Z",
-                "data_fim": "2026-07-28T05:36:50Z"
+                "data_inicio": "2026-07-26T10:30:04Z",
+                "data_fim": "2026-07-26T10:34:04Z"
             },
             {
                 "id_build": 53,
+                "versao": "5.8",
                 "status": "FALHA",
-                "data_inicio": "2026-07-28T18:27:09Z",
-                "data_fim": "2026-07-28T18:32:09Z"
+                "data_inicio": "2026-07-26T15:24:41Z",
+                "data_fim": "2026-07-26T15:30:41Z"
             },
             {
                 "id_build": 54,
+                "versao": "5.9",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-29T07:22:27Z",
-                "data_fim": "2026-07-29T07:27:27Z"
+                "data_inicio": "2026-07-26T20:19:18Z",
+                "data_fim": "2026-07-26T20:27:18Z"
             },
             {
                 "id_build": 55,
+                "versao": "5.10",
                 "status": "FALHA",
-                "data_inicio": "2026-07-29T20:17:46Z",
-                "data_fim": "2026-07-29T20:22:46Z"
+                "data_inicio": "2026-07-27T01:13:55Z",
+                "data_fim": "2026-07-27T01:17:55Z"
             },
             {
                 "id_build": 56,
+                "versao": "5.11",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-30T09:13:04Z",
-                "data_fim": "2026-07-30T09:18:04Z"
+                "data_inicio": "2026-07-27T06:08:32Z",
+                "data_fim": "2026-07-27T06:14:32Z"
             },
             {
                 "id_build": 57,
+                "versao": "5.12",
                 "status": "FALHA",
-                "data_inicio": "2026-07-30T22:08:23Z",
-                "data_fim": "2026-07-30T22:13:23Z"
+                "data_inicio": "2026-07-27T11:03:09Z",
+                "data_fim": "2026-07-27T11:11:09Z"
             },
             {
                 "id_build": 58,
+                "versao": "5.13",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T11:03:41Z",
-                "data_fim": "2026-07-31T11:08:41Z"
+                "data_inicio": "2026-07-27T15:57:46Z",
+                "data_fim": "2026-07-27T16:01:46Z"
             },
             {
                 "id_build": 59,
+                "versao": "5.14",
                 "status": "FALHA",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "data_inicio": "2026-07-27T20:52:23Z",
+                "data_fim": "2026-07-27T20:58:23Z"
             }
         ]
     },
@@ -395,93 +455,108 @@
         "ultimos_builds": [
             {
                 "id_build": 60,
+                "versao": "6.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "data_inicio": "2026-07-25T05:02:22Z",
+                "data_fim": "2026-07-25T05:06:22Z"
             },
             {
                 "id_build": 61,
+                "versao": "6.2",
                 "status": "FALHA",
-                "data_inicio": "2026-07-25T11:59:55Z",
-                "data_fim": "2026-07-25T12:04:55Z"
+                "data_inicio": "2026-07-25T09:35:56Z",
+                "data_fim": "2026-07-25T09:41:56Z"
             },
             {
                 "id_build": 62,
+                "versao": "6.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T23:59:51Z",
-                "data_fim": "2026-07-26T00:04:51Z"
+                "data_inicio": "2026-07-25T14:09:30Z",
+                "data_fim": "2026-07-25T14:17:30Z"
             },
             {
                 "id_build": 63,
+                "versao": "6.4",
                 "status": "FALHA",
-                "data_inicio": "2026-07-26T11:59:47Z",
-                "data_fim": "2026-07-26T12:04:47Z"
+                "data_inicio": "2026-07-25T18:43:05Z",
+                "data_fim": "2026-07-25T18:47:05Z"
             },
             {
                 "id_build": 64,
+                "versao": "6.5",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-26T23:59:42Z",
-                "data_fim": "2026-07-27T00:04:42Z"
+                "data_inicio": "2026-07-25T23:16:39Z",
+                "data_fim": "2026-07-25T23:22:39Z"
             },
             {
                 "id_build": 65,
+                "versao": "6.6",
                 "status": "FALHA",
-                "data_inicio": "2026-07-27T11:59:38Z",
-                "data_fim": "2026-07-27T12:04:38Z"
+                "data_inicio": "2026-07-26T03:50:14Z",
+                "data_fim": "2026-07-26T03:58:14Z"
             },
             {
                 "id_build": 66,
+                "versao": "6.7",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-27T23:59:34Z",
-                "data_fim": "2026-07-28T00:04:34Z"
+                "data_inicio": "2026-07-26T08:23:48Z",
+                "data_fim": "2026-07-26T08:27:48Z"
             },
             {
                 "id_build": 67,
+                "versao": "6.8",
                 "status": "FALHA",
-                "data_inicio": "2026-07-28T11:59:30Z",
-                "data_fim": "2026-07-28T12:04:30Z"
+                "data_inicio": "2026-07-26T12:57:22Z",
+                "data_fim": "2026-07-26T13:03:22Z"
             },
             {
                 "id_build": 68,
+                "versao": "6.9",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-28T23:59:25Z",
-                "data_fim": "2026-07-29T00:04:25Z"
+                "data_inicio": "2026-07-26T17:30:57Z",
+                "data_fim": "2026-07-26T17:38:57Z"
             },
             {
                 "id_build": 69,
+                "versao": "6.10",
                 "status": "FALHA",
-                "data_inicio": "2026-07-29T11:59:21Z",
-                "data_fim": "2026-07-29T12:04:21Z"
+                "data_inicio": "2026-07-26T22:04:31Z",
+                "data_fim": "2026-07-26T22:08:31Z"
             },
             {
                 "id_build": 70,
+                "versao": "6.11",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-29T23:59:17Z",
-                "data_fim": "2026-07-30T00:04:17Z"
+                "data_inicio": "2026-07-27T02:38:05Z",
+                "data_fim": "2026-07-27T02:44:05Z"
             },
             {
                 "id_build": 71,
+                "versao": "6.12",
                 "status": "FALHA",
-                "data_inicio": "2026-07-30T11:59:12Z",
-                "data_fim": "2026-07-30T12:04:12Z"
+                "data_inicio": "2026-07-27T07:11:40Z",
+                "data_fim": "2026-07-27T07:19:40Z"
             },
             {
                 "id_build": 72,
+                "versao": "6.13",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-30T23:59:08Z",
-                "data_fim": "2026-07-31T00:04:08Z"
+                "data_inicio": "2026-07-27T11:45:14Z",
+                "data_fim": "2026-07-27T11:49:14Z"
             },
             {
                 "id_build": 73,
+                "versao": "6.14",
                 "status": "FALHA",
-                "data_inicio": "2026-07-31T11:59:04Z",
-                "data_fim": "2026-07-31T12:04:04Z"
+                "data_inicio": "2026-07-27T16:18:49Z",
+                "data_fim": "2026-07-27T16:24:49Z"
             },
             {
                 "id_build": 74,
+                "versao": "6.15",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "data_inicio": "2026-07-27T20:52:23Z",
+                "data_fim": "2026-07-27T21:00:23Z"
             }
         ]
     },
@@ -491,99 +566,115 @@
         "ultimos_builds": [
             {
                 "id_build": 75,
+                "versao": "7.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "data_inicio": "2026-07-25T05:02:22Z",
+                "data_fim": "2026-07-25T05:06:22Z"
             },
             {
                 "id_build": 76,
+                "versao": "7.2",
                 "status": "FALHA",
-                "data_inicio": "2026-07-25T11:11:56Z",
-                "data_fim": "2026-07-25T11:16:56Z"
+                "data_inicio": "2026-07-25T09:17:42Z",
+                "data_fim": "2026-07-25T09:23:42Z"
             },
             {
                 "id_build": 77,
+                "versao": "7.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T22:23:52Z",
-                "data_fim": "2026-07-25T22:28:52Z"
+                "data_inicio": "2026-07-25T13:33:02Z",
+                "data_fim": "2026-07-25T13:41:02Z"
             },
             {
                 "id_build": 78,
+                "versao": "7.4",
                 "status": "FALHA",
-                "data_inicio": "2026-07-26T09:35:48Z",
-                "data_fim": "2026-07-26T09:40:48Z"
+                "data_inicio": "2026-07-25T17:48:22Z",
+                "data_fim": "2026-07-25T17:52:22Z"
             },
             {
                 "id_build": 79,
+                "versao": "7.5",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-26T20:47:44Z",
-                "data_fim": "2026-07-26T20:52:44Z"
+                "data_inicio": "2026-07-25T22:03:42Z",
+                "data_fim": "2026-07-25T22:09:42Z"
             },
             {
                 "id_build": 80,
+                "versao": "7.6",
                 "status": "FALHA",
-                "data_inicio": "2026-07-27T07:59:40Z",
-                "data_fim": "2026-07-27T08:04:40Z"
+                "data_inicio": "2026-07-26T02:19:02Z",
+                "data_fim": "2026-07-26T02:27:02Z"
             },
             {
                 "id_build": 81,
+                "versao": "7.7",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-27T19:11:36Z",
-                "data_fim": "2026-07-27T19:16:36Z"
+                "data_inicio": "2026-07-26T06:34:22Z",
+                "data_fim": "2026-07-26T06:38:22Z"
             },
             {
                 "id_build": 82,
+                "versao": "7.8",
                 "status": "FALHA",
-                "data_inicio": "2026-07-28T06:23:32Z",
-                "data_fim": "2026-07-28T06:28:32Z"
+                "data_inicio": "2026-07-26T10:49:42Z",
+                "data_fim": "2026-07-26T10:55:42Z"
             },
             {
                 "id_build": 83,
+                "versao": "7.9",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-28T17:35:28Z",
-                "data_fim": "2026-07-28T17:40:28Z"
+                "data_inicio": "2026-07-26T15:05:02Z",
+                "data_fim": "2026-07-26T15:13:02Z"
             },
             {
                 "id_build": 84,
+                "versao": "7.10",
                 "status": "FALHA",
-                "data_inicio": "2026-07-29T04:47:24Z",
-                "data_fim": "2026-07-29T04:52:24Z"
+                "data_inicio": "2026-07-26T19:20:22Z",
+                "data_fim": "2026-07-26T19:24:22Z"
             },
             {
                 "id_build": 85,
+                "versao": "7.11",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-29T15:59:20Z",
-                "data_fim": "2026-07-29T16:04:20Z"
+                "data_inicio": "2026-07-26T23:35:43Z",
+                "data_fim": "2026-07-26T23:41:43Z"
             },
             {
                 "id_build": 86,
+                "versao": "7.12",
                 "status": "FALHA",
-                "data_inicio": "2026-07-30T03:11:16Z",
-                "data_fim": "2026-07-30T03:16:16Z"
+                "data_inicio": "2026-07-27T03:51:03Z",
+                "data_fim": "2026-07-27T03:59:03Z"
             },
             {
                 "id_build": 87,
+                "versao": "7.13",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-30T14:23:12Z",
-                "data_fim": "2026-07-30T14:28:12Z"
+                "data_inicio": "2026-07-27T08:06:23Z",
+                "data_fim": "2026-07-27T08:10:23Z"
             },
             {
                 "id_build": 88,
+                "versao": "7.14",
                 "status": "FALHA",
-                "data_inicio": "2026-07-31T01:35:08Z",
-                "data_fim": "2026-07-31T01:40:08Z"
+                "data_inicio": "2026-07-27T12:21:43Z",
+                "data_fim": "2026-07-27T12:27:43Z"
             },
             {
                 "id_build": 89,
+                "versao": "7.15",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T12:47:04Z",
-                "data_fim": "2026-07-31T12:52:04Z"
+                "data_inicio": "2026-07-27T16:37:03Z",
+                "data_fim": "2026-07-27T16:45:03Z"
             },
             {
                 "id_build": 90,
+                "versao": "7.16",
                 "status": "FALHA",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "data_inicio": "2026-07-27T20:52:23Z",
+                "data_fim": "2026-07-27T20:56:23Z"
             }
         ]
     },
@@ -593,105 +684,122 @@
         "ultimos_builds": [
             {
                 "id_build": 91,
+                "versao": "8.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "data_inicio": "2026-07-25T05:02:22Z",
+                "data_fim": "2026-07-25T05:06:22Z"
             },
             {
                 "id_build": 92,
+                "versao": "8.2",
                 "status": "FALHA",
-                "data_inicio": "2026-07-25T10:29:56Z",
-                "data_fim": "2026-07-25T10:34:56Z"
+                "data_inicio": "2026-07-25T09:01:44Z",
+                "data_fim": "2026-07-25T09:07:44Z"
             },
             {
                 "id_build": 93,
+                "versao": "8.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T20:59:52Z",
-                "data_fim": "2026-07-25T21:04:52Z"
+                "data_inicio": "2026-07-25T13:01:07Z",
+                "data_fim": "2026-07-25T13:09:07Z"
             },
             {
                 "id_build": 94,
+                "versao": "8.4",
                 "status": "FALHA",
-                "data_inicio": "2026-07-26T07:29:48Z",
-                "data_fim": "2026-07-26T07:34:48Z"
+                "data_inicio": "2026-07-25T17:00:29Z",
+                "data_fim": "2026-07-25T17:04:29Z"
             },
             {
                 "id_build": 95,
+                "versao": "8.5",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-26T17:59:45Z",
-                "data_fim": "2026-07-26T18:04:45Z"
+                "data_inicio": "2026-07-25T20:59:52Z",
+                "data_fim": "2026-07-25T21:05:52Z"
             },
             {
                 "id_build": 96,
+                "versao": "8.6",
                 "status": "FALHA",
-                "data_inicio": "2026-07-27T04:29:41Z",
-                "data_fim": "2026-07-27T04:34:41Z"
+                "data_inicio": "2026-07-26T00:59:15Z",
+                "data_fim": "2026-07-26T01:07:15Z"
             },
             {
                 "id_build": 97,
+                "versao": "8.7",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-27T14:59:37Z",
-                "data_fim": "2026-07-27T15:04:37Z"
+                "data_inicio": "2026-07-26T04:58:37Z",
+                "data_fim": "2026-07-26T05:02:37Z"
             },
             {
                 "id_build": 98,
+                "versao": "8.8",
                 "status": "FALHA",
-                "data_inicio": "2026-07-28T01:29:33Z",
-                "data_fim": "2026-07-28T01:34:33Z"
+                "data_inicio": "2026-07-26T08:58:00Z",
+                "data_fim": "2026-07-26T09:04:00Z"
             },
             {
                 "id_build": 99,
+                "versao": "8.9",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-28T11:59:30Z",
-                "data_fim": "2026-07-28T12:04:30Z"
+                "data_inicio": "2026-07-26T12:57:22Z",
+                "data_fim": "2026-07-26T13:05:22Z"
             },
             {
                 "id_build": 100,
+                "versao": "8.10",
                 "status": "FALHA",
-                "data_inicio": "2026-07-28T22:29:26Z",
-                "data_fim": "2026-07-28T22:34:26Z"
+                "data_inicio": "2026-07-26T16:56:45Z",
+                "data_fim": "2026-07-26T17:00:45Z"
             },
             {
                 "id_build": 101,
+                "versao": "8.11",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-29T08:59:22Z",
-                "data_fim": "2026-07-29T09:04:22Z"
+                "data_inicio": "2026-07-26T20:56:07Z",
+                "data_fim": "2026-07-26T21:02:07Z"
             },
             {
                 "id_build": 102,
+                "versao": "8.12",
                 "status": "FALHA",
-                "data_inicio": "2026-07-29T19:29:18Z",
-                "data_fim": "2026-07-29T19:34:18Z"
+                "data_inicio": "2026-07-27T00:55:30Z",
+                "data_fim": "2026-07-27T01:03:30Z"
             },
             {
                 "id_build": 103,
+                "versao": "8.13",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-30T05:59:15Z",
-                "data_fim": "2026-07-30T06:04:15Z"
+                "data_inicio": "2026-07-27T04:54:53Z",
+                "data_fim": "2026-07-27T04:58:53Z"
             },
             {
                 "id_build": 104,
+                "versao": "8.14",
                 "status": "FALHA",
-                "data_inicio": "2026-07-30T16:29:11Z",
-                "data_fim": "2026-07-30T16:34:11Z"
+                "data_inicio": "2026-07-27T08:54:15Z",
+                "data_fim": "2026-07-27T09:00:15Z"
             },
             {
                 "id_build": 105,
+                "versao": "8.15",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T02:59:07Z",
-                "data_fim": "2026-07-31T03:04:07Z"
+                "data_inicio": "2026-07-27T12:53:38Z",
+                "data_fim": "2026-07-27T13:01:38Z"
             },
             {
                 "id_build": 106,
+                "versao": "8.16",
                 "status": "FALHA",
-                "data_inicio": "2026-07-31T13:29:03Z",
-                "data_fim": "2026-07-31T13:34:03Z"
+                "data_inicio": "2026-07-27T16:53:00Z",
+                "data_fim": "2026-07-27T16:57:00Z"
             },
             {
                 "id_build": 107,
+                "versao": "8.17",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "data_inicio": "2026-07-27T20:52:23Z",
+                "data_fim": "2026-07-27T20:58:23Z"
             }
         ]
     },
@@ -701,111 +809,129 @@
         "ultimos_builds": [
             {
                 "id_build": 108,
+                "versao": "9.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "data_inicio": "2026-07-25T05:02:22Z",
+                "data_fim": "2026-07-25T05:06:22Z"
             },
             {
                 "id_build": 109,
+                "versao": "9.2",
                 "status": "FALHA",
-                "data_inicio": "2026-07-25T09:52:52Z",
-                "data_fim": "2026-07-25T09:57:52Z"
+                "data_inicio": "2026-07-25T08:47:39Z",
+                "data_fim": "2026-07-25T08:53:39Z"
             },
             {
                 "id_build": 110,
+                "versao": "9.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T19:45:45Z",
-                "data_fim": "2026-07-25T19:50:45Z"
+                "data_inicio": "2026-07-25T12:32:57Z",
+                "data_fim": "2026-07-25T12:40:57Z"
             },
             {
                 "id_build": 111,
+                "versao": "9.4",
                 "status": "FALHA",
-                "data_inicio": "2026-07-26T05:38:38Z",
-                "data_fim": "2026-07-26T05:43:38Z"
+                "data_inicio": "2026-07-25T16:18:15Z",
+                "data_fim": "2026-07-25T16:22:15Z"
             },
             {
                 "id_build": 112,
+                "versao": "9.5",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-26T15:31:31Z",
-                "data_fim": "2026-07-26T15:36:31Z"
+                "data_inicio": "2026-07-25T20:03:33Z",
+                "data_fim": "2026-07-25T20:09:33Z"
             },
             {
                 "id_build": 113,
+                "versao": "9.6",
                 "status": "FALHA",
-                "data_inicio": "2026-07-27T01:24:24Z",
-                "data_fim": "2026-07-27T01:29:24Z"
+                "data_inicio": "2026-07-25T23:48:50Z",
+                "data_fim": "2026-07-25T23:56:50Z"
             },
             {
                 "id_build": 114,
+                "versao": "9.7",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-27T11:17:17Z",
-                "data_fim": "2026-07-27T11:22:17Z"
+                "data_inicio": "2026-07-26T03:34:08Z",
+                "data_fim": "2026-07-26T03:38:08Z"
             },
             {
                 "id_build": 115,
+                "versao": "9.8",
                 "status": "FALHA",
-                "data_inicio": "2026-07-27T21:10:10Z",
-                "data_fim": "2026-07-27T21:15:10Z"
+                "data_inicio": "2026-07-26T07:19:26Z",
+                "data_fim": "2026-07-26T07:25:26Z"
             },
             {
                 "id_build": 116,
+                "versao": "9.9",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-28T07:03:03Z",
-                "data_fim": "2026-07-28T07:08:03Z"
+                "data_inicio": "2026-07-26T11:04:43Z",
+                "data_fim": "2026-07-26T11:12:43Z"
             },
             {
                 "id_build": 117,
+                "versao": "9.10",
                 "status": "FALHA",
-                "data_inicio": "2026-07-28T16:55:56Z",
-                "data_fim": "2026-07-28T17:00:56Z"
+                "data_inicio": "2026-07-26T14:50:01Z",
+                "data_fim": "2026-07-26T14:54:01Z"
             },
             {
                 "id_build": 118,
+                "versao": "9.11",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-29T02:48:49Z",
-                "data_fim": "2026-07-29T02:53:49Z"
+                "data_inicio": "2026-07-26T18:35:19Z",
+                "data_fim": "2026-07-26T18:41:19Z"
             },
             {
                 "id_build": 119,
+                "versao": "9.12",
                 "status": "FALHA",
-                "data_inicio": "2026-07-29T12:41:42Z",
-                "data_fim": "2026-07-29T12:46:42Z"
+                "data_inicio": "2026-07-26T22:20:37Z",
+                "data_fim": "2026-07-26T22:28:37Z"
             },
             {
                 "id_build": 120,
+                "versao": "9.13",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-29T22:34:35Z",
-                "data_fim": "2026-07-29T22:39:35Z"
+                "data_inicio": "2026-07-27T02:05:54Z",
+                "data_fim": "2026-07-27T02:09:54Z"
             },
             {
                 "id_build": 121,
+                "versao": "9.14",
                 "status": "FALHA",
-                "data_inicio": "2026-07-30T08:27:28Z",
-                "data_fim": "2026-07-30T08:32:28Z"
+                "data_inicio": "2026-07-27T05:51:12Z",
+                "data_fim": "2026-07-27T05:57:12Z"
             },
             {
                 "id_build": 122,
+                "versao": "9.15",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-30T18:20:21Z",
-                "data_fim": "2026-07-30T18:25:21Z"
+                "data_inicio": "2026-07-27T09:36:30Z",
+                "data_fim": "2026-07-27T09:44:30Z"
             },
             {
                 "id_build": 123,
+                "versao": "9.16",
                 "status": "FALHA",
-                "data_inicio": "2026-07-31T04:13:14Z",
-                "data_fim": "2026-07-31T04:18:14Z"
+                "data_inicio": "2026-07-27T13:21:47Z",
+                "data_fim": "2026-07-27T13:25:47Z"
             },
             {
                 "id_build": 124,
+                "versao": "9.17",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T14:06:07Z",
-                "data_fim": "2026-07-31T14:11:07Z"
+                "data_inicio": "2026-07-27T17:07:05Z",
+                "data_fim": "2026-07-27T17:13:05Z"
             },
             {
                 "id_build": 125,
+                "versao": "9.18",
                 "status": "FALHA",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "data_inicio": "2026-07-27T20:52:23Z",
+                "data_fim": "2026-07-27T21:00:23Z"
             }
         ]
     },
@@ -815,117 +941,136 @@
         "ultimos_builds": [
             {
                 "id_build": 126,
+                "versao": "10.1",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T00:00:00Z",
-                "data_fim": "2026-07-25T00:05:00Z"
+                "data_inicio": "2026-07-25T05:02:22Z",
+                "data_fim": "2026-07-25T05:06:22Z"
             },
             {
                 "id_build": 127,
+                "versao": "10.2",
                 "status": "FALHA",
-                "data_inicio": "2026-07-25T09:19:56Z",
-                "data_fim": "2026-07-25T09:24:56Z"
+                "data_inicio": "2026-07-25T08:35:08Z",
+                "data_fim": "2026-07-25T08:41:08Z"
             },
             {
                 "id_build": 128,
+                "versao": "10.3",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-25T18:39:53Z",
-                "data_fim": "2026-07-25T18:44:53Z"
+                "data_inicio": "2026-07-25T12:07:55Z",
+                "data_fim": "2026-07-25T12:15:55Z"
             },
             {
                 "id_build": 129,
+                "versao": "10.4",
                 "status": "FALHA",
-                "data_inicio": "2026-07-26T03:59:50Z",
-                "data_fim": "2026-07-26T04:04:50Z"
+                "data_inicio": "2026-07-25T15:40:42Z",
+                "data_fim": "2026-07-25T15:44:42Z"
             },
             {
                 "id_build": 130,
+                "versao": "10.5",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-26T13:19:46Z",
-                "data_fim": "2026-07-26T13:24:46Z"
+                "data_inicio": "2026-07-25T19:13:29Z",
+                "data_fim": "2026-07-25T19:19:29Z"
             },
             {
                 "id_build": 131,
+                "versao": "10.6",
                 "status": "FALHA",
-                "data_inicio": "2026-07-26T22:39:43Z",
-                "data_fim": "2026-07-26T22:44:43Z"
+                "data_inicio": "2026-07-25T22:46:15Z",
+                "data_fim": "2026-07-25T22:54:15Z"
             },
             {
                 "id_build": 132,
+                "versao": "10.7",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-27T07:59:40Z",
-                "data_fim": "2026-07-27T08:04:40Z"
+                "data_inicio": "2026-07-26T02:19:02Z",
+                "data_fim": "2026-07-26T02:23:02Z"
             },
             {
                 "id_build": 133,
+                "versao": "10.8",
                 "status": "FALHA",
-                "data_inicio": "2026-07-27T17:19:36Z",
-                "data_fim": "2026-07-27T17:24:36Z"
+                "data_inicio": "2026-07-26T05:51:49Z",
+                "data_fim": "2026-07-26T05:57:49Z"
             },
             {
                 "id_build": 134,
+                "versao": "10.9",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-28T02:39:33Z",
-                "data_fim": "2026-07-28T02:44:33Z"
+                "data_inicio": "2026-07-26T09:24:36Z",
+                "data_fim": "2026-07-26T09:32:36Z"
             },
             {
                 "id_build": 135,
+                "versao": "10.10",
                 "status": "FALHA",
-                "data_inicio": "2026-07-28T11:59:30Z",
-                "data_fim": "2026-07-28T12:04:30Z"
+                "data_inicio": "2026-07-26T12:57:22Z",
+                "data_fim": "2026-07-26T13:01:22Z"
             },
             {
                 "id_build": 136,
+                "versao": "10.11",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-28T21:19:26Z",
-                "data_fim": "2026-07-28T21:24:26Z"
+                "data_inicio": "2026-07-26T16:30:09Z",
+                "data_fim": "2026-07-26T16:36:09Z"
             },
             {
                 "id_build": 137,
+                "versao": "10.12",
                 "status": "FALHA",
-                "data_inicio": "2026-07-29T06:39:23Z",
-                "data_fim": "2026-07-29T06:44:23Z"
+                "data_inicio": "2026-07-26T20:02:56Z",
+                "data_fim": "2026-07-26T20:10:56Z"
             },
             {
                 "id_build": 138,
+                "versao": "10.13",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-29T15:59:20Z",
-                "data_fim": "2026-07-29T16:04:20Z"
+                "data_inicio": "2026-07-26T23:35:43Z",
+                "data_fim": "2026-07-26T23:39:43Z"
             },
             {
                 "id_build": 139,
+                "versao": "10.14",
                 "status": "FALHA",
-                "data_inicio": "2026-07-30T01:19:16Z",
-                "data_fim": "2026-07-30T01:24:16Z"
+                "data_inicio": "2026-07-27T03:08:29Z",
+                "data_fim": "2026-07-27T03:14:29Z"
             },
             {
                 "id_build": 140,
+                "versao": "10.15",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-30T10:39:13Z",
-                "data_fim": "2026-07-30T10:44:13Z"
+                "data_inicio": "2026-07-27T06:41:16Z",
+                "data_fim": "2026-07-27T06:49:16Z"
             },
             {
                 "id_build": 141,
+                "versao": "10.16",
                 "status": "FALHA",
-                "data_inicio": "2026-07-30T19:59:10Z",
-                "data_fim": "2026-07-30T20:04:10Z"
+                "data_inicio": "2026-07-27T10:14:03Z",
+                "data_fim": "2026-07-27T10:18:03Z"
             },
             {
                 "id_build": 142,
+                "versao": "10.17",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T05:19:06Z",
-                "data_fim": "2026-07-31T05:24:06Z"
+                "data_inicio": "2026-07-27T13:46:49Z",
+                "data_fim": "2026-07-27T13:52:49Z"
             },
             {
                 "id_build": 143,
+                "versao": "10.18",
                 "status": "FALHA",
-                "data_inicio": "2026-07-31T14:39:03Z",
-                "data_fim": "2026-07-31T14:44:03Z"
+                "data_inicio": "2026-07-27T17:19:36Z",
+                "data_fim": "2026-07-27T17:27:36Z"
             },
             {
                 "id_build": 144,
+                "versao": "10.19",
                 "status": "SUCESSO",
-                "data_inicio": "2026-07-31T23:59:00Z",
-                "data_fim": "2026-08-01T00:04:00Z"
+                "data_inicio": "2026-07-27T20:52:23Z",
+                "data_fim": "2026-07-27T20:56:23Z"
             }
         ]
     }

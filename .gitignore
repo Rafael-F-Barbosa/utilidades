@@ -6,3 +6,7 @@
 /suite-k8s-python/namespaces.json
 
 */servidor-python-simples/.venv/
+
+*.venv/
+
+.streamlit/
