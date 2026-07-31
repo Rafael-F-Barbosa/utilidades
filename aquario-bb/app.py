@@ -139,6 +139,21 @@ def resumo_geral_etapa(cat):
     }
 
 
+def pct_agendado(nome):
+    arts = artefatos("releases", nome)
+    total = len(arts)
+    agend = sum(1 for a in arts if a["status"] == "AGENDADO")
+    return round(agend / total * 100) if total else 0
+
+
+def pct_agendado_geral():
+    total = sum(len(artefatos("releases", j["nome"])) for j in BUILDS)
+    agend = sum(
+        1 for j in BUILDS for a in artefatos("releases", j["nome"]) if a["status"] == "AGENDADO"
+    )
+    return round(agend / total * 100) if total else 0
+
+
 def fmt_data(iso):
     if not iso:
         return "-"
@@ -217,10 +232,15 @@ def matrix_html():
                 cor = "#bf8700"
             else:
                 cor = "#cf222e"
+            if c == "releases":
+                pct_txt = f"{pct_agendado(nome)}% agendadas"
+            else:
+                pct_txt = f"{r['taxa']}% de sucesso"
             partes.append(
-                f'<div class="cel-dados"><div class="bloco" style="background:{cor}">'
+                f'<div class="cel-dados">{lista_artefatos_html(c, nome)}'
+                f'<div class="bloco" style="background:{cor}">'
                 f'<b>{r["total"]}</b>'
-                f'<small>{r["bons"]} ok &middot; {r["ruins"]} ruim</small></div></div>'
+                f"<small>{pct_txt}</small></div></div>"
             )
         partes.append("</div>")
     return "".join(partes)
@@ -233,6 +253,18 @@ def cartao_html(titulo, valor, det, cor):
         f'<div class="cnum">{valor}</div>'
         f'<div class="cdet">{det}</div></div>'
     )
+
+
+def lista_artefatos_html(cat, nome):
+    arts = artefatos(cat, nome)
+    titulo = {"builds": "Builds", "releases": "Releases", "execucoes": "Execuções"}[cat]
+    itens = "".join(
+        f'<div class="tip-item"><span style="color:{COR_STATUS.get(a["status"], "#8b949e")}">&#9679;</span> '
+        f'#{a.get("id_build", a.get("id_release", a.get("id_execucao")))} &middot; {esc(a["versao"])} '
+        f'&middot; {esc(a["status"])}</div>'
+        for a in arts
+    )
+    return f'<div class="tip"><div class="tip-tit">{titulo} ({len(arts)})</div>{itens}</div>'
 
 
 def fluxo_html(rel, b, exs):
@@ -277,6 +309,30 @@ CSS = """
 .pgrade.cabecalho { border-top: 1px solid #d0d7de; background: #f6f8fa; }
 .pgrade > div { padding: 8px 12px; border-right: 1px solid #d0d7de; }
 .pgrade > div:last-child { border-right: none; }
+.cel-dados { position: relative; }
+.tip {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    min-width: 230px;
+    max-width: 360px;
+    max-height: 280px;
+    overflow-y: auto;
+    background: #24292f;
+    color: #f6f8fa;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 12px;
+    line-height: 1.6;
+    box-shadow: 0 8px 24px rgba(66, 74, 83, 0.35);
+    text-align: left;
+}
+.tip-tit { font-weight: 700; border-bottom: 1px solid rgba(246, 248, 250, 0.25); padding-bottom: 6px; margin-bottom: 6px; }
+.tip-item { white-space: nowrap; }
+.cel-dados:hover .tip { display: block; }
 .cel-nome { display: flex; flex-direction: column; gap: 4px; justify-content: center; }
 .cel-nome b { font-size: 14px; }
 .cel-etapa { font-weight: 600; font-size: 13px; color: #24292f; display: flex; flex-direction: column; gap: 2px; }
@@ -354,40 +410,40 @@ with col_metricas:
     r_r = resumo_geral_etapa("releases")
     r_e = resumo_geral_etapa("execucoes")
     m1, m2, m3 = st.columns(3)
-    m1.metric("Builds", r_b["total"], f"{r_b['taxa']}% ok")
-    m2.metric("Releases", r_r["total"], f"{r_r['taxa']}% ok")
-    m3.metric("Execuções", r_e["total"], f"{r_e['taxa']}% ok")
+    m1.metric("Builds", r_b["total"], f"{r_b['taxa']}% sucesso")
+    m2.metric("Releases", r_r["total"], f"{pct_agendado_geral()}% agendadas")
+    m3.metric("Execuções", r_e["total"], f"{r_e['taxa']}% sucesso")
 
 st.subheader("Pipeline Global")
 st.markdown(
     '<div style="font-size:13px;color:#57606a;margin-bottom:8px">'
-    'Jobs × etapas. Clique no job ao lado para ver o caminho dos dados (build → release → execuções).</div>',
+    'Jobs × etapas. Passe o mouse sobre um card para listar os itens; selecione o job abaixo para ver o caminho dos dados (build → release → execuções).</div>',
     unsafe_allow_html=True,
 )
 st.markdown(matrix_html(), unsafe_allow_html=True)
 
 st.caption(
-    "\u25cf OK (\u226580% de sucesso)   \u25cf Instável (55-79%)   "
-    "\u25cf Ruim (<55%)   — clique em um job para ver o caminho dos dados."
+    "\u25cf Saudável (\u226580% de sucesso)   \u25cf Atenção (55-79%)   "
+    "\u25cf Crítico (<55%)   · releases: % de agendadas   · passe o mouse sobre um card para listar os itens."
 )
 
 st.divider()
 
-st.subheader("Caminho dos Dados")
-
-sidebar = st.sidebar
-nome = sidebar.selectbox("Job", [j["nome"] for j in BUILDS])
+c_sel, c_saude = st.columns([2, 1], vertical_alignment="center")
+nome = c_sel.selectbox("Job", [j["nome"] for j in BUILDS])
 
 saude = saude_job(nome)
 est = estado_saude(saude)
-sidebar.markdown(
-    f'<div style="display:flex;align-items:center;gap:10px">'
+c_saude.markdown(
+    f'<div style="display:flex;align-items:center;gap:10px;justify-content:flex-end">'
     f'<div><div style="font-size:12px;color:#57606a;font-weight:600">Saúde do job</div>'
     f'<div style="font-size:12px;color:#57606a">{est["rotulo"]}</div></div>'
     f'{gauge_html(saude)}</div>',
     unsafe_allow_html=True,
 )
-sidebar.caption("Para cada versão fechada com sucesso (build → release), as execuções relacionadas com percentual de sucessos e falhas.")
+
+st.subheader("Caminho dos Dados")
+st.caption("Para cada versão fechada com sucesso (build → release), as execuções relacionadas com percentual de sucessos e falhas.")
 
 cols = st.columns(3)
 rb = resumo_etapa("builds", nome)
@@ -396,7 +452,7 @@ rels = artefatos("releases", nome)
 fechadas = [r for r in rels if r["status"] in ("AGENDADO", "ARQUIVADO")]
 
 with cols[0]:
-    st.markdown(cartao_html("Builds", rb["total"], f'<b class="ok">{rb["bons"]} ok</b> &middot; <b class="ruim">{rb["ruins"]} falha</b>', COR_ETAPA["builds"]), unsafe_allow_html=True)
+    st.markdown(cartao_html("Builds", rb["total"], f'{rb["taxa"]}% de sucesso', COR_ETAPA["builds"]), unsafe_allow_html=True)
 with cols[1]:
     st.markdown(cartao_html("Releases fechadas", len(fechadas), f"de {len(rels)} releases &middot; versões com execução", COR_ETAPA["releases"]), unsafe_allow_html=True)
 with cols[2]:
@@ -405,7 +461,7 @@ with cols[2]:
         f'{pizza_html(re["bons"], re["ruins"])}</div>',
         unsafe_allow_html=True,
     )
-st.caption(f'<b class="ok">{re["bons"]} sucesso</b> &middot; <b class="ruim">{re["ruins"]} falha</b> &middot; {re["total"]} total', unsafe_allow_html=True)
+st.caption(f'<b class="ok">{re["taxa"]}% de sucesso</b> &middot; {re["total"]} execuções', unsafe_allow_html=True)
 
 st.markdown("#### Versões fechadas")
 builds_map = {b["id_build"]: b for b in artefatos("builds", nome)}
