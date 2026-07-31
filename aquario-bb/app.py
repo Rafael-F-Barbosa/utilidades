@@ -363,6 +363,7 @@ CSS = """
 .cartao {
     background: #fff; border: 1px solid #d0d7de; border-radius: 8px;
     padding: 12px 14px; display: flex; flex-direction: column; gap: 2px;
+    height: 100%;
 }
 .ctit { font-size: 12px; font-weight: 600; color: #57606a; text-transform: uppercase; letter-spacing: .3px; }
 .cnum { font-size: 26px; font-weight: 700; color: #24292f; line-height: 1.1; }
@@ -457,11 +458,15 @@ with cols[1]:
     st.markdown(cartao_html("Releases fechadas", len(fechadas), f"de {len(rels)} releases &middot; versões com execução", COR_ETAPA["releases"]), unsafe_allow_html=True)
 with cols[2]:
     st.markdown(
-        f'<div style="display:flex;align-items:center;gap:14px">{cartao_html("Execuções", re["total"], "", COR_ETAPA["execucoes"])}'
-        f'{pizza_html(re["bons"], re["ruins"])}</div>',
+        f'<div class="cartao" style="border-top:4px solid {COR_ETAPA["execucoes"]}">'
+        f'<div class="ctit">Execuções</div>'
+        f'<div class="cnum" style="display:flex;align-items:center;gap:10px">{re["total"]}'
+        f'{pizza_html(re["bons"], re["ruins"], tam=34)}</div>'
+        f'<div class="cdet">{re["taxa"]}% de sucesso &middot; '
+        f'<span class="ok">{re["bons"]} sucesso</span> &middot; '
+        f'<span class="ruim">{re["ruins"]} falha</span></div></div>',
         unsafe_allow_html=True,
     )
-st.caption(f'<b class="ok">{re["taxa"]}% de sucesso</b> &middot; {re["total"]} execuções', unsafe_allow_html=True)
 
 st.markdown("#### Versões fechadas")
 builds_map = {b["id_build"]: b for b in artefatos("builds", nome)}
