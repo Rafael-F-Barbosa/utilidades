@@ -395,17 +395,9 @@ st.set_page_config(page_title="Esteira ", page_icon="\u2b26", layout="wide")
 
 st.markdown(CSS, unsafe_allow_html=True)
 
-col_titulo, col_gauge, col_metricas = st.columns([3, 1, 2], vertical_alignment="center")
+col_titulo, col_metricas = st.columns([3, 2], vertical_alignment="center")
 with col_titulo:
     st.caption("Release de software e dados &middot; últimos 7 dias")
-with col_gauge:
-    st.markdown(
-        f'<div style="display:flex;align-items:center;gap:10px;justify-content:flex-end">'
-        f'<div><div style="font-size:12px;color:#57606a;font-weight:600">Saúde do sistema</div>'
-        f'<div style="font-size:12px;color:#57606a">{estado_saude(saude_geral())["rotulo"]}</div></div>'
-        f'{gauge_html(saude_geral())}</div>',
-        unsafe_allow_html=True,
-    )
 with col_metricas:
     r_b = resumo_geral_etapa("builds")
     r_r = resumo_geral_etapa("releases")
@@ -430,18 +422,7 @@ st.caption(
 
 st.divider()
 
-c_sel, c_saude = st.columns([2, 1], vertical_alignment="center")
-nome = c_sel.selectbox("Job", [j["nome"] for j in BUILDS])
-
-saude = saude_job(nome)
-est = estado_saude(saude)
-c_saude.markdown(
-    f'<div style="display:flex;align-items:center;gap:10px;justify-content:flex-end">'
-    f'<div><div style="font-size:12px;color:#57606a;font-weight:600">Saúde do job</div>'
-    f'<div style="font-size:12px;color:#57606a">{est["rotulo"]}</div></div>'
-    f'{gauge_html(saude)}</div>',
-    unsafe_allow_html=True,
-)
+nome = st.selectbox("Job", [j["nome"] for j in BUILDS])
 
 st.subheader("Caminho dos Dados")
 st.caption("Para cada versão fechada com sucesso (build → release), as execuções relacionadas com percentual de sucessos e falhas.")
