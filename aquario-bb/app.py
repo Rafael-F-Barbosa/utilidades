@@ -6,6 +6,8 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
+from seletor import seletor
+
 BASE = Path(__file__).resolve().parent
 
 COR_STATUS = {
@@ -96,8 +98,9 @@ def saude_job(nome):
     return round(soma / n) if n else 0
 
 
-def saude_geral():
-    vals = [saude_job(j["nome"]) for j in BUILDS]
+def saude_geral(jobs=None):
+    jobs = jobs if jobs is not None else BUILDS
+    vals = [saude_job(j["nome"]) for j in jobs]
     return round(sum(vals) / len(vals)) if vals else 0
 
 
@@ -125,8 +128,9 @@ def resumo_etapa(cat, nome):
     }
 
 
-def resumo_geral_etapa(cat):
-    rs = [resumo_etapa(cat, j["nome"]) for j in BUILDS]
+def resumo_geral_etapa(cat, jobs=None):
+    jobs = jobs if jobs is not None else BUILDS
+    rs = [resumo_etapa(cat, j["nome"]) for j in jobs]
     total = sum(r["total"] for r in rs)
     bons = sum(r["bons"] for r in rs)
     ruins = sum(r["ruins"] for r in rs)
@@ -146,10 +150,11 @@ def pct_agendado(nome):
     return round(agend / total * 100) if total else 0
 
 
-def pct_agendado_geral():
-    total = sum(len(artefatos("releases", j["nome"])) for j in BUILDS)
+def pct_agendado_geral(jobs=None):
+    jobs = jobs if jobs is not None else BUILDS
+    total = sum(len(artefatos("releases", j["nome"])) for j in jobs)
     agend = sum(
-        1 for j in BUILDS for a in artefatos("releases", j["nome"]) if a["status"] == "AGENDADO"
+        1 for j in jobs for a in artefatos("releases", j["nome"]) if a["status"] == "AGENDADO"
     )
     return round(agend / total * 100) if total else 0
 
@@ -200,19 +205,20 @@ def pizza_html(ok, falha, tam=62):
     )
 
 
-def matrix_html():
+def matrix_html(jobs=None):
+    jobs = jobs if jobs is not None else BUILDS
     etaps = ["builds", "releases", "execucoes"]
     partes = ['<div class="pgrade cabecalho">']
     partes.append('<div class="cel-nome">Job</div>')
     for c in etaps:
-        rg = resumo_geral_etapa(c)
+        rg = resumo_geral_etapa(c, jobs)
         partes.append(
             f'<div class="cel-etapa">{TITULO_ETAPA[c]}'
             f'<small>{rg["total"]} no total</small></div>'
         )
     partes.append("</div>")
 
-    for j in BUILDS:
+    for j in jobs:
         nome = j["nome"]
         saude = saude_job(nome)
         est = estado_saude(saude)
@@ -395,17 +401,20 @@ st.set_page_config(page_title="Esteira ", page_icon="\u2b26", layout="wide")
 
 st.markdown(CSS, unsafe_allow_html=True)
 
-col_titulo, col_metricas = st.columns([3, 2], vertical_alignment="center")
+col_titulo, col_contador = st.columns([4, 1], vertical_alignment="center")
 with col_titulo:
     st.caption("Release de software e dados &middot; últimos 7 dias")
-with col_metricas:
-    r_b = resumo_geral_etapa("builds")
-    r_r = resumo_geral_etapa("releases")
-    r_e = resumo_geral_etapa("execucoes")
-    m1, m2, m3 = st.columns(3)
-    m1.metric("Builds", r_b["total"], f"{r_b['taxa']}% sucesso")
-    m2.metric("Releases", r_r["total"], f"{pct_agendado_geral()}% agendadas")
-    m3.metric("Execuções", r_e["total"], f"{r_e['taxa']}% sucesso")
+
+selecao = seletor(jobs=BUILDS)
+jobs_filtrados = selecao["jobs"]
+
+r_b = resumo_geral_etapa("builds", jobs_filtrados)
+r_r = resumo_geral_etapa("releases", jobs_filtrados)
+r_e = resumo_geral_etapa("execucoes", jobs_filtrados)
+m1, m2, m3 = st.columns(3)
+m1.metric("Builds", r_b["total"], f"{r_b['taxa']}% sucesso")
+m2.metric("Releases", r_r["total"], f"{pct_agendado_geral(jobs_filtrados)}% agendadas")
+m3.metric("Execuções", r_e["total"], f"{r_e['taxa']}% sucesso")
 
 st.subheader("Pipeline Global")
 st.markdown(
@@ -413,51 +422,10 @@ st.markdown(
     'Jobs × etapas. Passe o mouse sobre um card para listar os itens; selecione o job abaixo para ver o caminho dos dados (build → release → execuções).</div>',
     unsafe_allow_html=True,
 )
-st.markdown(matrix_html(), unsafe_allow_html=True)
+st.markdown(matrix_html(jobs_filtrados), unsafe_allow_html=True)
 
 st.caption(
     "\u25cf Saudável (\u226580% de sucesso)   \u25cf Atenção (55-79%)   "
     "\u25cf Crítico (<55%)   · releases: % de agendadas   · passe o mouse sobre um card para listar os itens."
 )
 
-st.divider()
-
-nome = st.selectbox("Job", [j["nome"] for j in BUILDS])
-
-st.subheader("Caminho dos Dados")
-st.caption("Para cada versão fechada com sucesso (build → release), as execuções relacionadas com percentual de sucessos e falhas.")
-
-cols = st.columns(3)
-rb = resumo_etapa("builds", nome)
-re = resumo_etapa("execucoes", nome)
-rels = artefatos("releases", nome)
-fechadas = [r for r in rels if r["status"] in ("AGENDADO", "ARQUIVADO")]
-
-with cols[0]:
-    st.markdown(cartao_html("Builds", rb["total"], f'{rb["taxa"]}% de sucesso', COR_ETAPA["builds"]), unsafe_allow_html=True)
-with cols[1]:
-    st.markdown(cartao_html("Releases fechadas", len(fechadas), f"de {len(rels)} releases &middot; versões com execução", COR_ETAPA["releases"]), unsafe_allow_html=True)
-with cols[2]:
-    st.markdown(
-        f'<div class="cartao" style="border-top:4px solid {COR_ETAPA["execucoes"]}">'
-        f'<div class="ctit">Execuções</div>'
-        f'<div class="cnum" style="display:flex;align-items:center;gap:10px">{re["total"]}'
-        f'{pizza_html(re["bons"], re["ruins"], tam=34)}</div>'
-        f'<div class="cdet">{re["taxa"]}% de sucesso &middot; '
-        f'<span class="ok">{re["bons"]} sucesso</span> &middot; '
-        f'<span class="ruim">{re["ruins"]} falha</span></div></div>',
-        unsafe_allow_html=True,
-    )
-
-st.markdown("#### Versões fechadas")
-builds_map = {b["id_build"]: b for b in artefatos("builds", nome)}
-execs = artefatos("execucoes", nome)
-
-if fechadas:
-    fluxos = "".join(
-        fluxo_html(rel, builds_map.get(rel["id_build"]), [e for e in execs if e["id_release"] == rel["id_release"]])
-        for rel in fechadas
-    )
-    st.markdown(fluxos, unsafe_allow_html=True)
-else:
-    st.markdown('<div class="sem-dados">Nenhuma versão fechada encontrada para este job.</div>', unsafe_allow_html=True)

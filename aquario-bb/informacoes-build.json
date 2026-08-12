@@ -73,7 +73,9 @@
                 "data_inicio": "2026-07-27T20:52:23Z",
                 "data_fim": "2026-07-27T20:56:23Z"
             }
-        ]
+        ],
+        "assunto": "Tecnologia",
+        "diretoria": "Desenvolvimento"
     },
     {
         "nome": "job_2",
@@ -156,7 +158,9 @@
                 "data_inicio": "2026-07-27T20:52:23Z",
                 "data_fim": "2026-07-27T20:58:23Z"
             }
-        ]
+        ],
+        "assunto": "Tecnologia",
+        "diretoria": "Desenvolvimento"
     },
     {
         "nome": "job_3",
@@ -246,7 +250,9 @@
                 "data_inicio": "2026-07-27T20:52:23Z",
                 "data_fim": "2026-07-27T21:00:23Z"
             }
-        ]
+        ],
+        "assunto": "Tecnologia",
+        "diretoria": "Operação"
     },
     {
         "nome": "job_4",
@@ -343,7 +349,9 @@
                 "data_inicio": "2026-07-27T20:52:23Z",
                 "data_fim": "2026-07-27T20:56:23Z"
             }
-        ]
+        ],
+        "assunto": "Tecnologia",
+        "diretoria": "Operação"
     },
     {
         "nome": "job_5",
@@ -447,7 +455,9 @@
                 "data_inicio": "2026-07-27T20:52:23Z",
                 "data_fim": "2026-07-27T20:58:23Z"
             }
-        ]
+        ],
+        "assunto": "Pessoas",
+        "diretoria": "Manutenção"
     },
     {
         "nome": "job_6",
@@ -558,7 +568,9 @@
                 "data_inicio": "2026-07-27T20:52:23Z",
                 "data_fim": "2026-07-27T21:00:23Z"
             }
-        ]
+        ],
+        "assunto": "Pessoas",
+        "diretoria": "Manutenção"
     },
     {
         "nome": "job_7",
@@ -676,7 +688,9 @@
                 "data_inicio": "2026-07-27T20:52:23Z",
                 "data_fim": "2026-07-27T20:56:23Z"
             }
-        ]
+        ],
+        "assunto": "Pessoas",
+        "diretoria": "Contratação"
     },
     {
         "nome": "job_8",
@@ -801,7 +815,9 @@
                 "data_inicio": "2026-07-27T20:52:23Z",
                 "data_fim": "2026-07-27T20:58:23Z"
             }
-        ]
+        ],
+        "assunto": "Processos",
+        "diretoria": "Análise"
     },
     {
         "nome": "job_9",
@@ -933,7 +949,9 @@
                 "data_inicio": "2026-07-27T20:52:23Z",
                 "data_fim": "2026-07-27T21:00:23Z"
             }
-        ]
+        ],
+        "assunto": "Processos",
+        "diretoria": "Evolução"
     },
     {
         "nome": "job_10",
@@ -1072,6 +1090,8 @@
                 "data_inicio": "2026-07-27T20:52:23Z",
                 "data_fim": "2026-07-27T20:56:23Z"
             }
-        ]
+        ],
+        "assunto": "Processos",
+        "diretoria": "Evolução"
     }
 ]
