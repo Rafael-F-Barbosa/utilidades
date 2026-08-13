@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terremotos - USGS</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            color: #222;
+        }
+        h1 { margin-bottom: 0.25rem; }
+        .meta { color: #555; margin-bottom: 1rem; }
+        .meta strong { color: #222; }
+        button {
+            background: #2563eb;
+            color: #fff;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-bottom: 1.5rem;
+        }
+        button:hover { background: #1d4ed8; }
+        button:disabled { background: #93c5fd; cursor: default; }
+        ul { list-style: none; padding: 0; }
+        li {
+            padding: 0.75rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        li .mag {
+            font-weight: 600;
+            color: #b91c1c;
+            margin-right: 0.5rem;
+        }
+        li .time { color: #6b7280; font-size: 0.85rem; }
+        .empty { color: #6b7280; font-style: italic; }
+        #status { margin-left: 0.75rem; color: #6b7280; }
+    </style>
+</head>
+<body>
+    <h1>Terremotos (USGS)</h1>
+    <p class="meta">
+        Última atualização: <strong id="last-updated">—</strong><br>
+        Quantidade: <strong id="count">—</strong>
+    </p>
+    <label for="period">Período:</label>
+    <select id="period">
+        <option value="hour">última hora</option>
+        <option value="day">últimas 24h</option>
+        <option value="week">últimos 7 dias</option>
+        <option value="month">últimos 30 dias</option>
+    </select>
+    <button id="refresh">Atualizar</button><span id="status"></span>
+    <ul id="list"></ul>
+
+    <script>
+        const listEl = document.getElementById('list');
+        const lastUpdatedEl = document.getElementById('last-updated');
+        const countEl = document.getElementById('count');
+        const statusEl = document.getElementById('status');
+        const refreshBtn = document.getElementById('refresh');
+        const periodEl = document.getElementById('period');
+
+        function formatDate(iso) {
+            if (!iso) return '—';
+            const d = new Date(iso);
+            return isNaN(d) ? iso : d.toLocaleString('pt-BR');
+        }
+
+        async function load() {
+            statusEl.textContent = 'Carregando...';
+            try {
+                const res = await fetch('/api/earthquakes?period=' + encodeURIComponent(periodEl.value));
+                const data = await res.json();
+                const features = (data.data && data.data.features) || [];
+                lastUpdatedEl.textContent = formatDate(data.lastUpdated);
+                countEl.textContent = features.length;
+                listEl.innerHTML = '';
+                if (features.length === 0) {
+                    listEl.innerHTML = '<li class="empty">Nenhum terremoto armazenado ainda.</li>';
+                } else {
+                    features.forEach(f => {
+                        const props = f.properties || {};
+                        const li = document.createElement('li');
+                        const mag = props.mag != null ? props.mag.toFixed(1) : '?';
+                        const place = props.place || '—';
+                        const time = formatDate(props.time);
+                        li.innerHTML = '<span class="mag">M ' + mag + '</span>'
+                            + place
+                            + ' <span class="time">' + time + '</span>';
+                        listEl.appendChild(li);
+                    });
+                }
+                statusEl.textContent = '';
+            } catch (err) {
+                statusEl.textContent = 'Erro ao carregar: ' + err.message;
+            }
+        }
+
+        refreshBtn.addEventListener('click', load);
+        periodEl.addEventListener('change', load);
+        load();
+    </script>
+</body>
+</html>

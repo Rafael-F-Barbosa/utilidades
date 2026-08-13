@@ -1,90 +1,106 @@
-# quarkus-mini-app-with-redis
+# PoC — USGS + Quarkus + Redis
 
-Aplicação Quarkus de exemplo (Java 21 + Maven) que armazena chave/valor no Redis.
+Aplicação Quarkus (Java 21) que consulta a API da USGS periodicamente, armazena os dados no Redis e exibe os terremotos em uma página HTML.
 
-A conexão é feita via variável `REDIS_URL` (definida no arquivo `.env` na raiz do projeto), por exemplo:
+## Como rodar
 
+### 1. Suba o Redis localmente
+
+```shell
+docker compose up -d
 ```
-REDIS_URL="rediss://default:<SENHA>@fine-joey-186735.upstash.io:6379"
-```
 
-## Running the application in dev mode
+### 2. Inicie a aplicação em modo dev
 
-You can run your application in dev mode that enables live coding using:
-
-```shell script
+```shell
 ./mvnw quarkus:dev
 ```
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at <http://localhost:8080/q/dev/>.
+> O Redis local fica em `redis://localhost:6379`. Para usar outro Redis, defina `REDIS_URL` (ex.: no arquivo `.env` da raiz do projeto):
+>
+> ```
+> REDIS_URL=redis://localhost:6379
+> ```
+
+### 3. Acesse
+
+- Página HTML: <http://localhost:8080>
+- API: <http://localhost:8080/api/earthquakes>
+
+## Como funciona
+
+- **Cronjobs** (Quarkus Scheduler) consultam a USGS e armazenam o resultado no Redis em chaves por período:
+
+| Período | Chave no Redis | Frequência |
+|---------|----------------|------------|
+| última hora (`hour`) | `usgs:earthquakes:hour` | a cada 1 min |
+| últimas 24h (`day`) | `usgs:earthquakes:day` | a cada 15 min |
+| últimos 7 dias (`week`) | `usgs:earthquakes:week` | a cada 1h |
+| últimos 30 dias (`month`) | `usgs:earthquakes:month` | a cada 6h |
+
+Cada valor tem o formato:
+
+```json
+{
+  "lastUpdated": "2026-08-13T18:30:00Z",
+  "data": {
+    "type": "FeatureCollection",
+    "features": []
+  }
+}
+```
+
+- O endpoint `GET /api/earthquakes` apenas **lê o Redis** — não consulta a USGS.
+- A página HTML chama `GET /api/earthquakes`; o botão **Atualizar** também apenas relê o Redis.
+
+## Instrumentação (logs de tempo)
+
+A aplicação registra em log (INFO) o tempo de execução:
+
+- **Jobs**: cada execução do cronjob loga o tempo total (consulta à USGS + gravação no Redis):
+  `JOB [hour] executado em 850 ms: 4 terremotos armazenados no Redis`
+- **Requests HTTP**: cada requisição loga método, caminho, status e tempo de resposta:
+  `REQUEST GET /api/earthquakes -> 200 em 12 ms`
 
 ## Endpoints
 
-### Salvar uma chave/valor
+### Recuperar os terremotos armazenados
 
-`POST /values`
+`GET /api/earthquakes?period=hour|day|week|month` (padrão: `hour`)
 
 ```shell
-curl -X POST http://localhost:8080/values \
-  -H "Content-Type: application/json" \
-  -d '{"key": "nome", "value": "rafael"}'
+curl "http://localhost:8080/api/earthquakes?period=month"
 ```
 
 Resposta:
 
 ```json
-{"nome":"rafael"}
+{
+  "lastUpdated": "2026-08-13T18:30:00Z",
+  "data": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "properties": {
+          "mag": 2.5,
+          "place": "5 km E de Ranson, WV",
+          "time": 1723563000000
+        }
+      }
+    ]
+  }
+}
 ```
 
-### Recuperar todos os valores
+### Página HTML
 
-`GET /values`
+`GET /` — exibe último horário de atualização, quantidade de terremotos, lista com magnitude/localização/horário, seletor de período e o botão **Atualizar**.
 
-```shell
-curl http://localhost:8080/values
-```
+## Fonte de dados
 
-Resposta:
+Feeds GeoJSON da USGS (atualizados a cada minuto pela USGS):
 
-```json
-{"nome":"rafael"}
-```
-
-## Packaging and running the application
-
-The application can be packaged using:
-
-```shell script
-./mvnw package
-```
-
-It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
-
-The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
-
-If you want to build an _über-jar_, execute the following command:
-
-```shell script
-./mvnw package -Dquarkus.package.jar.type=uber-jar
-```
-
-The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
-
-## Creating a native executable
-
-You can create a native executable using:
-
-```shell script
-./mvnw package -Dnative
-```
-
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using:
-
-```shell script
-./mvnw package -Dnative -Dquarkus.native.container-build=true
-```
-
-You can then execute your native executable with: `./target/quarkus-mini-app-with-redis-1.0.0-SNAPSHOT-runner`
-
-If you want to learn more about building native executables, please consult <https://quarkus.io/guides/maven-tooling>.
+- `https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson`
+- `https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson`
+- `https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson`
+- `https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson`
