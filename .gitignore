@@ -10,3 +10,21 @@
 *.venv/
 
 .streamlit/
+
+# Java / Quarkus
+target/
+*.class
+*.jar
+.mvn/wrapper/maven-wrapper.jar
+*.iml
+*.ipr
+.idea/
+.flattened-pom.xml
+.classpath
+.settings/
+.project
+bin/
+.vscode/
+.DS_Store
+.env
+.pytest_cache/
